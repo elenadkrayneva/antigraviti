@@ -1,0 +1,132 @@
+.heroSection {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: var(--header-height);
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bg-primary);
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/hero_bg.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  opacity: 0.15;
+}
+
+.bgOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, transparent 0%, var(--bg-primary) 80%);
+  z-index: 2;
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  position: relative;
+  z-index: 10;
+}
+
+.profileBadge {
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--brand-accent);
+  padding: 0.6rem 1.25rem;
+  border-radius: 99px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  margin-bottom: 2rem;
+}
+
+.headline {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  margin-bottom: 2rem;
+  color: var(--fg-primary);
+}
+
+.highlight {
+  color: var(--brand-accent);
+}
+
+.subheadline {
+  font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+  color: var(--fg-secondary);
+  max-width: 800px;
+  margin-bottom: 3.5rem;
+  line-height: 1.7;
+  text-align: center;
+  font-weight: 400;
+}
+
+.textHighlight {
+  color: var(--brand-accent);
+  font-weight: 600;
+}
+
+.ctaGroup {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--brand-accent);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btnPrimary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+}
+
+.btnSecondary {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: transparent;
+  color: var(--fg-primary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 2rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btnSecondary:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: var(--fg-tertiary);
+  transform: translateY(-3px);
+}

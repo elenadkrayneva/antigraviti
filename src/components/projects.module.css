@@ -1,0 +1,174 @@
+.section {
+  padding: 8rem 0;
+  position: relative;
+}
+
+.sectionTitle {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.sectionSubtitle {
+  color: var(--fg-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 2.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(37, 99, 235, 0.3);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.card:hover .icon {
+  color: var(--brand-accent);
+  transform: translate(2px, -2px);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: var(--bg-tertiary);
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.1);
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(180deg, transparent 50%, var(--bg-primary) 100%);
+  z-index: 1;
+}
+
+.cardBadge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  padding: 0.3rem 0.8rem;
+  border-radius: 99px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--brand-accent);
+  border: 1px solid rgba(37, 99, 235, 0.3);
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cardContent {
+  padding: 1.5rem 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+  z-index: 2;
+  margin-top: -1rem;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.icon {
+  color: var(--fg-tertiary);
+  transition: all 0.2s ease;
+}
+
+.description {
+  color: var(--fg-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.challengeBox, .resultBox {
+  margin-bottom: 1rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--fg-tertiary);
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.05em;
+}
+
+.problem, .result {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.problem {
+  color: var(--fg-secondary);
+}
+
+.result {
+  color: var(--fg-primary);
+  font-weight: 500;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.tag {
+  background: rgba(37, 99, 235, 0.05);
+  color: var(--brand-accent);
+  padding: 0.25rem 0.75rem;
+  border-radius: 99px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid rgba(37, 99, 235, 0.1);
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

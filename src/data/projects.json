@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ai-startup",
+    "title": "AI Startup Strategic Repositioning",
+    "description": "Strategic Consulting Mission for an early-stage AI startup specializing in automated image processing.",
+    "problem": "Operated in a highly competitive AI infrastructure market without clear differentiation or vertical focus.",
+    "actions": [
+      "Conducted structured market and competitive analysis using SWOT and Porter's 5 Forces",
+      "Assessed demand potential across 5 high-value verticals",
+      "Developed a disruptive repositioning strategy focusing on Vertical AI specialization",
+      "Designed a phased 6-month go-to-market and implementation roadmap"
+    ],
+    "result": "Reframed positioning toward a specialized industry application (Vertical AI). Strategy acknowledged by CEO as a viable growth direction for Series A funding.",
+    "tags": ["Market Analysis", "Strategic Positioning", "Consulting"]
+  },
+  {
+    "id": "digify-active",
+    "title": "Digify Active: B2B Growth Agency",
+    "description": "Building a performance marketing agency concept for SME fitness businesses in Europe.",
+    "problem": "SME fitness businesses lacked structured digital marketing and data measurement systems.",
+    "actions": [
+      "Conducted primary market research and defined ICP (Ideal Customer Profile)",
+      "Designed conversion-focused landing pages in HubSpot with A/B test setups",
+      "Launched and optimized Google Ads campaigns focused on lead generation",
+      "Analyzed key performance metrics: CTR, CPC, CTR, and lead conversion rates"
+    ],
+    "result": "Identified top-performing channels with a 15% lower projected CPA compared to benchmarks. Formulated data-backed optimization recommendations.",
+    "tags": ["Analytics", "Google Ads", "HubSpot", "Growth"]
+  },
+  {
+    "id": "oblicuo",
+    "title": "Oblicuo Hi-Fi Bar: Growth Strategy",
+    "description": "Data-informed social media and positioning strategy for a niche hi-fi listening bar in Barcelona.",
+    "problem": "Inconsistent weekday attendance (Tuesday–Thursday) and limited structured digital strategy for niche audiences.",
+    "actions": [
+      "Conducted qualitative research through 16 deep customer interviews",
+      "Developed 3 segmented customer personas with specific triggers and barriers",
+      "Built a structured KPI framework for social media growth and event tracking",
+      "Analyzed competitor share-of-voice and positioning"
+    ],
+    "result": "Established a clearly defined target segment and delivered a 6-month strategic plan grounded in real customer insights.",
+    "tags": ["Customer Insights", "Strategy", "KPI Framework"]
+  }
+]

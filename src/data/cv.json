@@ -1,0 +1,40 @@
+{
+  "profile": {
+    "name": "Elena Krayneva",
+    "role": "Marketing & Growth Analyst | Performance Specialist",
+    "headline": "Turning Marketing Data into Strategic Decisions",
+    "subheadline": "MSc Digital Marketing & Analytics student with a strong interest in **marketing performance**, **growth strategy**, and **data-driven decision-making**. Through applied academic projects, developed experience in campaign analysis, funnel evaluation, and KPI-based performance reporting. Particularly interested in translating marketing data into strategic insights and optimization opportunities.",
+    "location": "Barcelona, Spain",
+    "linkedin": "https://www.linkedin.com/in/elena-d-krayneva/",
+    "email": "elena.d.krayneva@gmail.com"
+  },
+  "skills_categorized": {
+    "Analytics": ["GA4", "Data Modeling", "A/B Testing", "Tableau", "Power BI", "R"],
+    "Marketing": ["Google Ads", "Conversion Optimization", "Persona Development", "Retention Strategy"],
+    "Strategy": ["Competitive Benchmarking", "Go-To-Market Planning", "Market Research", "Consulting Frameworks"],
+    "Tools": ["HubSpot", "Excel (Advanced)", "Excel Macro/VBA", "Canva", "SQL (Basics)"]
+  },
+  "experience": [
+    {
+      "company": "X5 Digital",
+      "role": "HRBP Assistant - People Analytics & Reporting",
+      "date": "02/2025 - 07/2025",
+      "bullets": [
+        "Analyzed workforce datasets (headcount, onboarding, attrition, leave)",
+        "Developed KPI reports to support workforce planning and decision-making",
+        "Prepared recurring workforce KPI dashboard presentations",
+        "Compiled workforce data for talent reviews supporting succession planning"
+      ]
+    },
+    {
+      "company": "Technologies of Trust",
+      "role": "Contractor Operations Specialist",
+      "date": "12/2023 - 02/2025",
+      "bullets": [
+        "Developed structured Excel trackers to monitor contract approvals",
+        "Coordinated cross-functional workflows for 40+ contractors monthly",
+        "Proposed workflow improvements to streamline approval cycles"
+      ]
+    }
+  ]
+}
