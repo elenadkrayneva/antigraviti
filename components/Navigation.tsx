@@ -3,50 +3,51 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Navigation.module.css';
 
+const navItems = [
+  { name: 'About', href: '#about' },
+  { name: 'Experience', href: '#experience' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Skills', href: '#skills' },
+];
+
 export default function Navigation() {
-  const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
+    const handleScroll = () => {
+      const sections = navItems.map(item => item.href.substring(1));
+      const current = sections.find(section => {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          return rect.top >= 0 && rect.top <= 300;
+        }
+        return false;
+      });
+      if (current) setActiveSection(current);
+    };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-    e.preventDefault();
-    const el = document.getElementById(id);
-    if (el) {
-      const offset = 80;
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = el.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
-  };
-
   return (
-    <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
-      <div className={`container ${styles.navContainer}`}>
-        <Link href="/" className={styles.logo} onClick={(e) => handleSmoothScroll(e, 'hero')}>
-          EK<span>.</span>
-        </Link>
-        <div className={styles.links}>
-          <a href="#projects" onClick={(e) => handleSmoothScroll(e, 'projects')} className={styles.link}>Projects</a>
-          <a href="#experience" onClick={(e) => handleSmoothScroll(e, 'experience')} className={styles.link}>Experience</a>
-          <a href="#skills" onClick={(e) => handleSmoothScroll(e, 'skills')} className={styles.link}>Skills</a>
-          <button 
-            className={styles.cta} 
-            onClick={() => window.dispatchEvent(new CustomEvent('open-chatbot'))}
-          >
-            Talk to AI
-          </button>
-        </div>
-      </div>
+    <nav className="mt-16 hidden lg:block">
+      <ul className="flex flex-col gap-4">
+        {navItems.map((item) => (
+          <li key={item.name}>
+            <Link 
+              href={item.href}
+              className={`group flex items-center py-3 ${activeSection === item.href.substring(1) ? styles.active : ''}`}
+            >
+              <span className={`mr-4 h-px w-8 bg-fg-muted transition-all group-hover:w-16 group-hover:bg-fg-primary ${activeSection === item.href.substring(1) ? 'w-16 bg-fg-primary' : ''}`}></span>
+              <span className={`text-xs font-bold uppercase tracking-widest text-fg-muted group-hover:text-fg-primary ${activeSection === item.href.substring(1) ? 'text-fg-primary' : ''}`}>
+                {item.name}
+              </span>
+            </Link>
+          </li>
+        ))}
+      </ul>
     </nav>
   );
 }
