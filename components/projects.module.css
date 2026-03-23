@@ -1,120 +1,116 @@
 .section {
-  padding: 10rem 0;
-  background-color: #ffffff;
+  padding: 9rem 0;
+  background: #ffffff;
+}
+
+.header {
+  margin-bottom: 4rem;
 }
 
 .sectionTitle {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
-  margin-bottom: 1rem;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
   color: var(--fg-primary);
+  margin-bottom: 0.75rem;
 }
 
 .sectionSubtitle {
   color: var(--fg-secondary);
-  font-size: 1.25rem;
-  margin-bottom: 6rem;
-  max-width: 700px;
+  font-size: 1.125rem;
+  max-width: 680px;
+  line-height: 1.6;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 2rem;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
   background: #ffffff;
-  border-radius: var(--radius-sm);
   border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
   overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  border-color: var(--brand-accent);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-}
-
-.imageContainer {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  background-color: #f3f4f6;
-  overflow: hidden;
-}
-
-.image {
-  object-fit: cover;
-  transition: transform 0.6s ease;
-}
-
-.card:hover .image {
-  transform: scale(1.05);
-}
-
-.cardBadge {
-  position: absolute;
-  top: 1.25rem;
-  left: 1.25rem;
-  background: var(--brand-accent);
-  color: #ffffff;
-  padding: 4px 12px;
-  border-radius: 99px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  z-index: 10;
-}
-
-.cardContent {
-  padding: 2.5rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+}
+
+.card:hover, .cardOpen {
+  border-color: var(--brand-accent);
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.07);
 }
 
 .cardHeader {
+  padding: 2rem 2rem 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.categoryBadge {
+  display: inline-block;
+  background: var(--brand-accent);
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.titleRow {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.25rem;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .title {
-  font-size: 1.625rem;
+  font-size: 1.375rem;
   font-weight: 800;
-  color: var(--fg-primary);
   letter-spacing: -0.02em;
+  color: var(--fg-primary);
+  line-height: 1.2;
 }
 
-.icon {
+.arrowIcon {
   color: var(--brand-accent);
-  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-top: 4px;
 }
 
-.card:hover .icon {
-  transform: translate(2px, -2px);
+.clientLine {
+  font-size: 0.875rem;
+  color: var(--fg-muted);
 }
 
-.description {
+.clientLine strong {
   color: var(--fg-secondary);
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
 }
 
-.challengeBox, .resultBox {
-  padding: 1.25rem;
-  background: #f9fafb;
+.cardBody {
+  padding: 1.75rem 2rem;
+  flex-grow: 1;
+}
+
+.context {
+  font-size: 0.9375rem;
+  color: var(--fg-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.problemBox {
+  background: #fafafa;
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--brand-accent);
   border-radius: var(--radius-sm);
-  margin-bottom: 1rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .label {
@@ -122,50 +118,133 @@
   font-size: 0.75rem;
   font-weight: 800;
   text-transform: uppercase;
+  letter-spacing: 0.08em;
   color: var(--fg-primary);
   margin-bottom: 0.5rem;
-  letter-spacing: 0.05em;
 }
 
-.problem, .result {
+.problemText {
   font-size: 0.9375rem;
+  color: var(--fg-secondary);
   line-height: 1.5;
   margin: 0;
-  color: var(--fg-secondary);
 }
 
-.result {
-  font-weight: 600;
-  color: var(--fg-primary);
-}
-
-.tags {
+.metrics {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.metric {
+  background: #f0f9ff;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 99px;
+}
+
+.expandBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid var(--border-subtle);
+  color: var(--fg-secondary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.expandBtn:hover {
+  border-color: var(--brand-accent);
+  color: var(--brand-accent);
+}
+
+.expandedContent {
+  overflow: hidden;
   margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.actionsBlock, .contributionBlock, .resultBlock {
+  background: #fafafa;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem;
+}
+
+.actionList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.actionList li {
+  font-size: 0.9375rem;
+  color: var(--fg-secondary);
+  line-height: 1.5;
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.actionList li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 5px;
+  height: 5px;
+  background: var(--brand-accent);
+  border-radius: 50%;
+}
+
+.contributionBlock p, .resultBlock p {
+  font-size: 0.9375rem;
+  color: var(--fg-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.resultText {
+  font-weight: 600;
+  color: var(--fg-primary) !important;
+}
+
+.tags {
+  padding: 1.25rem 2rem;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  background: #fafafa;
 }
 
 .tag {
   background: #f3f4f6;
   color: var(--fg-secondary);
-  padding: 4px 12px;
-  border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 4px;
 }
 
 @media (max-width: 640px) {
   .grid {
     grid-template-columns: 1fr;
   }
-  .cardContent {
+  .cardHeader, .cardBody {
     padding: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .grid {
-    grid-template-columns: 1fr;
   }
 }

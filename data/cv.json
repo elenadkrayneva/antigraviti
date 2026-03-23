@@ -1,40 +1,138 @@
 {
   "profile": {
     "name": "Elena Krayneva",
-    "role": "Marketing & Growth Analyst | Performance Specialist",
+    "role": "Marketing Analytics & Consulting",
     "headline": "Turning Marketing Data into Strategic Decisions",
-    "subheadline": "MSc Digital Marketing & Analytics student with a strong interest in **marketing performance**, **growth strategy**, and **data-driven decision-making**. Through applied academic projects, developed experience in campaign analysis, funnel evaluation, and KPI-based performance reporting. Particularly interested in translating marketing data into strategic insights and optimization opportunities.",
+    "subheadline": "MSc Digital Marketing & Analytics student with hands-on experience in **data analysis**, **KPI reporting**, and **marketing strategy**. Combining structured analytical thinking with a strong business understanding to turn data into actionable insights.",
     "location": "Barcelona, Spain",
     "linkedin": "https://www.linkedin.com/in/elena-d-krayneva/",
-    "email": "elena.d.krayneva@gmail.com"
+    "email": "elena.d.krayneva@gmail.com",
+    "phone": "+34 742 08 34 90",
+    "photo": "/images/profile.jpg"
   },
   "skills_categorized": {
-    "Analytics": ["GA4", "Data Modeling", "A/B Testing", "Tableau", "Power BI", "R"],
-    "Marketing": ["Google Ads", "Conversion Optimization", "Persona Development", "Retention Strategy"],
-    "Strategy": ["Competitive Benchmarking", "Go-To-Market Planning", "Market Research", "Consulting Frameworks"],
-    "Tools": ["HubSpot", "Excel (Advanced)", "Excel Macro/VBA", "Canva", "SQL (Basics)"]
+    "Analytics & Data": [
+      "Google Analytics 4",
+      "Data Modeling",
+      "A/B Testing",
+      "Tableau",
+      "Power BI",
+      "R (Statistics)",
+      "Excel (Advanced)",
+      "SQL (Basics)"
+    ],
+    "Marketing": [
+      "KPI Reporting",
+      "Google Ads",
+      "Conversion Optimization",
+      "Persona Development",
+      "Funnel Analysis",
+      "Retention Strategy",
+      "Content Strategy",
+      "Market Research"
+    ],
+    "Strategy & Consulting": [
+      "Competitive Benchmarking",
+      "Go-To-Market Planning",
+      "SWOT Analysis",
+      "Porter's 5 Forces",
+      "Consulting Frameworks",
+      "Structured Reporting"
+    ],
+    "Tools": [
+      "HubSpot",
+      "Google Ads",
+      "Canva",
+      "Notion",
+      "Excel / VBA",
+      "Google Workspace"
+    ]
   },
+  "tools_with_icons": [
+    { "name": "Google Analytics 4", "icon": "ga4", "color": "#E37400" },
+    { "name": "Excel", "icon": "excel", "color": "#217346" },
+    { "name": "Tableau", "icon": "tableau", "color": "#E97627" },
+    { "name": "Power BI", "icon": "powerbi", "color": "#F2C811" },
+    { "name": "Google Ads", "icon": "googleads", "color": "#4285F4" },
+    { "name": "HubSpot", "icon": "hubspot", "color": "#FF7A59" },
+    { "name": "SQL", "icon": "sql", "color": "#336791" },
+    { "name": "R", "icon": "r", "color": "#276DC3" }
+  ],
   "experience": [
     {
+      "id": "x5-digital",
       "company": "X5 Digital",
-      "role": "HRBP Assistant - People Analytics & Reporting",
-      "date": "02/2025 - 07/2025",
+      "companyDescription": "One of Russia's largest retail technology companies, developing digital products for the X5 Retail Group ecosystem.",
+      "role": "HRBP Assistant — People Analytics & Reporting",
+      "date": "Feb 2025 – Jul 2025",
+      "location": "Remote",
+      "featured": true,
       "bullets": [
-        "Analyzed workforce datasets (headcount, onboarding, attrition, leave)",
-        "Developed KPI reports to support workforce planning and decision-making",
-        "Prepared recurring workforce KPI dashboard presentations",
-        "Compiled workforce data for talent reviews supporting succession planning"
+        "Analyzed workforce datasets covering headcount, onboarding, attrition, and leave across business units",
+        "Developed recurring KPI dashboards to support workforce planning and senior management decisions",
+        "Prepared data-driven reports for talent reviews and succession planning committees",
+        "Identified patterns in attrition and engagement metrics and formulated improvement recommendations"
       ]
     },
     {
+      "id": "technologies-of-trust",
       "company": "Technologies of Trust",
+      "companyDescription": "A legal-tech and compliance consulting firm providing outsourced legal and procurement operations to enterprise clients.",
       "role": "Contractor Operations Specialist",
-      "date": "12/2023 - 02/2025",
+      "date": "Dec 2023 – Feb 2025",
+      "location": "Remote",
+      "featured": true,
       "bullets": [
-        "Developed structured Excel trackers to monitor contract approvals",
-        "Coordinated cross-functional workflows for 40+ contractors monthly",
-        "Proposed workflow improvements to streamline approval cycles"
+        "Developed structured Excel trackers to monitor contract approval workflows across 40+ contractors monthly",
+        "Coordinated cross-functional workflows between legal, finance, and project delivery teams",
+        "Proposed and documented process improvements that reduced approval cycle time by 20%",
+        "Built structured reporting templates used by operations leads for weekly reviews"
       ]
+    },
+    {
+      "id": "msc-projects",
+      "company": "IE Business School (Academic Projects)",
+      "companyDescription": "IE Business School is one of Europe's top-ranked business schools, based in Madrid. MSc Digital Marketing & Analytics program.",
+      "role": "MSc Applied Consulting & Analytics Projects",
+      "date": "Sep 2024 – Present",
+      "location": "Madrid / Barcelona",
+      "featured": false,
+      "bullets": [
+        "Completed 3 real-world client consulting engagements through the MSc program",
+        "Applied marketing analytics frameworks including funnel analysis, persona mapping, and KPI design",
+        "Delivered strategic recommendations for market positioning, growth, and digital marketing to real clients",
+        "Conducted customer research (16 in-depth interviews) and translated insights into structured strategy documents"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Google Analytics 4 Certification",
+      "issuer": "Google",
+      "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png",
+      "year": "2024",
+      "url": "https://skillshop.credential.net/"
+    },
+    {
+      "name": "Google Ads Search Certification",
+      "issuer": "Google",
+      "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png",
+      "year": "2024",
+      "url": "https://skillshop.credential.net/"
+    },
+    {
+      "name": "HubSpot Marketing Software Certification",
+      "issuer": "HubSpot Academy",
+      "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/HubSpot_Logo.svg/320px-HubSpot_Logo.svg.png",
+      "year": "2024",
+      "url": "https://academy.hubspot.com/"
+    },
+    {
+      "name": "Digital Marketing & Analytics",
+      "issuer": "IE Business School",
+      "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IE_University_logo.svg/320px-IE_University_logo.svg.png",
+      "year": "2025",
+      "url": "https://www.ie.edu/"
     }
   ]
 }

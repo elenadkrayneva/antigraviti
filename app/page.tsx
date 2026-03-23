@@ -2,6 +2,8 @@ import Hero from '@/components/Hero';
 import Experience from '@/components/Experience';
 import Projects from '@/components/projects';
 import Skills from '@/components/Skills';
+import Certifications from '@/components/Certifications';
+import Contact from '@/components/Contact';
 import Chatbot from '@/components/Chatbot';
 import Footer from '@/components/Footer';
 import Navigation from '@/components/Navigation';
@@ -12,9 +14,11 @@ export default function Home() {
     <main className={styles.main}>
       <Navigation />
       <Hero />
-      <Skills />
       <Experience />
       <Projects />
+      <Skills />
+      <Certifications />
+      <Contact />
       <Footer />
       <Chatbot />
     </main>

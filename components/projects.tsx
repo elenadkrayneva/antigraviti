@@ -1,14 +1,14 @@
 'use client';
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import styles from './projects.module.css';
-import { ExternalLink, ArrowUpRight } from 'lucide-react';
+import { ChevronDown, ChevronUp, ArrowUpRight } from 'lucide-react';
 import projectsData from '@/data/projects.json';
-import Image from 'next/image';
 
 export default function Projects() {
-  const openChatbot = () => {
-    window.dispatchEvent(new CustomEvent('open-chatbot'));
-  };
+  const [openId, setOpenId] = useState<string | null>(null);
+
+  const toggle = (id: string) => setOpenId(prev => prev === id ? null : id);
 
   return (
     <section id="projects" className={styles.section}>
@@ -17,65 +17,103 @@ export default function Projects() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5 }}
+          className={styles.header}
         >
-          <h2 className={styles.sectionTitle}>Consulting Case Studies</h2>
-          <p className={styles.sectionSubtitle}>Solving business problems through data-driven performance analysis.</p>
+          <h2 className={styles.sectionTitle}>Case Studies</h2>
+          <p className={styles.sectionSubtitle}>
+            Applied consulting and marketing analytics projects — structured approach, real clients, measurable thinking.
+          </p>
         </motion.div>
-        
-        <div className={styles.grid}>
-          {projectsData.map((project: any, index: number) => {
-            const imageMap: {[key: string]: string} = {
-              "ai-startup": "/images/project_ai.png",
-              "digify-active": "/images/project_digify.png",
-              "oblicuo": "/images/project_oblicuo.png"
-            };
-            const imagePath = imageMap[project.id] || "/images/hero_bg.png";
 
+        <div className={styles.grid}>
+          {(projectsData as any[]).map((project, index) => {
+            const isOpen = openId === project.id;
             return (
-              <motion.div 
-                key={project.id} 
-                className={styles.card}
-                initial={{ opacity: 0, y: 32 }}
+              <motion.article
+                key={project.id}
+                className={`${styles.card} ${isOpen ? styles.cardOpen : ''}`}
+                initial={{ opacity: 0, y: 28 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.15, duration: 0.6 }}
-                onClick={openChatbot}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
               >
-                <div className={styles.imageContainer}>
-                  <Image 
-                    src={imagePath} 
-                    alt={project.title} 
-                    fill 
-                    className={styles.image}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                  <div className={styles.cardBadge}>{project.tags[0]}</div>
-                </div>
-                <div className={styles.cardContent}>
-                  <div className={styles.cardHeader}>
+                {/* Header */}
+                <div className={styles.cardHeader}>
+                  <span className={styles.categoryBadge}>{project.category}</span>
+                  <div className={styles.titleRow}>
                     <h3 className={styles.title}>{project.title}</h3>
-                    <ArrowUpRight size={22} className={styles.icon} />
+                    <ArrowUpRight size={20} className={styles.arrowIcon} />
                   </div>
-                  <p className={styles.description}>{project.description}</p>
-                  
-                  <div className={styles.challengeBox}>
-                    <span className={styles.label}>Challenge:</span>
-                    <p className={styles.problem}>{project.problem}</p>
-                  </div>
-
-                  <div className={styles.resultBox}>
-                    <span className={styles.label}>Outcome:</span>
-                    <p className={styles.result}>{project.result}</p>
-                  </div>
-
-                  <div className={styles.tags}>
-                    {project.tags.map((tag: string) => (
-                      <span key={tag} className={styles.tag}>{tag}</span>
-                    ))}
-                  </div>
+                  <p className={styles.clientLine}>Client: <strong>{project.client}</strong></p>
                 </div>
-              </motion.div>
+
+                {/* Context & Problem always visible */}
+                <div className={styles.cardBody}>
+                  <p className={styles.context}>{project.context}</p>
+
+                  <div className={styles.problemBox}>
+                    <span className={styles.label}>Business Problem</span>
+                    <p className={styles.problemText}>{project.problem}</p>
+                  </div>
+
+                  {/* Metrics chips */}
+                  {project.metrics && (
+                    <div className={styles.metrics}>
+                      {project.metrics.map((m: string, i: number) => (
+                        <span key={i} className={styles.metric}>{m}</span>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Expandable detail */}
+                  <button
+                    className={styles.expandBtn}
+                    onClick={() => toggle(project.id)}
+                    aria-expanded={isOpen}
+                  >
+                    {isOpen ? <><ChevronUp size={15} /> Hide detail</> : <><ChevronDown size={15} /> View full case study</>}
+                  </button>
+
+                  <AnimatePresence initial={false}>
+                    {isOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.35, ease: 'easeInOut' }}
+                        className={styles.expandedContent}
+                      >
+                        <div className={styles.actionsBlock}>
+                          <span className={styles.label}>What Was Done</span>
+                          <ul className={styles.actionList}>
+                            {project.actions.map((a: string, i: number) => (
+                              <li key={i}>{a}</li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        <div className={styles.contributionBlock}>
+                          <span className={styles.label}>My Contribution</span>
+                          <p>{project.myContribution}</p>
+                        </div>
+
+                        <div className={styles.resultBlock}>
+                          <span className={styles.label}>Outcome</span>
+                          <p className={styles.resultText}>{project.result}</p>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+
+                {/* Tags */}
+                <div className={styles.tags}>
+                  {project.tags.map((tag: string) => (
+                    <span key={tag} className={styles.tag}>{tag}</span>
+                  ))}
+                </div>
+              </motion.article>
             );
           })}
         </div>
