@@ -1,54 +1,51 @@
 .section {
-  padding: 8rem 0;
-  position: relative;
+  padding: 10rem 0;
+  background-color: #ffffff;
 }
 
 .sectionTitle {
-  font-size: clamp(2rem, 4vw, 3rem);
-  margin-bottom: 0.5rem;
-  letter-spacing: -0.02em;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -0.04em;
+  color: var(--fg-primary);
 }
 
 .sectionSubtitle {
   color: var(--fg-secondary);
-  font-size: 1.1rem;
-  margin-bottom: 4rem;
+  font-size: 1.25rem;
+  margin-bottom: 6rem;
+  max-width: 700px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  background: #ffffff;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-  overflow: hidden;
-  padding: 0;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .card:hover {
   transform: translateY(-8px);
-  border-color: rgba(37, 99, 235, 0.3);
-  background: rgba(255, 255, 255, 0.04);
-}
-
-.card:hover .icon {
-  color: var(--brand-accent);
-  transform: translate(2px, -2px);
+  border-color: var(--brand-accent);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 .imageContainer {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  background-color: var(--bg-tertiary);
+  aspect-ratio: 16 / 10;
+  background-color: #f3f4f6;
   overflow: hidden;
 }
 
@@ -58,69 +55,65 @@
 }
 
 .card:hover .image {
-  transform: scale(1.1);
-}
-
-.imageOverlay {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(180deg, transparent 50%, var(--bg-primary) 100%);
-  z-index: 1;
+  transform: scale(1.05);
 }
 
 .cardBadge {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
-  padding: 0.3rem 0.8rem;
+  top: 1.25rem;
+  left: 1.25rem;
+  background: var(--brand-accent);
+  color: #ffffff;
+  padding: 4px 12px;
   border-radius: 99px;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 700;
-  color: var(--brand-accent);
-  border: 1px solid rgba(37, 99, 235, 0.3);
-  z-index: 2;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  z-index: 10;
 }
 
 .cardContent {
-  padding: 1.5rem 2rem 2.5rem;
+  padding: 2.5rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  position: relative;
-  z-index: 2;
-  margin-top: -1rem;
 }
 
 .cardHeader {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 0.75rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
 }
 
 .title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  line-height: 1.2;
+  font-size: 1.625rem;
+  font-weight: 800;
+  color: var(--fg-primary);
+  letter-spacing: -0.02em;
 }
 
 .icon {
-  color: var(--fg-tertiary);
-  transition: all 0.2s ease;
+  color: var(--brand-accent);
+  transition: transform 0.2s ease;
+}
+
+.card:hover .icon {
+  transform: translate(2px, -2px);
 }
 
 .description {
   color: var(--fg-secondary);
-  font-size: 0.95rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
 }
 
 .challengeBox, .resultBox {
+  padding: 1.25rem;
+  background: #f9fafb;
+  border-radius: var(--radius-sm);
   margin-bottom: 1rem;
 }
 
@@ -129,42 +122,46 @@
   font-size: 0.75rem;
   font-weight: 800;
   text-transform: uppercase;
-  color: var(--fg-tertiary);
-  margin-bottom: 0.25rem;
+  color: var(--fg-primary);
+  margin-bottom: 0.5rem;
   letter-spacing: 0.05em;
 }
 
 .problem, .result {
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   line-height: 1.5;
   margin: 0;
-}
-
-.problem {
   color: var(--fg-secondary);
 }
 
 .result {
+  font-weight: 600;
   color: var(--fg-primary);
-  font-weight: 500;
 }
 
 .tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-top: auto;
-  padding-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .tag {
-  background: rgba(37, 99, 235, 0.05);
-  color: var(--brand-accent);
-  padding: 0.25rem 0.75rem;
-  border-radius: 99px;
+  background: #f3f4f6;
+  color: var(--fg-secondary);
+  padding: 4px 12px;
+  border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 600;
-  border: 1px solid rgba(37, 99, 235, 0.1);
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .cardContent {
+    padding: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
