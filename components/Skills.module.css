@@ -1,14 +1,10 @@
 .section {
-  padding: 9rem 0;
-  background: #fafafa;
-}
-
-.header {
-  margin-bottom: 4rem;
+  padding: 8rem 0;
+  background: #ffffff;
 }
 
 .sectionTitle {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2rem, 4vw, 2.75rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   color: var(--fg-primary);
@@ -18,136 +14,83 @@
 .sectionSubtitle {
   color: var(--fg-secondary);
   font-size: 1.125rem;
-  max-width: 620px;
+  max-width: 600px;
   line-height: 1.6;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
   margin-bottom: 4rem;
 }
 
-.categoryCard {
-  background: #ffffff;
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 2rem;
-  transition: border-color 0.2s, transform 0.2s;
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4.5rem;
 }
 
-.categoryCard:hover {
-  border-color: var(--brand-accent);
-  transform: translateY(-3px);
+@media (max-width: 768px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
 }
 
-.categoryTitle {
-  font-size: 0.8125rem;
+.listTitle {
+  font-size: 0.75rem;
   font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--fg-primary);
-  margin-bottom: 1.25rem;
-}
-
-.pills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.pill {
-  background: var(--brand-accent-soft);
-  color: var(--brand-accent);
-  font-size: 0.8125rem;
-  font-weight: 600;
-  padding: 5px 12px;
-  border-radius: 99px;
-  border: 1px solid transparent;
-  transition: all 0.2s;
-}
-
-.pill:hover {
-  border-color: var(--brand-accent);
-  background: #ffffff;
-}
-
-.blocks {
-  display: flex;
-  flex-direction: column;
-  gap: 1.75rem;
-}
-
-.blockTitle {
-  font-size: 0.7rem;
-  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--fg-secondary);
-  opacity: 0.6;
-  margin-bottom: 0.75rem;
+  color: var(--brand-accent);
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 0.75rem;
+  display: block;
 }
 
-/* Tools section */
-.toolsSection {
-  border-top: 1px solid var(--border-subtle);
-  padding-top: 3rem;
+.skillList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.toolsTitle {
-  font-size: 1.125rem;
-  font-weight: 800;
+.skillItem {
+  font-size: 1.0625rem;
+  font-weight: 500;
   color: var(--fg-primary);
-  margin-bottom: 2rem;
+  margin-bottom: 0.875rem;
+  transition: color 0.2s;
   letter-spacing: -0.01em;
 }
 
-.toolsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 1rem;
+.skillItem:hover {
+  color: var(--brand-accent);
 }
 
-.toolCard {
+.toolsFooter {
+  padding-top: 3.5rem;
+  border-top: 1px solid var(--border-subtle);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 1.5rem 1rem;
-  background: #ffffff;
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  cursor: default;
-  transition: all 0.2s;
+  align-items: baseline;
+  gap: 1.25rem;
 }
 
-.toolCard:hover {
-  border-color: var(--brand-accent);
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(37,99,235,0.07);
+@media (max-width: 768px) {
+  .toolsFooter {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
 }
 
-.toolIcon {
-  width: 52px;
-  height: 52px;
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-}
-
-.toolAbbr {
+.toolsLabel {
   font-size: 0.75rem;
-  font-weight: 900;
-  letter-spacing: 0.04em;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--fg-secondary);
+  flex-shrink: 0;
 }
 
-.toolName {
-  font-size: 0.8125rem;
-  font-weight: 600;
+.toolsList {
+  font-size: 0.9375rem;
   color: var(--fg-secondary);
-  text-align: center;
-  line-height: 1.3;
+  line-height: 1.6;
+  font-weight: 500;
 }
