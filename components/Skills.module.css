@@ -1,6 +1,15 @@
 .section {
   padding: 8rem 0;
   background: var(--bg-primary);
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
 }
 
 .sectionTitle {
@@ -14,15 +23,36 @@
 .sectionSubtitle {
   color: var(--fg-secondary);
   font-size: 1.125rem;
-  max-width: 620px;
+  max-width: 520px;
   line-height: 1.6;
+}
+
+.headerVisual {
+  display: block;
+}
+
+.miniIllustration {
+  width: 180px;
+  height: auto;
+  opacity: 0.9;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.05));
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .headerVisual {
+    display: none;
+  }
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1.5rem;
-  margin-top: 4rem;
 }
 
 .categoryCard {
@@ -30,23 +60,40 @@
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   padding: 2.5rem 2rem;
-  transition: all 0.2s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   height: 100%;
 }
 
 .categoryCard:hover {
   border-color: var(--brand-accent);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(37,99,235,0.06);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(37,99,235,0.08);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.iconBox {
+  width: 40px;
+  height: 40px;
+  background: var(--brand-accent-soft);
+  color: var(--brand-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 
 .categoryTitle {
   font-size: 0.75rem;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   color: var(--fg-primary);
-  margin-bottom: 1.5rem;
 }
 
 .pills {
@@ -56,19 +103,27 @@
 }
 
 .pill {
-  background: var(--brand-accent-soft);
-  color: var(--brand-accent);
+  background: #f8fafc;
+  color: var(--fg-secondary);
   font-size: 0.8125rem;
   font-weight: 600;
   padding: 6px 14px;
   border-radius: var(--radius-sm);
-  border: 1px solid transparent;
+  border: 1px solid var(--border-subtle);
   transition: all 0.2s;
 }
 
+.categoryCard:hover .pill {
+  color: var(--brand-accent);
+  border-color: var(--brand-accent-soft);
+  background: var(--brand-accent-soft);
+}
+
 .pill:hover {
-  background: var(--brand-accent);
-  color: #ffffff;
+  background: var(--brand-accent) !important;
+  color: #ffffff !important;
+  border-color: var(--brand-accent);
+  transform: scale(1.05);
 }
 
 /* Subgroups styling */
