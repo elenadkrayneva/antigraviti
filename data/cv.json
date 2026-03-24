@@ -37,10 +37,24 @@
         "Workflow Optimization",
         "Operational Reporting"
       ]
+    },
+    {
+      "title": "Tools",
+      "subgroups": [
+        {
+          "name": "Data & Analytics",
+          "pills": ["SQL", "R", "Python", "Databricks", "Snowflake"]
+        },
+        {
+          "name": "Visualization & Reporting",
+          "pills": ["Power BI", "Tableau", "Excel", "PowerPoint"]
+        },
+        {
+          "name": "Marketing Tools",
+          "pills": ["Google Analytics", "Google Search Console", "Google Ads", "HubSpot"]
+        }
+      ]
     }
-  ],
-  "tools_horizontal": [
-    "SQL", "R", "Python", "Power BI", "Tableau", "Excel", "Google Analytics", "Google Search Console", "Google Ads", "HubSpot", "Databricks", "Snowflake", "PowerPoint"
   ],
   "tools_with_icons": [
     { "name": "Google Analytics 4", "icon": "ga4", "color": "#E37400" },

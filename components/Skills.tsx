@@ -4,7 +4,7 @@ import styles from './Skills.module.css';
 import cvData from '@/data/cv.json';
 
 export default function Skills() {
-  const { skills_columns, tools_horizontal } = cvData;
+  const { skills_columns } = cvData;
 
   return (
     <section id="skills" className={styles.section}>
@@ -30,29 +30,36 @@ export default function Skills() {
               transition={{ delay: idx * 0.1 }}
             >
               <h3 className={styles.categoryTitle}>{column.title}</h3>
-              <div className={styles.pills}>
-                {column.pills.map((skill, i) => (
-                  <span key={i} className={styles.pill}>
-                    {skill}
-                  </span>
-                ))}
-              </div>
+              
+              {column.pills && (
+                <div className={styles.pills}>
+                  {column.pills.map((skill, i) => (
+                    <span key={i} className={styles.pill}>
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              )}
+
+              {column.subgroups && (
+                <div className={styles.subgroups}>
+                  {column.subgroups.map((group, i) => (
+                    <div key={i} className={styles.subgroup}>
+                      <h4 className={styles.subgroupName}>{group.name}</h4>
+                      <div className={styles.pills}>
+                        {group.pills.map((pill, j) => (
+                          <span key={j} className={styles.pill}>
+                            {pill}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          className={styles.toolsFooter}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3 }}
-        >
-          <span className={styles.toolsLabel}>Tools:</span>
-          <p className={styles.toolsList}>
-            {tools_horizontal.join(' · ')}
-          </p>
-        </motion.div>
       </div>
     </section>
   );
