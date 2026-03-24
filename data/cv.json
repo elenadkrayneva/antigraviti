@@ -10,44 +10,55 @@
     "phone": "+34 742 08 34 90",
     "photo": "/images/profile.jpg"
   },
-  "skills_categorized": {
-    "Analytics & Data": [
-      "Google Analytics 4",
-      "Data Modeling",
-      "A/B Testing",
-      "Tableau",
-      "Power BI",
-      "R (Statistics)",
-      "Excel (Advanced)",
-      "SQL (Basics)"
-    ],
-    "Marketing": [
-      "KPI Reporting",
-      "Google Ads",
-      "Conversion Optimization",
-      "Persona Development",
-      "Funnel Analysis",
-      "Retention Strategy",
-      "Content Strategy",
-      "Market Research"
-    ],
-    "Strategy & Consulting": [
-      "Competitive Benchmarking",
-      "Go-To-Market Planning",
-      "SWOT Analysis",
-      "Porter's 5 Forces",
-      "Consulting Frameworks",
-      "Structured Reporting"
-    ],
-    "Tools": [
-      "HubSpot",
-      "Google Ads",
-      "Canva",
-      "Notion",
-      "Excel / VBA",
-      "Google Workspace"
-    ]
-  },
+  "skills_structured": [
+    {
+      "category": "Digital Marketing & Analytics",
+      "blocks": [
+        {
+          "title": "Analytics",
+          "skills": ["Marketing Analytics", "Web & SEO Analytics", "Campaign Performance Tracking", "Conversion Tracking"]
+        },
+        {
+          "title": "Paid Media",
+          "skills": ["Paid Media Strategy", "Google Ads (Search & Display)", "Campaign Planning & Optimization"]
+        },
+        {
+          "title": "Reporting & Visualization",
+          "skills": ["Dashboard Development", "Data Visualization", "Performance Reporting"]
+        }
+      ]
+    },
+    {
+      "category": "Marketing Strategy & Business",
+      "blocks": [
+        {
+          "title": "Strategy & Analysis",
+          "skills": ["Market Research", "Strategic & Business Analysis", "Analytical & Research Skills"]
+        },
+        {
+          "title": "Execution & Operations",
+          "skills": ["Cross-functional Coordination", "Stakeholder Communication", "Workflow Optimization", "Operational Reporting"]
+        }
+      ]
+    },
+    {
+      "category": "Tools",
+      "blocks": [
+        {
+          "title": "Data & Analytics",
+          "skills": ["SQL", "R", "Databricks", "Snowflake"]
+        },
+        {
+          "title": "Visualization & Reporting",
+          "skills": ["Power BI", "Tableau", "Excel", "PowerPoint"]
+        },
+        {
+          "title": "Marketing Tools",
+          "skills": ["Google Analytics", "Google Search Console", "Google Ads", "HubSpot"]
+        }
+      ]
+    }
+  ],
   "tools_with_icons": [
     { "name": "Google Analytics 4", "icon": "ga4", "color": "#E37400" },
     { "name": "Excel", "icon": "excel", "color": "#217346" },

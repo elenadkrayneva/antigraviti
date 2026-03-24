@@ -73,6 +73,22 @@
   background: #ffffff;
 }
 
+.blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.blockTitle {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--fg-secondary);
+  opacity: 0.6;
+  margin-bottom: 0.75rem;
+}
+
 /* Tools section */
 .toolsSection {
   border-top: 1px solid var(--border-subtle);
