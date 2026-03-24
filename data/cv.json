@@ -10,43 +10,45 @@
     "phone": "+34 742 08 34 90",
     "photo": "/images/profile.jpg"
   },
-  "skills_flat": {
-    "marketing": [
-      "Marketing Analytics",
-      "Web & SEO Analytics",
-      "Campaign Performance Tracking",
-      "Conversion Tracking",
-      "Paid Media Strategy",
-      "Google Ads (Search & Display)",
-      "Campaign Planning & Optimization",
-      "KPI Dashboards",
-      "Market Research"
-    ],
-    "strategy": [
-      "Strategic & Business Analysis",
-      "Analytical & Research Skills",
-      "Cross-functional Coordination",
-      "Stakeholder Communication",
-      "Workflow Optimization",
-      "Operational Reporting",
-      "Competitive Intelligence",
-      "GTM Strategy"
-    ],
-    "tools": [
-      "SQL",
-      "R",
-      "Databricks",
-      "Snowflake",
-      "Power BI",
-      "Tableau",
-      "Excel",
-      "PowerPoint",
-      "Google Analytics",
-      "Google Search Console",
-      "HubSpot",
-      "Google Ads"
-    ]
-  },
+  "skills_categories": [
+    {
+      "title": "Analytics & Data",
+      "pills": [
+        "Marketing Analytics",
+        "Web & SEO Analytics",
+        "Campaign Performance Tracking",
+        "Conversion Tracking",
+        "KPI Dashboards",
+        "A/B Testing",
+        "Data Modeling"
+      ]
+    },
+    {
+      "title": "Marketing",
+      "pills": [
+        "Paid Media Strategy",
+        "Google Ads",
+        "Campaign Planning & Optimization",
+        "Persona Development",
+        "Conversion Optimization",
+        "Retention Strategy",
+        "Content Strategy"
+      ]
+    },
+    {
+      "title": "Strategy & Consulting",
+      "pills": [
+        "Strategic & Business Analysis",
+        "Analytical & Research Skills",
+        "Market Research",
+        "Competitive Benchmarking",
+        "GTM Planning",
+        "SWOT Analysis",
+        "Workflow Optimization",
+        "Structured Reporting"
+      ]
+    }
+  ],
   "tools_with_icons": [
     { "name": "Google Analytics 4", "icon": "ga4", "color": "#E37400" },
     { "name": "Excel", "icon": "excel", "color": "#217346" },
