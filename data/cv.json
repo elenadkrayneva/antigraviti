@@ -10,44 +10,37 @@
     "phone": "+34 742 08 34 90",
     "photo": "/images/profile.jpg"
   },
-  "skills_categories": [
+  "skills_columns": [
     {
-      "title": "Analytics & Data",
+      "title": "Digital Marketing & Analytics",
       "pills": [
         "Marketing Analytics",
         "Web & SEO Analytics",
         "Campaign Performance Tracking",
         "Conversion Tracking",
-        "KPI Dashboards",
-        "A/B Testing",
-        "Data Modeling"
-      ]
-    },
-    {
-      "title": "Marketing",
-      "pills": [
         "Paid Media Strategy",
-        "Google Ads",
+        "Google Ads (Search & Display)",
         "Campaign Planning & Optimization",
-        "Persona Development",
-        "Conversion Optimization",
-        "Retention Strategy",
-        "Content Strategy"
+        "Dashboard Development",
+        "Data Visualization",
+        "Performance Reporting"
       ]
     },
     {
-      "title": "Strategy & Consulting",
+      "title": "Marketing Strategy & Business",
       "pills": [
+        "Market Research",
         "Strategic & Business Analysis",
         "Analytical & Research Skills",
-        "Market Research",
-        "Competitive Benchmarking",
-        "GTM Planning",
-        "SWOT Analysis",
+        "Cross-functional Coordination",
+        "Stakeholder Communication",
         "Workflow Optimization",
-        "Structured Reporting"
+        "Operational Reporting"
       ]
     }
+  ],
+  "tools_horizontal": [
+    "SQL", "R", "Python", "Power BI", "Tableau", "Excel", "Google Analytics", "Google Search Console", "Google Ads", "HubSpot", "Databricks", "Snowflake", "PowerPoint"
   ],
   "tools_with_icons": [
     { "name": "Google Analytics 4", "icon": "ga4", "color": "#E37400" },
