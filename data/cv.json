@@ -69,47 +69,78 @@
   "experience": [
     {
       "id": "x5-digital",
-      "company": "X5 Digital",
-      "companyDescription": "One of Russia's largest retail technology companies, developing digital products for the X5 Retail Group ecosystem.",
-      "role": "HRBP Assistant — People Analytics & Reporting",
-      "date": "Feb 2025 – Jul 2025",
-      "location": "Remote",
+      "logo": "/images/logos/x5.png",
+      "company": "X5 DIGITAL",
+      "companyDescription": "Digital division of X5 Group, Russia’s largest food retailer",
+      "role": "HRBP Assistant - People Analytics & Reporting",
+      "date": "02/25 – 07/25",
+      "location": "Moscow, Russia",
       "featured": true,
       "bullets": [
-        "Analyzed workforce datasets covering headcount, onboarding, attrition, and leave across business units",
-        "Developed recurring KPI dashboards to support workforce planning and senior management decisions",
-        "Prepared data-driven reports for talent reviews and succession planning committees",
-        "Identified patterns in attrition and engagement metrics and formulated improvement recommendations"
+        "Analyzed workforce datasets (headcount, onboarding, attrition, leave) and developed KPI reports to support workforce planning and organizational decision-making",
+        "Prepared recurring workforce KPI dashboard presentations summarizing key trends",
+        "Compiled workforce data and candidate profiles for talent reviews supporting succession planning across departments and two leadership levels (1–6 candidates per role)"
       ]
     },
     {
       "id": "technologies-of-trust",
-      "company": "Technologies of Trust",
-      "companyDescription": "A legal-tech and compliance consulting firm providing outsourced legal and procurement operations to enterprise clients.",
+      "logo": "/images/logos/trust.png",
+      "company": "TECHNOLOGIES OF TRUST",
+      "companyDescription": "Russian audit & consulting firm, successor to PwC Russia",
       "role": "Contractor Operations Specialist",
-      "date": "Dec 2023 – Feb 2025",
-      "location": "Remote",
+      "date": "12/23 – 02/25",
+      "location": "Moscow, Russia",
       "featured": true,
       "bullets": [
-        "Developed structured Excel trackers to monitor contract approval workflows across 40+ contractors monthly",
-        "Coordinated cross-functional workflows between legal, finance, and project delivery teams",
-        "Proposed and documented process improvements that reduced approval cycle time by 20%",
-        "Built structured reporting templates used by operations leads for weekly reviews"
+        "Developed structured Excel trackers to monitor contract approvals across departments, onboarding, payments, and renewals",
+        "Coordinated cross-functional approval workflows for 40+ contractors monthly",
+        "Proposed workflow improvements to streamline approval cycles and reduce administrative iterations"
       ]
     },
     {
-      "id": "msc-projects",
-      "company": "IE Business School (Academic Projects)",
-      "companyDescription": "IE Business School is one of Europe's top-ranked business schools, based in Madrid. MSc Digital Marketing & Analytics program.",
-      "role": "MSc Applied Consulting & Analytics Projects",
-      "date": "Sep 2024 – Present",
-      "location": "Madrid / Barcelona",
+      "id": "qwell",
+      "logo": "/images/logos/qwell.png",
+      "company": "Qwell",
+      "companyDescription": "Personnel outsourcing and workforce management platform",
+      "role": "Workforce Operations Specialist",
+      "date": "Nov 2023 – Dec 2023",
+      "location": "Moscow, Russia",
       "featured": false,
       "bullets": [
-        "Completed 3 real-world client consulting engagements through the MSc program",
-        "Applied marketing analytics frameworks including funnel analysis, persona mapping, and KPI design",
-        "Delivered strategic recommendations for market positioning, growth, and digital marketing to real clients",
-        "Conducted customer research (16 in-depth interviews) and translated insights into structured strategy documents"
+        "Coordinated workforce operations for a personnel base of approximately 3,000 employees",
+        "Managed shift allocation through internal systems to maintain operational continuity",
+        "Conducted high-volume recruitment and effectively resolved on-site workforce issues"
+      ]
+    },
+    {
+      "id": "legrand",
+      "logo": "/images/logos/legrand.png",
+      "company": "Legrand",
+      "companyDescription": "Global specialist in electrical and digital building infrastructures",
+      "role": "Internship Trainee",
+      "date": "Jan 2023 – Feb 2023",
+      "location": "Moscow, Russia",
+      "featured": false,
+      "bullets": [
+        "Managed publication of job vacancies across internal and external platforms and coordinated initial candidate communication",
+        "Contributed to an external employer branding campaign through partnerships with universities and student outreach initiatives at both headquarters and regional offices",
+        "Supported recruitment pipeline tracking and prepared structured HR reports in Excel"
+      ]
+    },
+    {
+      "id": "scanderm",
+      "logo": "/images/logos/scanderm.png",
+      "company": "Scanderm",
+      "companyDescription": "Health technology startup focusing on dermatological analytics",
+      "role": "Operations Intern",
+      "date": "Apr 2022 – Dec 2022",
+      "location": "Moscow, Russia",
+      "featured": false,
+      "bullets": [
+        "Structured and managed internal documentation workflows within a tech startup environment",
+        "Conducted analysis of external funding opportunities, including grants and financial support programs",
+        "Formalized technical documentation to improve internal information flow and process clarity",
+        "Collaborated directly with founders to ensure timely submission of applications and compliance requirements"
       ]
     }
   ],

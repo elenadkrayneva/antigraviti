@@ -8,7 +8,9 @@ import cvData from '@/data/cv.json';
 export default function Experience() {
   const { experience } = cvData;
   const [expanded, setExpanded] = useState(false);
-  const [openCards, setOpenCards] = useState<Set<string>>(new Set([experience[0].id]));
+  
+  // Set the first open card to the first entry if exists
+  const [openCards, setOpenCards] = useState<Set<string>>(new Set(experience.length > 0 ? [experience[0].id] : []));
 
   const featured = experience.filter((e: any) => e.featured);
   const extra = experience.filter((e: any) => !e.featured);
@@ -55,7 +57,11 @@ export default function Experience() {
                 >
                   <div className={styles.cardLeft}>
                     <div className={styles.companyIcon}>
-                      <Building2 size={18} />
+                      {exp.logo ? (
+                        <img src={exp.logo} alt={exp.company} className={styles.logoImg} />
+                      ) : (
+                        <Building2 size={18} />
+                      )}
                     </div>
                     <div>
                       <div className={styles.role}>{exp.role}</div>
