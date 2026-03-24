@@ -56,7 +56,7 @@ export default function Experience() {
                   aria-expanded={isOpen}
                 >
                   <div className={styles.cardLeft}>
-                    <div className={styles.companyIcon}>
+                    <div className={exp.logo ? styles.companyLogoContainer : styles.companyIcon}>
                       {exp.logo ? (
                         <img src={exp.logo} alt={exp.company} className={styles.logoImg} />
                       ) : (
