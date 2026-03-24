@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   description: 'Digital Marketing & Analytics specialist turning marketing data into strategic decisions.',
 };
 
+import BackgroundBlur from '@/components/BackgroundBlur';
+
 export default function RootLayout({
   children,
 }: {
@@ -14,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <BackgroundBlur />
         {children}
       </body>
     </html>
