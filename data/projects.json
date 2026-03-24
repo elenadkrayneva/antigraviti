@@ -1,59 +1,40 @@
 [
   {
-    "id": "ai-startup",
-    "title": "AI Startup Strategic Repositioning",
-    "category": "Strategic Consulting",
-    "client": "Early-stage AI startup (confidential)",
-    "context": "An early-stage AI startup specializing in automated image processing faced difficulty gaining traction in a saturated market. They lacked clear differentiation, a focused vertical, and a structured go-to-market strategy.",
-    "problem": "The company operated in a highly competitive AI infrastructure market without clear differentiation or a defined target vertical — making investor conversations and customer acquisition inefficient.",
-    "actions": [
-      "Conducted structured market and competitive analysis using SWOT and Porter's 5 Forces",
-      "Assessed demand potential and competitive intensity across 5 high-value industry verticals",
-      "Developed a disruptive repositioning strategy focused on Vertical AI specialization",
-      "Designed a phased 6-month go-to-market and implementation roadmap with clear KPIs",
-      "Presented findings and strategic recommendations to the founding team and CEO"
-    ],
-    "myContribution": "Led the market analysis and strategic framework development. Responsible for the competitive benchmarking, vertical scoring matrix, and the final repositioning strategy document.",
-    "result": "Strategy acknowledged by the CEO as a viable growth direction for Series A funding. Company reframed positioning toward Vertical AI specialization, improving messaging clarity and investor narrative.",
-    "metrics": ["5 verticals assessed", "6-month roadmap delivered", "CEO-validated strategy"],
-    "tags": ["Market Analysis", "Strategic Positioning", "Go-To-Market", "Consulting"]
-  },
-  {
     "id": "digify-active",
-    "title": "Digify Active: B2B Growth Marketing Agency",
-    "category": "Performance Marketing",
-    "client": "SME fitness businesses (EU market)",
-    "context": "Digify Active was a B2B performance marketing agency concept built as part of an applied MSc project. The target clients were small and medium fitness businesses in Europe lacking structured digital marketing systems.",
-    "problem": "SME fitness businesses had no structured approach to digital marketing measurement — operating without clear KPIs, defined conversion funnels, or data-driven budget allocation.",
+    "title": "Digify Active: B2B Marketing Agency Simulation",
+    "category": "Growth & Marketing Analytics",
+    "client": "SME fitness businesses",
+    "context": "A team-based academic project focused on building and testing a B2B marketing agency from scratch. The objective was to simulate a realistic go-to-market process, combining strategic positioning, UX/UI, SEO, paid acquisition, and performance analysis.",
+    "problem": "Many SME fitness businesses lack structured digital marketing capabilities and rely on fragmented acquisition channels. This created an opportunity to design a marketing service tailored to their operational constraints.",
     "actions": [
-      "Conducted primary market research and defined the Ideal Customer Profile (ICP) for the agency",
-      "Designed conversion-focused landing pages in HubSpot with A/B test framework",
-      "Launched and optimized Google Ads campaigns focused on lead generation for fitness SMEs",
-      "Defined KPI measurement framework: CTR, CPC, lead conversion rate, and CPA",
-      "Analyzed campaign performance data and built optimization recommendations based on findings"
+      "Market Positioning & Offer Design: Developed value proposition and pricing logic for a service-based B2B offering.",
+      "Customer Journey & Conversion Funnel: Designed conversion-focused funnel and built landing pages in HubSpot.",
+      "UX/UI Design & SEO: Prototyped in Figma, applied foundational on-page SEO, and adapted UX to HubSpot constraints.",
+      "Paid Acquisition: Launched Google Ads (Search & Display) with a limited budget to test acquisition approaches.",
+      "Performance Analysis: Tracked CTR, CPA, and funnel behavior in HubSpot to identify drop-off points."
     ],
-    "myContribution": "Responsible for ICP definition, Google Ads campaign strategy and setup, HubSpot landing page architecture, and the performance analytics framework. Led the data analysis and reporting layer.",
-    "result": "Identified top-performing channels with 15% lower projected CPA compared to industry benchmarks. Delivered a data-backed optimization playbook. Validated the agency model as viable for the target segment.",
-    "metrics": ["15% lower projected CPA vs benchmark", "A/B test framework designed", "Full funnel KPI model delivered"],
-    "tags": ["Analytics", "Google Ads", "HubSpot", "Lead Generation", "Growth"]
+    "myContribution": "Designed conversion funnel structure and customer journey logic. Co-developed landing pages (copywriting and HubSpot implementation). Contributed to SEO research and participated in campaign analysis, connecting performance data with optimization decisions.",
+    "result": "Conversion depended more on clarity of value proposition than traffic volume. Search campaigns outperformed Display. The simplified UX had a measurable impact on efficiency, resulting in real leads generated during the simulation.",
+    "metrics": ["End-to-End Workflow", "Real Leads Generated", "HubSpot & Google Ads"],
+    "tags": ["B2B Marketing", "Conversion Funnel", "Google Ads", "HubSpot", "UX/UI", "SEO"]
   },
   {
-    "id": "oblicuo",
-    "title": "Oblicuo Hi-Fi Bar: Growth & Positioning Strategy",
-    "category": "Customer Research & Strategy",
-    "client": "Oblicuo Hi-Fi Bar, Barcelona",
-    "context": "Oblicuo is a niche hi-fi listening bar in Barcelona targeting a specific audiophile and music enthusiast audience. Despite strong core product appeal, the business struggled with low weekday attendance and lacked a defined digital strategy to grow awareness and loyalty.",
-    "problem": "Inconsistent weekday attendance (Tuesday–Thursday) and no structured digital or content strategy for reaching and retaining niche music-focused audiences in a competitive Barcelona nightlife market.",
+    "id": "ai-startup",
+    "title": "AI Startup | Market Opportunity & Repositioning",
+    "category": "Strategic Consulting",
+    "client": "Early-stage AI startup",
+    "context": "A short-term consulting engagement with an early-stage AI startup in image generation and dataset infrastructure. Still in product development, the focus was on strategic direction setting rather than performance optimization.",
+    "problem": "Given the absence of an established market presence, the primary objective was to identify a viable market opportunity: Where and how should the company position its core technology to achieve differentiation and long-term viability?",
     "actions": [
-      "Conducted 16 in-depth qualitative customer interviews to map motivations, barriers, and triggers",
-      "Developed 3 detailed customer personas with behavioral, psychographic, and media data",
-      "Built a structured KPI framework for social media growth, event attendance tracking, and content performance",
-      "Analyzed competitor social presence, positioning, and share-of-voice in the Barcelona nightlife/culture space",
-      "Delivered a 6-month strategic plan covering content calendar, event strategy, and audience acquisition"
+      "Week 1 — Analytical Phase: Conducted market landscape analysis, competitive benchmarking, and demand driver assessment.",
+      "Explored unconventional applications beyond the original use case to identify gaps in high-regulation industries.",
+      "Week 2 — Strategy & Recommendations: Developed new positioning logic scaling away from horizontal applications toward vertical specialization.",
+      "Designed a scalable SaaS-based business model and a phased go-to-market approach.",
+      "Structured funding and growth pathways."
     ],
-    "myContribution": "Led the customer research design and interview execution (16 interviews). Responsible for persona development, KPI framework design, and the final strategic document and presentation.",
-    "result": "Delivered a clearly defined target segment and a 6-month strategic plan grounded in real customer insights. Client received a structured, data-informed roadmap for digital growth and event programming.",
-    "metrics": ["16 customer interviews", "3 detailed personas", "6-month strategic plan"],
-    "tags": ["Customer Research", "Persona Development", "KPI Framework", "Brand Strategy"]
+    "myContribution": "Responsible for market and industry analysis, competitive benchmarking, identification of strategic opportunity areas, and the development of the core positioning logic and go-to-market framework.",
+    "result": "Identified that addressing a structural data gap in a specialized industry offered higher potential than horizontal AI use cases. Delivered a strategic report and presented to the CEO, establishing a viable, data-backed growth direction.",
+    "metrics": ["2-Week Sprint", "C-Level Presentation", "Vertical Repositioning"],
+    "tags": ["Market Analysis", "Strategic Positioning", "Competitive Benchmarking", "Go-To-Market"]
   }
 ]

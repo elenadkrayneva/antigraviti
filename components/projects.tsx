@@ -1,14 +1,10 @@
 'use client';
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import styles from './projects.module.css';
-import { ChevronDown, ChevronUp, ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import projectsData from '@/data/projects.json';
 
 export default function Projects() {
-  const [openId, setOpenId] = useState<string | null>(null);
-
-  const toggle = (id: string) => setOpenId(prev => prev === id ? null : id);
 
   return (
     <section id="projects" className={styles.section}>
@@ -28,11 +24,10 @@ export default function Projects() {
 
         <div className={styles.grid}>
           {(projectsData as any[]).map((project, index) => {
-            const isOpen = openId === project.id;
             return (
               <motion.article
                 key={project.id}
-                className={`${styles.card} ${isOpen ? styles.cardOpen : ''}`}
+                className={`${styles.card} ${styles.cardOpen}`}
                 initial={{ opacity: 0, y: 28 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -48,7 +43,7 @@ export default function Projects() {
                   <p className={styles.clientLine}>Client: <strong>{project.client}</strong></p>
                 </div>
 
-                {/* Context & Problem always visible */}
+                {/* Content */}
                 <div className={styles.cardBody}>
                   <p className={styles.context}>{project.context}</p>
 
@@ -66,45 +61,27 @@ export default function Projects() {
                     </div>
                   )}
 
-                  {/* Expandable detail */}
-                  <button
-                    className={styles.expandBtn}
-                    onClick={() => toggle(project.id)}
-                    aria-expanded={isOpen}
-                  >
-                    {isOpen ? <><ChevronUp size={15} /> Hide detail</> : <><ChevronDown size={15} /> View full case study</>}
-                  </button>
+                  {/* Always Expanded Content */}
+                  <div className={styles.expandedContent} style={{ marginTop: '2rem', height: 'auto', opacity: 1 }}>
+                    <div className={styles.actionsBlock}>
+                      <span className={styles.label}>What Was Done</span>
+                      <ul className={styles.actionList}>
+                        {project.actions.map((a: string, i: number) => (
+                          <li key={i}>{a}</li>
+                        ))}
+                      </ul>
+                    </div>
 
-                  <AnimatePresence initial={false}>
-                    {isOpen && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.35, ease: 'easeInOut' }}
-                        className={styles.expandedContent}
-                      >
-                        <div className={styles.actionsBlock}>
-                          <span className={styles.label}>What Was Done</span>
-                          <ul className={styles.actionList}>
-                            {project.actions.map((a: string, i: number) => (
-                              <li key={i}>{a}</li>
-                            ))}
-                          </ul>
-                        </div>
+                    <div className={styles.contributionBlock}>
+                      <span className={styles.label}>My Contribution</span>
+                      <p>{project.myContribution}</p>
+                    </div>
 
-                        <div className={styles.contributionBlock}>
-                          <span className={styles.label}>My Contribution</span>
-                          <p>{project.myContribution}</p>
-                        </div>
-
-                        <div className={styles.resultBlock}>
-                          <span className={styles.label}>Outcome</span>
-                          <p className={styles.resultText}>{project.result}</p>
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                    <div className={styles.resultBlock}>
+                      <span className={styles.label}>Outcome / Insights</span>
+                      <p className={styles.resultText}>{project.result}</p>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Tags */}
