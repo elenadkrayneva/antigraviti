@@ -71,6 +71,21 @@ export default function Chatbot() {
     }
   };
 
+  const renderMessage = (content: string) => {
+    // Simple regex to handle **bold**, ### headers, and - lists for professional formatting
+    const lines = content.split('\n');
+    return lines.map((line, i) => {
+      if (line.trim() === '') return <br key={i} />;
+      
+      let processed = line
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/### (.*)/g, '<h4 style="margin: 0.8rem 0 0.4rem; color: #2563eb; font-size: 1.1rem; font-weight: 700;">$1</h4>')
+        .replace(/^- (.*)/g, '<li style="margin-left: 1.25rem; margin-bottom: 0.25rem; list-style-type: disc;">$1</li>');
+      
+      return <div key={i} className={styles.messageLine} dangerouslySetInnerHTML={{ __html: processed }} />;
+    });
+  };
+
   return (
     <>
       <button 
@@ -131,7 +146,7 @@ export default function Chatbot() {
                   className={`${styles.messageWrapper} ${msg.role === 'user' ? styles.userWrapper : styles.aiWrapper}`}
                 >
                   <div className={`${styles.message} ${msg.role === 'user' ? styles.userMessage : styles.aiMessage}`}>
-                    {msg.content}
+                    {msg.role === 'assistant' ? renderMessage(msg.content) : msg.content}
                   </div>
                 </motion.div>
               ))}
@@ -141,7 +156,7 @@ export default function Chatbot() {
                   animate={{ opacity: 1, y: 0 }}
                   className={`${styles.messageWrapper} ${styles.aiWrapper}`}
                 >
-                  <div className={`${styles.message} ${msg.role === 'assistant' ? styles.aiMessage : styles.userMessage} ${styles.loading}`}>
+                  <div className={`${styles.message} ${styles.aiMessage} ${styles.loading}`}>
                     <div className={styles.typingDots}>
                       <span></span>
                       <span></span>
