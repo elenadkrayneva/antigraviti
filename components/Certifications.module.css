@@ -47,6 +47,12 @@
   }
   .sectionTitle {
     font-size: 1.25rem;
+    font-weight: 800;
+  }
+  .sectionSubtitle {
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
   }
   .groupsContainer {
     display: flex;
@@ -54,36 +60,35 @@
     gap: 2rem;
   }
   .groupTitle {
-    font-size: 0.75rem;
-    color: var(--fg-muted);
+    font-size: 0.625rem;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     margin-bottom: 0.75rem;
   }
   .list, .grid {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.75rem !important;
   }
   .card, .eduCard {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid var(--border-subtle);
-    padding: 0 0 0.75rem;
-    margin: 0;
-    gap: 0.5rem;
-    border-radius: 0;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid var(--border-subtle) !important;
+    padding: 0 0 0.75rem 0 !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
   }
   .iconWrap {
     display: none;
   }
   .certName {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     font-weight: 700;
   }
   .certIssuer {
     font-size: 0.75rem;
-    color: var(--fg-muted);
   }
 }
 

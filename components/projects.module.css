@@ -282,50 +282,43 @@
   }
   .sectionTitle {
     font-size: 1.25rem;
+    font-weight: 800;
+  }
+  .sectionSubtitle {
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
   }
   .grid {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
     margin-top: 1.5rem;
-    padding: 0;
   }
   .card {
-    min-width: auto;
     border: none;
-    background: transparent;
-    box-shadow: none;
     border-bottom: 1px solid var(--border-subtle);
     padding-bottom: 1.25rem;
     border-radius: 0;
   }
   .cardImage {
     height: 120px;
-    border-radius: var(--radius-sm);
-    margin-bottom: 1rem;
-    border: 1px solid var(--border-subtle);
-  }
-  .cardHeader {
-    padding: 0;
-    border: none;
-  }
-  .categoryBadge {
-    font-size: 0.625rem;
-    border-radius: 2px;
+    margin-bottom: 0.75rem;
   }
   .title {
-    font-size: 1.125rem;
+    font-size: 0.9375rem;
+    font-weight: 800;
   }
-  .cardBody {
-    padding: 0.75rem 0 0;
-  }
-  .problemBox, .metrics, .expandBtn {
-    display: none; /* Keep it focused on summary */
+  .clientLine {
+    display: none;
   }
   .context {
     font-size: 0.8125rem;
     line-height: 1.5;
     -webkit-line-clamp: 2;
     line-clamp: 2;
+  }
+  .problemBox, .metrics, .expandBtn {
+    display: none;
   }
 }

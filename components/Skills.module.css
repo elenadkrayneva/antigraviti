@@ -105,37 +105,31 @@
   }
   .sectionTitle {
     font-size: 1.25rem;
+    font-weight: 800;
+  }
+  .sectionSubtitle {
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
   }
   .grid {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-    padding: 0;
+    gap: 1.25rem;
+    margin-top: 2rem;
   }
   .categoryCard {
-    background: transparent;
-    border: none;
-    padding: 0;
     border-bottom: 1px solid var(--border-subtle);
-    border-radius: 0;
-    padding-bottom: 1rem;
-    height: auto;
+    padding-bottom: 1.25rem;
   }
   .categoryTitle {
     font-size: 0.625rem;
-    color: var(--fg-muted);
-    margin-bottom: 0.5rem;
-    opacity: 1;
-  }
-  .pills {
-    gap: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
   }
   .pill {
-    padding: 2px 8px;
     font-size: 0.6875rem;
-    background: transparent;
-    border: 1px solid var(--border-subtle);
-    color: var(--fg-secondary);
+    padding: 3px 10px;
   }
 }

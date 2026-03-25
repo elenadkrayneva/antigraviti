@@ -217,72 +217,32 @@
   }
   .sectionTitle {
     font-size: 1.25rem;
+    font-weight: 800;
     margin-bottom: 0.25rem;
   }
   .sectionSubtitle {
     font-size: 0.8125rem;
+    line-height: 1.5;
     margin-bottom: 2rem;
   }
   .timeline {
     border-left: 1px solid var(--border-subtle);
-    margin-left: 0.75rem;
-    padding-left: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .card {
-    background: transparent;
-    border: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
+    margin-left: 0.5rem;
+    padding-left: 1.25rem;
   }
   .card::before {
-    content: "";
-    position: absolute;
-    left: -1.825rem;
-    top: 0.5rem;
-    width: 9px;
-    height: 9px;
-    background: var(--brand-accent);
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px #ffffff;
-  }
-  .cardToggle {
-    padding: 0;
-    width: 100%;
-    background: transparent;
-    border: none;
-    text-align: left;
-    display: block;
+    left: -1.55rem;
+    width: 8px;
+    height: 8px;
   }
   .role {
     font-size: 0.9375rem;
-    font-weight: 700;
   }
   .company {
     font-size: 0.75rem;
-    color: var(--fg-muted);
   }
   .dateBadge {
-    display: inline-block;
-    background: #f1f5f9;
-    color: #64748b;
     font-size: 0.625rem;
-    font-weight: 700;
     padding: 2px 8px;
-    border-radius: 4px;
-    margin-top: 4px;
-  }
-  .chevron {
-    display: none; /* Keep it simple on mobile timeline */
-  }
-  .cardBody {
-    padding: 0.75rem 0 0;
-  }
-  .bullets li {
-    font-size: 0.8125rem;
-    line-height: 1.5;
   }
 }
