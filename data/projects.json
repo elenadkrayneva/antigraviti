@@ -1,42 +1,20 @@
 [
   {
-    "id": "digify-active",
-    "image": "/images/projects/digify_active.png",
-    "title": "DIGIFY ACTIVE | B2B Agency Growth Simulation",
+    "id": "project-digify-active",
+    "title": "Digify Active B2B Marketing Agency Simulation",
     "category": "Growth & Marketing Analytics",
-    "client": "SME fitness businesses",
-    "context": "A team-based academic project focused on building and testing a B2B marketing agency from scratch. The objective was to simulate a realistic go-to-market process, combining strategic positioning, UX/UI, SEO, paid acquisition, and performance analysis.",
-    "problem": "Many SME fitness businesses lack structured digital marketing capabilities and rely on fragmented acquisition channels. This created an opportunity to design a marketing service tailored to their operational constraints.",
-    "actions": [
-      "Market Positioning & Offer Design: Developed value proposition and pricing logic for a service-based B2B offering.",
-      "Customer Journey & Conversion Funnel: Designed conversion-focused funnel and built landing pages in HubSpot.",
-      "UX/UI Design & SEO: Prototyped in Figma, applied foundational on-page SEO, and adapted UX to HubSpot constraints.",
-      "Paid Acquisition: Launched Google Ads (Search & Display) with a limited budget to test acquisition approaches.",
-      "Performance Analysis: Tracked CTR, CPA, and funnel behavior in HubSpot to identify drop-off points."
-    ],
-    "myContribution": "Designed conversion funnel structure and customer journey logic. Co-developed landing pages (copywriting and HubSpot implementation). Contributed to SEO research and participated in campaign analysis, connecting performance data with optimization decisions.",
-    "result": "Conversion depended more on clarity of value proposition than traffic volume. Search campaigns outperformed Display. The simplified UX had a measurable impact on efficiency, resulting in real leads generated during the simulation.",
-    "metrics": ["End-to-End Workflow", "Real Leads Generated", "HubSpot & Google Ads"],
-    "tags": ["B2B Marketing", "Conversion Funnel", "Google Ads", "HubSpot", "UX/UI", "SEO"]
+    "context": "A team-based academic project to build a B2B marketing agency targeting SME fitness businesses. Combined strategic positioning, UX/UI design, SEO, paid acquisition, and performance analysis.",
+    "result": "Launched Google Ads campaigns (Search & Display) generating real leads. Key insight: Conversion performance depends more on clarity of value proposition than on traffic volume.",
+    "tags": ["HubSpot", "Google Ads", "GA4", "SEO", "Market Research"],
+    "details": "Conducted market research to define segments, designed conversion-focused funnels, built landing pages in Landingi, and implemeted keyword integration and on-page SEO. Analyzed CTR, CPA, and conversion behavior."
   },
   {
-    "id": "ai-startup",
-    "image": "/images/projects/ai_startup.png",
-    "title": "AI STARTUP | Strategic Market Consulting",
+    "id": "project-ai-startup",
+    "title": "AI Startup Strategic Consulting | Repositioning",
     "category": "Strategic Consulting",
-    "client": "Early-stage AI startup",
-    "context": "A short-term consulting engagement with an early-stage AI startup in image generation and dataset infrastructure. Still in product development, the focus was on strategic direction setting rather than performance optimization.",
-    "problem": "Given the absence of an established market presence, the primary objective was to identify a viable market opportunity: Where and how should the company position its core technology to achieve differentiation and long-term viability?",
-    "actions": [
-      "Week 1 — Analytical Phase: Conducted market landscape analysis, competitive benchmarking, and demand driver assessment.",
-      "Explored unconventional applications beyond the original use case to identify gaps in high-regulation industries.",
-      "Week 2 — Strategy & Recommendations: Developed new positioning logic scaling away from horizontal applications toward vertical specialization.",
-      "Designed a scalable SaaS-based business model and a phased go-to-market approach.",
-      "Structured funding and growth pathways."
-    ],
-    "myContribution": "Responsible for market and industry analysis, competitive benchmarking, identification of strategic opportunity areas, and the development of the core positioning logic and go-to-market framework.",
-    "result": "Identified that addressing a structural data gap in a specialized industry offered higher potential than horizontal AI use cases. Delivered a strategic report and presented to the CEO, establishing a viable, data-backed growth direction.",
-    "metrics": ["2-Week Sprint", "C-Level Presentation", "Vertical Repositioning"],
-    "tags": ["Market Analysis", "Strategic Positioning", "Competitive Benchmarking", "Go-To-Market"]
+    "context": "Engagement with an early-stage AI startup focused on image generation and data infrastructure. Focused on finding a viable market opportunity and strategic differentiation.",
+    "result": "Identified a clear market gap in a high-regulation industry. Recommended a shift to vertical specialization (SaaS-based model), a direction presented to and acknowledged by the CEO.",
+    "tags": ["Strategic Analysis", "SaaS", "Market Landscape", "Competitive Benchmarking"],
+    "details": "Phase 1: Analytical (Industry drivers, regulatory constraints). Phase 2: Implementation (Positioning logic, target users, business model, go-to-market). Demonstrated ability to work with early-stage, ambiguous business contexts."
   }
 ]
