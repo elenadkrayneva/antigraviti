@@ -60,10 +60,12 @@ export default function Chatbot() {
       if (res.ok) {
         setMessages(prev => [...prev, { role: 'assistant', content: data.reply }]);
       } else {
-        setMessages(prev => [...prev, { role: 'assistant', content: "I'm currently offline for maintenance. Please check back later!" }]);
+        const errorMsg = data.reply || "I'm currently offline for maintenance. Please check again in a few moments!";
+        setMessages(prev => [...prev, { role: 'assistant', content: errorMsg }]);
       }
-    } catch {
-      setMessages(prev => [...prev, { role: 'assistant', content: "An error occurred while processing your request." }]);
+    } catch (err) {
+      console.error('Chatbot fetch error:', err);
+      setMessages(prev => [...prev, { role: 'assistant', content: "Connection error. Please check your internet and try again." }]);
     } finally {
       setIsLoading(false);
     }

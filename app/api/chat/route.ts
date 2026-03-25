@@ -20,40 +20,53 @@ Projects:
 ${JSON.stringify(projectsData, null, 2)}
 `;
 
-export async function POST(req: Request) {
-  if (!process.env.OPENAI_API_KEY) {
-    return NextResponse.json(
-      { reply: "Oops! My API key is not configured yet. Please add OPENAI_API_KEY to the environment." },
-      { status: 500 }
-    );
-  }
+export const dynamic = 'force-dynamic';
 
+export async function POST(req: Request) {
   try {
+    const { message, history } = await req.json();
+
+    if (!process.env.OPENAI_API_KEY) {
+      console.error('Chat API Error: OPENAI_API_KEY is missing');
+      return NextResponse.json(
+        { reply: "I'm currently missing my API key. Please check your environment variables." },
+        { status: 500 }
+      );
+    }
+
     const openai = new OpenAI({
       apiKey: process.env.OPENAI_API_KEY,
     });
-    
-    const { message, history } = await req.json();
+
+    // Ensure history is an array and filter out invalid messages
+    const validHistory = Array.isArray(history) 
+      ? history.filter((msg: any) => msg?.role && msg?.content)
+      : [];
 
     const messages = [
       { role: 'system', content: systemPrompt },
-      ...history.map((msg: any) => ({
-        role: msg.role,
-        content: msg.content,
+      ...validHistory.map((msg: any) => ({
+        role: msg.role === 'assistant' || msg.role === 'user' ? msg.role : 'user',
+        content: String(msg.content),
       })),
-      { role: 'user', content: message }
+      { role: 'user', content: String(message) }
     ];
 
     const response = await openai.chat.completions.create({
       model: 'gpt-4o-mini',
       messages: messages as any,
       temperature: 0.7,
-      max_tokens: 400,
+      max_tokens: 500,
     });
 
-    return NextResponse.json({ reply: response.choices[0]?.message?.content || "I couldn't generate a response." });
-  } catch (error) {
-    console.error('Chat API Error:', error);
-    return NextResponse.json({ reply: "Sorry, I encountered an error while processing your request." }, { status: 500 });
+    const reply = response.choices[0]?.message?.content || "I'm thinking, but couldn't find the right words. Try asking differently!";
+    return NextResponse.json({ reply });
+
+  } catch (error: any) {
+    console.error('Chat API Runtime Error:', error);
+    
+    // Check for specific OpenAI errors if possible
+    const errorMsg = error?.message || "I encountered an error while processing your request.";
+    return NextResponse.json({ reply: `Bot error: ${errorMsg}` }, { status: 500 });
   }
 }
