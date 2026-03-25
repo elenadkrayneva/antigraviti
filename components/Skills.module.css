@@ -4,16 +4,16 @@
 }
 
 .sectionTitle {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   color: var(--fg-primary);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .sectionSubtitle {
   color: var(--fg-secondary);
-  font-size: 1.125rem;
+  font-size: 1rem;
   max-width: 620px;
   line-height: 1.6;
 }

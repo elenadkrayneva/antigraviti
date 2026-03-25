@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './projects.module.css';
-import { ChevronDown, ChevronUp, ArrowUpRight, TrendingUp } from 'lucide-react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 import projectsData from '@/data/projects.json';
 
 export default function Projects() {
@@ -50,7 +50,6 @@ export default function Projects() {
                   <span className={styles.categoryBadge}>{project.category}</span>
                   <div className={styles.titleRow}>
                     <h3 className={styles.title}>{project.title}</h3>
-                    <ArrowUpRight size={20} className={styles.arrowIcon} />
                   </div>
                   <p className={styles.clientLine}>Client: <strong>{project.client}</strong></p>
                 </div>
@@ -69,7 +68,7 @@ export default function Projects() {
                     <div className={styles.metrics}>
                       {project.metrics.map((m: string, i: number) => (
                         <span key={i} className={styles.metric}>
-                          <TrendingUp size={12} /> {m}
+                          {m}
                         </span>
                       ))}
                     </div>
