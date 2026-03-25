@@ -6,75 +6,120 @@
     "email": "elena.d.krayneva@gmail.com",
     "linkedin": "https://www.linkedin.com/in/elena-d-krayneva/",
     "subheadline": "MSc Digital Marketing & Analytics student with hands-on experience in **data analysis**, **KPI reporting**, and **marketing strategy**. Combining structured analytical thinking with a strong business understanding to turn data into actionable insights.",
-    "about": "MSc Digital Marketing & Analytics student with a background in business analysis and a strong interest in how positioning, performance drivers, and data-informed insights shape strategic growth decisions."
+    "about": "MSc Digital Marketing & Analytics student with a background in business consultancy and a strong interest in how positioning, performance drivers, and data-informed insights shape strategic growth decisions."
   },
   "experience": [
     {
       "id": "exp-x5",
       "company": "X5 Digital",
-      "role": "HR Business Partner Assistant – People Analytics & Reporting",
-      "period": "Feb 2025 - Jul 2025",
-      "location": "Moscow, Russia (Hybrid)",
-      "description": "Analyzed workforce datasets (headcount, onboarding, attrition, leave trends) and translated findings into performance-driven insights to support workforce planning and business decision-making at one of Russia's largest digital retailers.",
-      "skills": ["Microsoft PowerPoint", "Data Analysis", "People Analytics", "Reporting"]
+      "role": "HR BP Assistant – People Analytics",
+      "date": "Feb 2025 - Present",
+      "featured": true,
+      "companyDescription": "One of Russia's leading high-load digital retailers, managing logistics and delivery for major grocery chains.",
+      "bullets": [
+        "Analyzed workforce datasets (headcount, onboarding, attrition, leave trends) using SQL and Excel.",
+        "Translated complex data into performance-driven insights to support strategic workforce planning.",
+        "Collaborated with cross-functional teams to optimize reporting accuracy and decision-making speed."
+      ],
+      "logo": null
     },
     {
       "id": "exp-tedo",
       "company": "Technologies of Trust (TeDo)",
-      "role": "Operations Specialist (Contractors)",
-      "period": "Dec 2023 - Feb 2025",
-      "location": "Moscow, Russia",
-      "description": "Coordinated freelance contracting workflows for 40+ contractors monthly within a consulting environment, ensuring cross-functional approvals across HR, legal, and finance. Focused on workflow optimization and coordination.",
-      "skills": ["Cross-functional Coordination", "Workflow Optimization", "Operations Management"]
+      "role": "Operations Specialist (Freelance)",
+      "date": "Dec 2023 - Feb 2025",
+      "featured": true,
+      "companyDescription": "Former PwC Russia, specializing in high-level strategic and operational consulting.",
+      "bullets": [
+        "Coordinated contracting workflows for 40+ freelance consultants monthly, ensuring legal/finance alignment.",
+        "Optimized internal approval processes, reducing bottleneck time for contractor onboarding.",
+        "Managed operational reporting for various consulting project workstreams."
+      ],
+      "logo": null
     },
     {
       "id": "exp-qwell",
       "company": "Qwell",
       "role": "Workforce Operations Specialist",
-      "period": "Nov 2023 - Dec 2023",
-      "location": "Moscow, Russia",
-      "description": "Coordinated workforce operations for a base of 3,000 employees. Managed shift allocation through internal systems to maintain operational continuity.",
-      "skills": ["Operational Reporting", "Workforce Coordination", "Logistics Planning"]
+      "date": "Nov 2023 - Dec 2023",
+      "featured": false,
+      "companyDescription": "Market leader in flexible workforce management and workforce logistics.",
+      "bullets": [
+        "Coordinated daily shift allocations for a pool of 3,000 employees using internal ERP systems.",
+        "Maintained 95%+ operational continuity through proactive workforce scheduling and conflict resolution.",
+        "Reduced administrative errors in shift reporting through dashboard optimization."
+      ],
+      "logo": null
     },
     {
       "id": "exp-legrand",
       "company": "Legrand",
-      "role": "Internship Trainee",
-      "period": "Jan 2023 - Feb 2023",
-      "location": "Moscow, Russia",
-      "description": "Managed job vacancy publications across platforms and coordinated initial candidate communication.",
-      "skills": ["Recruitment Coordination", "Microsoft Excel"]
+      "role": "Recruitment & HR Intern",
+      "date": "Jan 2023 - Feb 2023",
+      "featured": false,
+      "companyDescription": "Global specialist in electrical and digital building infrastructures.",
+      "bullets": [
+        "Supported the regional recruitment roadmap by managing job postings and candidate funnels.",
+        "Facilitated initial communication for technical and corporate roles across multiple departments."
+      ],
+      "logo": null
     },
     {
       "id": "exp-scanderm",
       "company": "Scanderm",
       "role": "Operations Intern",
-      "period": "Apr 2022 - Dec 2022",
-      "location": "Moscow, Russia (Remote)",
-      "description": "Tech startup environment: Structured internal documentation workflows and analyzed external funding opportunities (grants/financial support).",
-      "skills": ["Startup Operations", "Market Research", "Grant Analysis"]
+      "date": "Apr 2022 - Dec 2022",
+      "featured": true,
+      "companyDescription": "Early-stage HealthTech startup focusing on AI-driven diagnostics.",
+      "bullets": [
+        "Structured internal documentation workflows and knowledge management systems.",
+        "Analyzed external funding landscapes, identifying key grant opportunities for startup scaling.",
+        "Assisted in competitive market research to refine product valuation and positioning."
+      ],
+      "logo": null
     }
   ],
   "education": [
     {
+      "id": "edu-tbs",
       "school": "TBS Education",
-      "degree": "Master of Science, Digital Marketing and Analytics",
-      "period": "Oct 2025 - Oct 2026",
-      "description": "Focused on data-driven decision-making and marketing analytics. Projects in customer research, digital strategy, SEO, and performance analysis using AI-driven tools."
+      "degree": "MSc Digital Marketing & Analytics",
+      "date": "Oct 2025 - Oct 2026",
+      "description": "Advanced coursework in GA4, SQL, SEO, and Marketing Science. Focus on data-driven strategic growth."
     },
     {
-      "school": "Higher School of Economics (HSE)",
-      "degree": "Bachelor of Business Administration (BBA)",
-      "period": "Sep 2019 - Jul 2023",
-      "description": "Specialization in HR Management. Foundation in business processes, organizational behavior, and data-based management. GPA: High achievement in project management and data-driven decision-making."
+      "id": "edu-hse",
+      "school": "HSE University",
+      "degree": "BBA, HR Management",
+      "date": "Sep 2019 - Jul 2023",
+      "description": "Focus on data-driven management, organizational behavior, and business process modeling."
     }
   ],
   "certifications": [
-    "Google Ads Display Certification (Google, Jan 2026)",
-    "Google Analytics Certification (Google, Jan 2026)",
-    "HubSpot Marketing Hub Software Certification (HubSpot, Feb 2026)",
-    "IELTS Academic - C1 (Score: 7.5, May 2025)",
-    "Microsoft Excel – Advanced Level (Level 2)"
+    {
+      "name": "Google Ads Display Certification",
+      "issuer": "Google",
+      "year": "2026",
+      "url": ""
+    },
+    {
+      "name": "Google Analytics Certification",
+      "issuer": "Google",
+      "year": "2026",
+      "url": ""
+    },
+    {
+      "name": "HubSpot Marketing Hub",
+      "issuer": "HubSpot",
+      "year": "2026",
+      "url": ""
+    },
+    {
+      "name": "IELTS Academic (C1)",
+      "issuer": "British Council",
+      "year": "2025",
+      "url": ""
+    }
   ],
   "skills_columns": [
     {
