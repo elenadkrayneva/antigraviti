@@ -300,11 +300,17 @@
   filter: brightness(1.1);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .toggleButton {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 50px;
+    height: 50px;
+  }
   .chatContainer {
     width: calc(100vw - 2rem);
-    height: calc(100vh - 8rem);
+    height: calc(100vh - 10rem);
     right: 1rem;
-    bottom: 6rem;
+    bottom: 5.5rem;
   }
 }
