@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './projects.module.css';
-import { ChevronDown, ChevronUp, ArrowUpRight } from 'lucide-react';
+import { ChevronDown, ChevronUp, ArrowUpRight, TrendingUp } from 'lucide-react';
 import projectsData from '@/data/projects.json';
 
 export default function Projects() {
@@ -68,7 +68,9 @@ export default function Projects() {
                   {project.metrics && (
                     <div className={styles.metrics}>
                       {project.metrics.map((m: string, i: number) => (
-                        <span key={i} className={styles.metric}>{m}</span>
+                        <span key={i} className={styles.metric}>
+                          <TrendingUp size={12} /> {m}
+                        </span>
                       ))}
                     </div>
                   )}

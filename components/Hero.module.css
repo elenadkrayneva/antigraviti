@@ -1,5 +1,5 @@
 .heroSection {
-  min-height: 92vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   padding-top: var(--header-height);
@@ -12,7 +12,7 @@
   max-width: 860px;
   width: 100%;
   margin: 0 auto;
-  padding: 5rem 2rem 5rem;
+  padding: 3rem 2rem 3rem;
   position: relative;
   z-index: 2;
 }
@@ -45,19 +45,19 @@
 }
 
 .name {
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1;
   color: var(--fg-primary);
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .role {
-  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 600;
   color: var(--brand-accent);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   letter-spacing: -0.01em;
 }
 
