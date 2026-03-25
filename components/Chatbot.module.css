@@ -4,7 +4,7 @@
   right: 2.5rem;
   width: 60px;
   height: 60px;
-  border-radius: 50%;
+  border-radius: 30px;
   background: var(--brand-accent);
   color: #ffffff;
   border: none;
@@ -17,8 +17,31 @@
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+.toggleExpanded {
+  width: auto;
+  padding: 0 1.25rem;
+}
+
+.toggleIconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggleIconWrapExpanded {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.toggleText {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+}
+
 .toggleButton:hover {
-  transform: translateY(-4px) scale(1.05);
+  transform: translateY(-4px) scale(1.02);
   box-shadow: 0 12px 40px rgba(37, 99, 235, 0.4);
 }
 

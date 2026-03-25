@@ -72,18 +72,19 @@ export default function Chatbot() {
   return (
     <>
       <button 
-        className={styles.toggleButton} 
+        className={`${styles.toggleButton} ${!isOpen ? styles.toggleExpanded : ''}`} 
         onClick={() => setIsOpen(!isOpen)}
-        aria-label="Toggle Strategy Bot"
+        aria-label="Ask AI About Me"
       >
         <AnimatePresence mode="wait">
           {isOpen ? (
-            <motion.div key="x" initial={{ opacity: 0, rotate: -90 }} animate={{ opacity: 1, rotate: 0 }} exit={{ opacity: 0, rotate: 90 }}>
+            <motion.div key="x" className={styles.toggleIconWrap} initial={{ opacity: 0, rotate: -90 }} animate={{ opacity: 1, rotate: 0 }} exit={{ opacity: 0, rotate: 90 }}>
               <X size={28} />
             </motion.div>
           ) : (
-            <motion.div key="chat" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.8 }}>
-              <Sparkles size={28} />
+            <motion.div key="chat" className={styles.toggleIconWrapExpanded} initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.8 }}>
+              <Sparkles size={24} />
+              <span className={styles.toggleText}>Ask AI About Me</span>
             </motion.div>
           )}
         </AnimatePresence>

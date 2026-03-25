@@ -26,13 +26,13 @@ export default function Hero() {
     <section id="hero" className={styles.heroSection}>
       <div className={styles.content}>
         <motion.div
+          className={styles.availabilityBadge}
           initial={{ opacity: 0, y: -16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className={styles.availabilityBadge}
         >
           <span className={styles.dot} />
-          Open to opportunities · Barcelona
+          Open to opportunities
         </motion.div>
 
         <motion.h1
@@ -79,6 +79,10 @@ export default function Hero() {
             <Mail size={14} />
             <a href={`mailto:${profile.email}`}>{profile.email}</a>
           </span>
+          <span className={styles.metaItem}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </span>
         </motion.div>
 
         <motion.div
@@ -92,9 +96,6 @@ export default function Hero() {
           </button>
           <button onClick={() => handleScroll('contact')} className={styles.btnSecondary}>
             Contact Me
-          </button>
-          <button onClick={openChatbot} className={styles.btnGhost}>
-            <MessageSquare size={16} /> Ask AI About Me
           </button>
         </motion.div>
       </div>

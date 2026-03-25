@@ -36,15 +36,10 @@ export default function Navigation() {
           EK<span>.</span>
         </Link>
         <div className={styles.links}>
-          <a href="#projects" onClick={(e) => handleSmoothScroll(e, 'projects')} className={styles.link}>Projects</a>
           <a href="#experience" onClick={(e) => handleSmoothScroll(e, 'experience')} className={styles.link}>Experience</a>
+          <a href="#projects" onClick={(e) => handleSmoothScroll(e, 'projects')} className={styles.link}>Projects</a>
           <a href="#skills" onClick={(e) => handleSmoothScroll(e, 'skills')} className={styles.link}>Skills</a>
-          <button 
-            className={styles.cta} 
-            onClick={() => window.dispatchEvent(new CustomEvent('open-chatbot'))}
-          >
-            Talk to AI
-          </button>
+          <a href="#education-certifications" onClick={(e) => handleSmoothScroll(e, 'education-certifications')} className={styles.link}>Education</a>
         </div>
       </div>
     </nav>

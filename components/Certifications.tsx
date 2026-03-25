@@ -8,7 +8,7 @@ export default function Certifications() {
   const { certifications } = cvData;
 
   return (
-    <section id="certifications" className={styles.section}>
+    <section id="education-certifications" className={styles.section}>
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -17,17 +17,18 @@ export default function Certifications() {
           transition={{ duration: 0.5 }}
           className={styles.header}
         >
-          <h2 className={styles.sectionTitle}>Certifications</h2>
-          <p className={styles.sectionSubtitle}>Professional credentials in marketing analytics and digital tools.</p>
+          <h2 className={styles.sectionTitle}>Education & Certifications</h2>
+          <p className={styles.sectionSubtitle}>Academic degrees and professional credentials.</p>
         </motion.div>
 
         <div className={styles.grid}>
-          {(certifications as any[]).map((cert, index) => (
-            <motion.a
+          {(certifications as any[]).map((cert, index) => {
+            const hasUrl = cert.url && cert.url.trim() !== '';
+            const Component = hasUrl ? motion.a : motion.div;
+            return (
+            <Component
               key={index}
-              href={cert.url}
-              target="_blank"
-              rel="noopener noreferrer"
+              {...(hasUrl ? { href: cert.url, target: "_blank", rel: "noopener noreferrer" } : {})}
               className={styles.card}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -41,8 +42,9 @@ export default function Certifications() {
                 <div className={styles.certName}>{cert.name}</div>
                 <div className={styles.certIssuer}>{cert.issuer} · {cert.year}</div>
               </div>
-            </motion.a>
-          ))}
+            </Component>
+            );
+          })}
         </div>
       </div>
     </section>
