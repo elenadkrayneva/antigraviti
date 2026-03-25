@@ -3,22 +3,81 @@ import OpenAI from 'openai';
 import cvData from '@/data/cv.json';
 import projectsData from '@/data/projects.json';
 
-const systemPrompt = `You are the AI assistant for Elena Krayneva, a Digital Marketing & Analytics specialist based in Barcelona.
-You act like a professional, friendly, and persuasive recruiter assistant embedded on her portfolio website.
-Your goal is to answer questions about Elena, explain her projects and skills, and convince recruiters to hire her.
+const systemPrompt = `You are "The Strategist", the advanced AI Ambassador for Elena Krayneva.
+Your primary function is to represent Elena to potential employers, recruiters, and collaborators with the precision of a top-tier management consultant and the flair of a digital marketing expert.
 
-Important Guidelines:
-1. Keep answers concise, structured (use bullet points if helpful), and "consulting-style".
-2. Highlight her end-to-end thinking: strategy → execution → analytics.
-3. Use only the provided data below to answer.
+IDENTITY:
+- Elena Krayneva is a Marketing Analytics & Consulting specialist.
+- She has an MSc in Digital Marketing & Analytics (TBS Education) and a BSc in Business (HSE).
+- Her unique value: Bridging the gap between raw data (SQL, Python, R) and business ROI (Marketing Strategy, Funnel Optimization).
+
+CORE PERSONALITY:
+- Analytical & Insightful: You don't just state WHAT she did; you explain WHY it mattered and the ROI it delivered.
+- Business-Oriented: Use professional terminology (KPIs, CTR, CPA, LTV, ROAS, GTM).
+- Confident but Grounded: Your tone is helpful, professional, and reflects a strategic mindset.
 
 KNOWLEDGE BASE:
-Profile & Experience:
-${JSON.stringify(cvData, null, 2)}
+---
+PROFILE & EXPERIENCE DATA:
+${JSON.stringify(cvData, null, 1)}
 
-Projects:
-${JSON.stringify(projectsData, null, 2)}
+KEY PROJECTS DATA:
+${JSON.stringify(projectsData, null, 1)}
+---
+
+CONSTRAINTS & RULES:
+1. **Source of Truth**: ONLY use the data provided above. If asked about something NOT in the data, politely pivot back to her known expertise or suggest contacting her directly via LinkedIn/Email.
+2. **No Hallucinations**: NEVER invent projects, roles, or specific metrics not listed in the JSON.
+3. **Structured Responses**: Use markdown (bullet points, bold text) to keep answers readable and professional.
+4. **Language**: Respond in the same language the user uses. If they ask in Russian, answer in Russian. If in English, answer in English.
 `;
+
+// Deterministic Fallback Logic (The "Smart" Offline Mode)
+function getDeterministicResponse(message: string): string {
+  const query = message.toLowerCase();
+  const isRussian = /[а-яА-ЯёЁ]/.test(query);
+
+  // Search Projects
+  const foundProject = projectsData.find(project => 
+    project.title.toLowerCase().includes(query) || 
+    project.tags.some(tag => query.includes(tag.toLowerCase())) ||
+    project.category.toLowerCase().includes(query)
+  );
+
+  if (foundProject) {
+    if (isRussian) {
+      return `О проекте **${foundProject.title}**: ${foundProject.context}\n\n**Результат:** ${foundProject.result}\n\n**Стек:** ${foundProject.tags.join(', ')}.`;
+    }
+    return `Regarding the **${foundProject.title}** project: ${foundProject.context}\n\n**Result:** ${foundProject.result}\n\n**Stack:** ${foundProject.tags.join(', ')}.`;
+  }
+
+  // Search Skills & Experience
+  if (query.includes('sql') || query.includes('database') || query.includes('данн')) {
+    return isRussian 
+      ? "Елена профессионально владеет SQL для анализа данных. Например, в X5 DIGITAL она работала с наборами данных о персонале для KPI-отчетности."
+      : "Elena is proficient in SQL for data analysis. For example, at X5 DIGITAL, she worked with workforce datasets to build KPI reports.";
+  }
+
+  if (query.includes('google') || query.includes('ads') || query.includes('analytics') || query.includes('аналити')) {
+    return isRussian
+      ? "Она сертифицированный специалист по Google Ads и Google Analytics 4. В проекте DIGIFY ACTIVE она успешно запускала кампании, отслеживая CTR и CPA."
+      : "She is a certified Google Ads and GA4 specialist. In the DIGIFY ACTIVE project, she successfully launched campaigns while tracking CTR and CPA.";
+  }
+
+  if (query.includes('contact') || query.includes('email') || query.includes('linkedin') || query.includes('контакт') || query.includes('почт')) {
+    const email = cvData.profile.email;
+    const linkedin = cvData.profile.linkedin;
+    return isRussian
+      ? `Вы можете связаться с Еленой напрямую через Email: **${email}** или в **LinkedIn**: ${linkedin}.`
+      : `You can reach Elena directly through Email: **${email}** or on **LinkedIn**: ${linkedin}.`;
+  }
+
+  // Default "Smart" response
+  if (isRussian) {
+    return "Я — AI-ассистент Елены. Сейчас я работаю в локальном режиме, но могу рассказать о её опыте в **Marketing Analytics**, работе в **X5 Digital** или проектах в **SaaS**. Что вас интересует?";
+  }
+  return "I'm Elena's AI Assistant. I'm currently in smart-local mode, but I can tell you about her **Marketing Analytics** expertise, her work at **X5 Digital**, or her **SaaS consulting** projects. What would you like to know?";
+}
 
 export const dynamic = 'force-dynamic';
 
@@ -26,25 +85,27 @@ export async function POST(req: Request) {
   try {
     const { message, history } = await req.json();
 
-    if (!process.env.OPENAI_API_KEY) {
-      console.warn('Chat API: OPENAI_API_KEY is missing, using fallback response');
-      return NextResponse.json({ 
-        reply: "I'm currently in a limited 'offline' mode as my AI brain needs a key boost, but I can still tell you that Elena is a dedicated Marketing Analytics specialist with a strong background in data-driven growth and strategic consulting. Feel free to reach out to her directly via Email or LinkedIn!" 
-      });
+    // Try OpenAI, but use Smart Fallback if Key is placeholder or missing
+    const hasValidKey = process.env.OPENAI_API_KEY && 
+                        process.env.OPENAI_API_KEY !== 'your_openai_api_key_here' && 
+                        process.env.OPENAI_API_KEY.startsWith('sk-');
+
+    if (!hasValidKey) {
+      console.warn('Chat API: Using Smart Fallback');
+      return NextResponse.json({ reply: getDeterministicResponse(message) });
     }
 
     const openai = new OpenAI({
       apiKey: process.env.OPENAI_API_KEY,
     });
 
-    // Ensure history is an array and filter out invalid messages
     const validHistory = Array.isArray(history) 
       ? history.filter((msg: any) => msg?.role && msg?.content)
       : [];
 
     const messages = [
       { role: 'system', content: systemPrompt },
-      ...validHistory.map((msg: any) => ({
+      ...validHistory.slice(-10).map((msg: any) => ({ // Extended context for better conversation logic
         role: msg.role === 'assistant' || msg.role === 'user' ? msg.role : 'user',
         content: String(msg.content),
       })),
@@ -55,23 +116,21 @@ export async function POST(req: Request) {
       const response = await openai.chat.completions.create({
         model: 'gpt-4o-mini',
         messages: messages as any,
-        temperature: 0.7,
-        max_tokens: 500,
+        temperature: 0.6,
+        max_tokens: 400,
       });
 
-      const reply = response.choices[0]?.message?.content || "I'm having a bit of a quiet moment, but I'd love to chat more about Elena's background if you try another question!";
+      const reply = response.choices[0]?.message?.content || getDeterministicResponse(message);
       return NextResponse.json({ reply });
     } catch (apiError: any) {
       console.error('OpenAI API Error:', apiError);
-      return NextResponse.json({ 
-        reply: "I'm experiencing a brief connection hiccup with my AI provider, but you can explore Elena's projects and skills right here on the page! She's particularly experienced in Google Ads and HubSpot."
-      });
+      return NextResponse.json({ reply: getDeterministicResponse(message) });
     }
 
   } catch (error: any) {
     console.error('Chat API Runtime Error:', error);
     return NextResponse.json({ 
-      reply: "I'm here to help! Please feel free to check out the Experience and Projects sections while I refresh my connection." 
-    }, { status: 200 }); // Return 200 even on error to avoid "offline" message
+      reply: "I'm here to assist! Please explore the Experience and Projects sections below." 
+    }, { status: 200 });
   }
 }

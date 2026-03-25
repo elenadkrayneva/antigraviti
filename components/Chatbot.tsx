@@ -10,16 +10,16 @@ type Message = {
 };
 
 const SUGGESTED_PROMPTS = [
-  "What is your approach to data-driven growth?",
-  "Tell me about the AI startup project",
-  "How do you handle marketing performance analysis?",
-  "In which tools are you most proficient?"
+  "How did she optimize the AI Startup marketing?",
+  "Analyze her B2B Analytics project results",
+  "What is her approach to funnel optimization?",
+  "What is her background in Digital Marketing?"
 ];
 
 export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'assistant', content: "Hello! I'm Elena's Strategy Bot. I can analyze her performance data, experience, and project frameworks. What would you like to explore first?" }
+    { role: 'assistant', content: "Hello! I'm Elena's Career Strategist. I can analyze her performance data, experience frameworks, and project ROI. What analytical challenge or project would you like to explore first?" }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -94,37 +94,62 @@ export default function Chatbot() {
       <AnimatePresence>
         {isOpen && (
           <motion.div 
-            className={`glass-panel ${styles.chatContainer}`}
-            initial={{ opacity: 0, y: 30, scale: 0.9, x: 20 }}
-            animate={{ opacity: 1, y: 0, scale: 1, x: 0 }}
-            exit={{ opacity: 0, y: 30, scale: 0.9, x: 20 }}
-            transition={{ type: "spring", damping: 25, stiffness: 200 }}
+            className={styles.chatContainer}
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 20, scale: 0.95 }}
           >
             <div className={styles.chatHeader}>
-              <div className={styles.avatar}>EK</div>
-              <div className={styles.headerInfo}>
-                <h3 className={styles.chatTitle}>Strategy Bot</h3>
-                <div className={styles.statusRow}>
-                  <span className={styles.statusDot}></span>
-                  <p className={styles.chatStatus}>Expert in Elena's Data & Insights</p>
+              <div className={styles.botInfo}>
+                <div className={styles.botAvatar}>
+                  <Sparkles size={20} />
+                </div>
+                <div className={styles.botName}>
+                  <h3>Elena&apos;s AI Assistant</h3>
+                  <div className={styles.botStatus}>
+                    <div className={styles.statusDot} />
+                    Ready to analyze
+                  </div>
                 </div>
               </div>
+              <button 
+                className={styles.closeBtn} 
+                onClick={() => setIsOpen(false)}
+                aria-label="Close Chat"
+              >
+                <X size={18} />
+              </button>
             </div>
 
             <div className={styles.messagesArea}>
               {messages.map((msg, idx) => (
-                <div key={idx} className={`${styles.messageWrapper} ${msg.role === 'user' ? styles.userWrapper : styles.aiWrapper}`}>
+                <motion.div 
+                  key={idx} 
+                  initial={{ opacity: 0, y: 10, scale: 0.98 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  transition={{ duration: 0.3, delay: idx === messages.length - 1 ? 0.1 : 0 }}
+                  className={`${styles.messageWrapper} ${msg.role === 'user' ? styles.userWrapper : styles.aiWrapper}`}
+                >
                   <div className={`${styles.message} ${msg.role === 'user' ? styles.userMessage : styles.aiMessage}`}>
                     {msg.content}
                   </div>
-                </div>
+                </motion.div>
               ))}
               {isLoading && (
-                <div className={`${styles.messageWrapper} ${styles.aiWrapper}`}>
-                  <div className={`${styles.message} ${styles.aiMessage} ${styles.loading}`}>
-                    <Loader2 size={16} className={styles.spinner} /> Analyzing...
+                <motion.div 
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className={`${styles.messageWrapper} ${styles.aiWrapper}`}
+                >
+                  <div className={`${styles.message} ${msg.role === 'assistant' ? styles.aiMessage : styles.userMessage} ${styles.loading}`}>
+                    <div className={styles.typingDots}>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    Analyzing data...
                   </div>
-                </div>
+                </motion.div>
               )}
               <div ref={messagesEndRef} />
             </div>
