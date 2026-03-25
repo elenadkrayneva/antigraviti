@@ -98,7 +98,7 @@ export async function POST(req: Request) {
 
     const messages = [
       { role: 'system', content: systemPrompt },
-      ...validHistory.slice(-10).map((msg: any) => ({
+      ...validHistory.slice(-10).map((msg: any) => ({ // Extended context for better conversation logic
         role: msg.role === 'assistant' || msg.role === 'user' ? msg.role : 'user',
         content: String(msg.content),
       })),

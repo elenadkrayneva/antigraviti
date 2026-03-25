@@ -13,7 +13,7 @@ export default function Skills() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.4 }}
         >
           <h2 className={styles.sectionTitle}>Skills & Tools</h2>
           <p className={styles.sectionSubtitle}>Analytical, marketing, and strategic skills — backed by hands-on tools and frameworks.</p>
@@ -27,7 +27,7 @@ export default function Skills() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
+              transition={{ delay: idx * 0.05, duration: 0.3 }}
             >
               <h3 className={styles.categoryTitle}>{column.title}</h3>
               

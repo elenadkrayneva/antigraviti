@@ -31,7 +31,7 @@ export default function Experience() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.35 }}
           className={styles.header}
         >
           <h2 className={styles.sectionTitle}>Professional Experience</h2>
@@ -48,7 +48,7 @@ export default function Experience() {
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.08, duration: 0.5 }}
+                transition={{ delay: index * 0.05, duration: 0.35 }}
               >
                 <button
                   className={styles.cardToggle}

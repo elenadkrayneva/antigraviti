@@ -1,5 +1,5 @@
 .heroSection {
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   padding-top: var(--header-height);
@@ -152,11 +152,11 @@
 .btnGhost {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
   background: #f8fafc;
   color: #475569;
   border: 1px solid #cbd5e1;
-  padding: 14px 24px;
+  padding: 14px 28px; /* Consistent with other hero buttons */
   border-radius: var(--radius-sm);
   font-weight: 700;
   font-size: 0.875rem;

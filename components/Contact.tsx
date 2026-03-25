@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import styles from './Contact.module.css';
-import { Mail, Phone, Linkedin, MessageSquare } from 'lucide-react';
+import { Mail, Phone, Linkedin } from 'lucide-react';
 import cvData from '@/data/cv.json';
 
 export default function Contact() {
@@ -19,7 +19,7 @@ export default function Contact() {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.4 }}
         >
           <div className={styles.textSide}>
             <span className={styles.eyebrow}>Get in touch</span>
@@ -28,7 +28,7 @@ export default function Contact() {
               I&apos;m open to internship opportunities, marketing analytics roles, and consulting projects. Feel free to reach out directly.
             </p>
             <button onClick={openChatbot} className={styles.chatBtn}>
-              <MessageSquare size={16} /> Ask AI About Me
+              Ask AI About Me
             </button>
           </div>
 

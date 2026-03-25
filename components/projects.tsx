@@ -17,7 +17,7 @@ export default function Projects() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.35 }}
           className={styles.header}
         >
           <h2 className={styles.sectionTitle}>Case Studies</h2>
@@ -36,11 +36,11 @@ export default function Projects() {
                 initial={{ opacity: 0, y: 28 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.5 }}
+                transition={{ delay: index * 0.05, duration: 0.35 }}
               >
                 {/* Visual Image */}
                 {project.image && (
-                  <div className={styles.cardImage}>
+                  <div className={`${styles.cardImage} ${project.id === 'ai-startup' ? styles.strategicZoom : ''}`}>
                     <img src={project.image} alt={project.title} />
                   </div>
                 )}

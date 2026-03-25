@@ -1,4 +1,7 @@
 .section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
   padding: 4rem 0;
   background: transparent;
 }
@@ -62,6 +65,14 @@
   transform: scale(1.02);
 }
 
+.strategicZoom img {
+  transform: scale(1.04); /* Subtly zoom in to remove black borders */
+  transform-origin: center;
+}
+
+.card:hover .strategicZoom img {
+  transform: scale(1.06); /* Maintain the extra zoom on hover */
+}
 .cardHeader {
   padding: 1.25rem 1.5rem 1rem;
   border-bottom: 1px solid var(--border-subtle);

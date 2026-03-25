@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import styles from './Hero.module.css';
-import { ArrowRight, MessageSquare, MapPin, Mail } from 'lucide-react';
+import { ArrowRight, MapPin, Mail } from 'lucide-react';
 import cvData from '@/data/cv.json';
 
 export default function Hero() {
@@ -29,17 +29,17 @@ export default function Hero() {
           className={styles.availabilityBadge}
           initial={{ opacity: 0, y: -16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.35 }}
         >
           <span className={styles.dot} />
-          Open to opportunities
+          Open to Internships & Consulting Roles
         </motion.div>
 
         <motion.h1
           className={styles.name}
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
+          transition={{ duration: 0.4, delay: 0.05 }}
         >
           {profile.name}
         </motion.h1>
@@ -48,7 +48,7 @@ export default function Hero() {
           className={styles.role}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.35, delay: 0.1 }}
         >
           {profile.role}
         </motion.p>
@@ -57,7 +57,7 @@ export default function Hero() {
           className={styles.subheadline}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.35, delay: 0.15 }}
         >
           {profile.subheadline.split('**').map((part, index) =>
             index % 2 === 1
@@ -70,7 +70,7 @@ export default function Hero() {
           className={styles.meta}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 0.3, delay: 0.2 }}
         >
           <span className={styles.metaItem}>
             <MapPin size={14} /> {profile.location}
@@ -89,7 +89,7 @@ export default function Hero() {
           className={styles.ctaGroup}
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.35, delay: 0.25 }}
         >
           <button onClick={() => handleScroll('projects')} className={styles.btnPrimary}>
             View Case Studies <ArrowRight size={16} />
@@ -98,7 +98,7 @@ export default function Hero() {
             Contact Me
           </button>
           <button onClick={openChatbot} className={styles.btnGhost}>
-            <MessageSquare size={16} /> Ask AI About Me
+            Ask AI About Me
           </button>
         </motion.div>
       </div>
