@@ -27,11 +27,10 @@ export async function POST(req: Request) {
     const { message, history } = await req.json();
 
     if (!process.env.OPENAI_API_KEY) {
-      console.error('Chat API Error: OPENAI_API_KEY is missing');
-      return NextResponse.json(
-        { reply: "I'm currently missing my API key. Please check your environment variables." },
-        { status: 500 }
-      );
+      console.warn('Chat API: OPENAI_API_KEY is missing, using fallback response');
+      return NextResponse.json({ 
+        reply: "I'm currently in a limited 'offline' mode as my AI brain needs a key boost, but I can still tell you that Elena is a dedicated Marketing Analytics specialist with a strong background in data-driven growth and strategic consulting. Feel free to reach out to her directly via Email or LinkedIn!" 
+      });
     }
 
     const openai = new OpenAI({
@@ -52,21 +51,27 @@ export async function POST(req: Request) {
       { role: 'user', content: String(message) }
     ];
 
-    const response = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      messages: messages as any,
-      temperature: 0.7,
-      max_tokens: 500,
-    });
+    try {
+      const response = await openai.chat.completions.create({
+        model: 'gpt-4o-mini',
+        messages: messages as any,
+        temperature: 0.7,
+        max_tokens: 500,
+      });
 
-    const reply = response.choices[0]?.message?.content || "I'm thinking, but couldn't find the right words. Try asking differently!";
-    return NextResponse.json({ reply });
+      const reply = response.choices[0]?.message?.content || "I'm having a bit of a quiet moment, but I'd love to chat more about Elena's background if you try another question!";
+      return NextResponse.json({ reply });
+    } catch (apiError: any) {
+      console.error('OpenAI API Error:', apiError);
+      return NextResponse.json({ 
+        reply: "I'm experiencing a brief connection hiccup with my AI provider, but you can explore Elena's projects and skills right here on the page! She's particularly experienced in Google Ads and HubSpot."
+      });
+    }
 
   } catch (error: any) {
     console.error('Chat API Runtime Error:', error);
-    
-    // Check for specific OpenAI errors if possible
-    const errorMsg = error?.message || "I encountered an error while processing your request.";
-    return NextResponse.json({ reply: `Bot error: ${errorMsg}` }, { status: 500 });
+    return NextResponse.json({ 
+      reply: "I'm here to help! Please feel free to check out the Experience and Projects sections while I refresh my connection." 
+    }, { status: 200 }); // Return 200 even on error to avoid "offline" message
   }
 }

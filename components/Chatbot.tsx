@@ -60,12 +60,12 @@ export default function Chatbot() {
       if (res.ok) {
         setMessages(prev => [...prev, { role: 'assistant', content: data.reply }]);
       } else {
-        const errorMsg = data.reply || "I'm currently offline for maintenance. Please check again in a few moments!";
+        const errorMsg = data.reply || "I'm having a bit of a quiet moment while I catch up on data insights, but I'm here! What would you like to know about Elena's background?";
         setMessages(prev => [...prev, { role: 'assistant', content: errorMsg }]);
       }
     } catch (err) {
       console.error('Chatbot fetch error:', err);
-      setMessages(prev => [...prev, { role: 'assistant', content: "Connection error. Please check your internet and try again." }]);
+      setMessages(prev => [...prev, { role: 'assistant', content: "I'm momentarily quiet while I sync up my notes, but I'm always available to help explore Elena's profile! Would you like to check her projects or perhaps her background in analytics?" }]);
     } finally {
       setIsLoading(false);
     }
@@ -74,7 +74,7 @@ export default function Chatbot() {
   return (
     <>
       <button 
-        className={`${styles.toggleButton} ${!isOpen ? styles.toggleExpanded : ''}`} 
+        className={styles.toggleButton} 
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Ask AI About Me"
       >
@@ -84,9 +84,8 @@ export default function Chatbot() {
               <X size={28} />
             </motion.div>
           ) : (
-            <motion.div key="chat" className={styles.toggleIconWrapExpanded} initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.8 }}>
-              <Sparkles size={24} />
-              <span className={styles.toggleText}>Ask AI About Me</span>
+            <motion.div key="chat" className={styles.toggleIconWrap} initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.8 }}>
+              <Sparkles size={28} />
             </motion.div>
           )}
         </AnimatePresence>

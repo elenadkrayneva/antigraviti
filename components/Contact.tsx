@@ -27,6 +27,9 @@ export default function Contact() {
             <p className={styles.subtitle}>
               I&apos;m open to internship opportunities, marketing analytics roles, and consulting projects. Feel free to reach out directly.
             </p>
+            <button onClick={openChatbot} className={styles.chatBtn}>
+              <MessageSquare size={16} /> Ask AI About Me
+            </button>
           </div>
 
           <div className={styles.contacts}>

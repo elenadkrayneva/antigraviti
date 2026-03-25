@@ -60,13 +60,13 @@
 }
 
 .cta {
-  background: var(--brand-accent);
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  padding: 8px 18px;
   border-radius: var(--radius-sm);
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   cursor: pointer;
@@ -74,8 +74,9 @@
 }
 
 .cta:hover {
+  background: #e2e8f0;
+  color: var(--fg-primary);
   transform: translateY(-1px);
-  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.2);
 }
 
 @media (max-width: 768px) {

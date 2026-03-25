@@ -97,6 +97,9 @@ export default function Hero() {
           <button onClick={() => handleScroll('contact')} className={styles.btnSecondary}>
             Contact Me
           </button>
+          <button onClick={openChatbot} className={styles.btnGhost}>
+            <MessageSquare size={16} /> Ask AI About Me
+          </button>
         </motion.div>
       </div>
 
