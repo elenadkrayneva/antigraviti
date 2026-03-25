@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import styles from './Certifications.module.css';
-import { Award } from 'lucide-react';
+import { Award, GraduationCap } from 'lucide-react';
 import cvData from '@/data/cv.json';
 
 export default function Certifications() {
@@ -35,6 +35,9 @@ export default function Certifications() {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.05, duration: 0.3 }}
                 >
+                  <div className={styles.iconWrap}>
+                    <GraduationCap size={20} className={styles.awardIcon} />
+                  </div>
                   <div className={styles.eduInfo}>
                     <div className={styles.certName}>{edu.degree}</div>
                     <div className={styles.certIssuer}>{edu.school} · {edu.period}</div>

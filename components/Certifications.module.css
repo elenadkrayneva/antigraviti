@@ -57,7 +57,7 @@
   .groupsContainer {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
   }
   .groupTitle {
     font-size: 0.625rem;
@@ -65,30 +65,48 @@
     text-transform: uppercase;
     letter-spacing: 0.08em;
     margin-bottom: 0.75rem;
+    color: var(--fg-muted);
   }
   .list, .grid {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 0.75rem !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
   }
   .card, .eduCard {
-    background: transparent !important;
-    border: none !important;
-    border-bottom: 1px solid var(--border-subtle) !important;
-    padding: 0 0 0.75rem 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+    background: #ffffff !important;
+    border: 1px solid var(--border-subtle) !important;
+    padding: 0.75rem !important;
     margin: 0 !important;
-    border-radius: 0 !important;
+    border-radius: var(--radius-sm) !important;
     box-shadow: none !important;
   }
   .iconWrap {
-    display: none;
+    display: flex !important;
+    width: 32px !important;
+    height: 32px !important;
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 6px !important;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .awardIcon {
+    width: 16px !important;
+    height: 16px !important;
+    color: var(--brand-accent) !important;
   }
   .certName {
-    font-size: 0.9375rem;
-    font-weight: 700;
+    font-size: 0.8125rem !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
   }
   .certIssuer {
-    font-size: 0.75rem;
+    font-size: 0.6875rem !important;
+    color: var(--fg-muted) !important;
   }
 }
 
