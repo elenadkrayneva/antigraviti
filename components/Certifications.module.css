@@ -39,14 +39,16 @@
 
 @media (max-width: 768px) {
   .section {
-    padding: 4rem 0;
-    min-height: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 6rem 0 4rem;
   }
   .header {
     margin-bottom: 2rem;
   }
   .sectionTitle {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 }
 

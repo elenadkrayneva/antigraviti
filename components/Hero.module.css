@@ -204,7 +204,10 @@
 
 @media (max-width: 768px) {
   .heroSection {
-    min-height: 80vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: var(--header-height);
   }
   .content {
     padding: 2.5rem 1.25rem 3rem;
