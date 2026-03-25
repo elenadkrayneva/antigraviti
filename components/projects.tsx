@@ -38,6 +38,23 @@ export default function Projects() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
               >
+                {/* Top Title Banner */}
+                <div className={styles.cardTopHeader}>
+                  <h3 className={styles.topTitle}>
+                    {(() => {
+                      const parts = project.title.split(' | ');
+                      if (parts.length > 1) {
+                        return (
+                          <>
+                            <span className={styles.titleBold}>{parts[0]}</span> | {parts.slice(1).join(' | ')}
+                          </>
+                        );
+                      }
+                      return <span className={styles.titleBold}>{project.title}</span>;
+                    })()}
+                  </h3>
+                </div>
+
                 {/* Visual Image */}
                 {project.image && (
                   <div className={styles.cardImage}>
