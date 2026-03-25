@@ -21,6 +21,25 @@ export default function Certifications() {
           <p className={styles.sectionSubtitle}>Academic degrees and professional credentials.</p>
         </motion.div>
 
+        {/* Education Section */}
+        <div className={styles.educationGrid}>
+          {(cvData.education as any[]).map((edu, index) => (
+            <motion.div
+              key={edu.id}
+              className={styles.eduCard}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1, duration: 0.5 }}
+            >
+              <div className={styles.eduDate}>{edu.date}</div>
+              <h3 className={styles.schoolName}>{edu.school}</h3>
+              <p className={styles.degreeName}>{edu.degree}</p>
+              <p className={styles.eduDesc}>{edu.description}</p>
+            </motion.div>
+          ))}
+        </div>
+
         <div className={styles.grid}>
           {(certifications as any[]).map((cert, index) => {
             const hasUrl = cert.url && cert.url.trim() !== '';
