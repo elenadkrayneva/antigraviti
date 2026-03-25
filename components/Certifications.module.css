@@ -43,39 +43,47 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2.5rem 0;
-  }
-  .header {
-    margin-bottom: 2rem;
+    padding: 3rem 0;
   }
   .sectionTitle {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
-    padding: 0 1.25rem;
-  }
-  .card {
-    padding: 0.75rem;
-    gap: 0.75rem;
+  .groupsContainer {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+    gap: 2rem;
+  }
+  .groupTitle {
+    font-size: 0.75rem;
+    color: var(--fg-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+  }
+  .list, .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .card, .eduCard {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 0 0 0.75rem;
+    margin: 0;
+    gap: 0.5rem;
+    border-radius: 0;
   }
   .iconWrap {
-    width: 32px;
-    height: 32px;
-  }
-  .awardIcon {
-    width: 16px; 
-    height: 16px;
+    display: none;
   }
   .certName {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 700;
   }
   .certIssuer {
-    font-size: 0.625rem;
+    font-size: 0.75rem;
+    color: var(--fg-muted);
   }
 }
 
