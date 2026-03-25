@@ -1,6 +1,7 @@
 [
   {
     "id": "digify-active",
+    "image": "/images/projects/digify_active.png",
     "title": "Digify Active: B2B Marketing Agency Simulation",
     "category": "Growth & Marketing Analytics",
     "client": "SME fitness businesses",
@@ -20,6 +21,7 @@
   },
   {
     "id": "ai-startup",
+    "image": "/images/projects/ai_startup.png",
     "title": "AI Startup | Market Opportunity & Repositioning",
     "category": "Strategic Consulting",
     "client": "Early-stage AI startup",

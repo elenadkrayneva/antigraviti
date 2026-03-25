@@ -1,10 +1,14 @@
 'use client';
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import styles from './projects.module.css';
-import { ArrowUpRight } from 'lucide-react';
+import { ChevronDown, ChevronUp, ArrowUpRight } from 'lucide-react';
 import projectsData from '@/data/projects.json';
 
 export default function Projects() {
+  const [openId, setOpenId] = useState<string | null>(null);
+
+  const toggle = (id: string) => setOpenId(prev => prev === id ? null : id);
 
   return (
     <section id="projects" className={styles.section}>
@@ -24,15 +28,23 @@ export default function Projects() {
 
         <div className={styles.grid}>
           {(projectsData as any[]).map((project, index) => {
+            const isOpen = openId === project.id;
             return (
               <motion.article
                 key={project.id}
-                className={`${styles.card} ${styles.cardOpen}`}
+                className={`${styles.card} ${isOpen ? styles.cardOpen : ''}`}
                 initial={{ opacity: 0, y: 28 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
               >
+                {/* Visual Image */}
+                {project.image && (
+                  <div className={styles.cardImage}>
+                    <img src={project.image} alt={project.title} />
+                  </div>
+                )}
+                
                 {/* Header */}
                 <div className={styles.cardHeader}>
                   <span className={styles.categoryBadge}>{project.category}</span>
@@ -61,27 +73,46 @@ export default function Projects() {
                     </div>
                   )}
 
+                  {/* Expand / Collapse Button */}
+                  <button
+                    className={styles.expandBtn}
+                    onClick={() => toggle(project.id)}
+                    aria-expanded={isOpen}
+                  >
+                    {isOpen ? <><ChevronUp size={15} /> Hide details</> : <><ChevronDown size={15} /> Expand project details</>}
+                  </button>
+
                   {/* Always Expanded Content */}
-                  <div className={styles.expandedContent} style={{ marginTop: '2rem', height: 'auto', opacity: 1 }}>
-                    <div className={styles.actionsBlock}>
-                      <span className={styles.label}>What Was Done</span>
-                      <ul className={styles.actionList}>
-                        {project.actions.map((a: string, i: number) => (
-                          <li key={i}>{a}</li>
-                        ))}
-                      </ul>
-                    </div>
+                  <AnimatePresence initial={false}>
+                    {isOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.35, ease: 'easeInOut' }}
+                        className={styles.expandedContent}
+                      >
+                        <div className={styles.actionsBlock}>
+                          <span className={styles.label}>What Was Done</span>
+                          <ul className={styles.actionList}>
+                            {project.actions.map((a: string, i: number) => (
+                              <li key={i}>{a}</li>
+                            ))}
+                          </ul>
+                        </div>
 
-                    <div className={styles.contributionBlock}>
-                      <span className={styles.label}>My Contribution</span>
-                      <p>{project.myContribution}</p>
-                    </div>
+                        <div className={styles.contributionBlock}>
+                          <span className={styles.label}>My Contribution</span>
+                          <p>{project.myContribution}</p>
+                        </div>
 
-                    <div className={styles.resultBlock}>
-                      <span className={styles.label}>Outcome / Insights</span>
-                      <p className={styles.resultText}>{project.result}</p>
-                    </div>
-                  </div>
+                        <div className={styles.resultBlock}>
+                          <span className={styles.label}>Outcome / Insights</span>
+                          <p className={styles.resultText}>{project.result}</p>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
 
                 {/* Tags */}
