@@ -1,14 +1,16 @@
 {
   "profile": {
     "name": "Elena Krayneva",
-    "title": "MSc Digital Marketing & Analytics | Aspiring Marketing and Analytics Consultant",
-    "location": "Barcelona, Catalonia, Spain",
+    "role": "Marketing Analytics & Consulting",
+    "location": "Barcelona, Spain",
     "email": "elena.d.krayneva@gmail.com",
     "linkedin": "https://www.linkedin.com/in/elena-d-krayneva/",
-    "about": "MSc Digital Marketing & Analytics student with a background in business analysis and a strong interest in how positioning, performance drivers, and data-informed insights shape strategic growth decisions. I bridge the gap between metrics like CTR, CPA, and conversion rates and broader strategic implications."
+    "subheadline": "MSc Digital Marketing & Analytics student with hands-on experience in **data analysis**, **KPI reporting**, and **marketing strategy**. Combining structured analytical thinking with a strong business understanding to turn data into actionable insights.",
+    "about": "MSc Digital Marketing & Analytics student with a background in business analysis and a strong interest in how positioning, performance drivers, and data-informed insights shape strategic growth decisions."
   },
   "experience": [
     {
+      "id": "exp-x5",
       "company": "X5 Digital",
       "role": "HR Business Partner Assistant – People Analytics & Reporting",
       "period": "Feb 2025 - Jul 2025",
@@ -17,6 +19,7 @@
       "skills": ["Microsoft PowerPoint", "Data Analysis", "People Analytics", "Reporting"]
     },
     {
+      "id": "exp-tedo",
       "company": "Technologies of Trust (TeDo)",
       "role": "Operations Specialist (Contractors)",
       "period": "Dec 2023 - Feb 2025",
@@ -25,6 +28,7 @@
       "skills": ["Cross-functional Coordination", "Workflow Optimization", "Operations Management"]
     },
     {
+      "id": "exp-qwell",
       "company": "Qwell",
       "role": "Workforce Operations Specialist",
       "period": "Nov 2023 - Dec 2023",
@@ -33,6 +37,7 @@
       "skills": ["Operational Reporting", "Workforce Coordination", "Logistics Planning"]
     },
     {
+      "id": "exp-legrand",
       "company": "Legrand",
       "role": "Internship Trainee",
       "period": "Jan 2023 - Feb 2023",
@@ -41,6 +46,7 @@
       "skills": ["Recruitment Coordination", "Microsoft Excel"]
     },
     {
+      "id": "exp-scanderm",
       "company": "Scanderm",
       "role": "Operations Intern",
       "period": "Apr 2022 - Dec 2022",
@@ -70,9 +76,36 @@
     "IELTS Academic - C1 (Score: 7.5, May 2025)",
     "Microsoft Excel – Advanced Level (Level 2)"
   ],
-  "skills": {
-    "data_tools": ["SQL", "Python", "R", "Excel (Advanced)", "Databricks", "Fabric", "Snowflake", "Power BI", "Tableau", "GA4"],
-    "marketing": ["Marketing Analytics", "Web Analytics", "SEO", "Google Ads", "HubSpot", "Performance Reporting", "Conversion Tracking"],
-    "business": ["Strategic Analysis", "Strategic Consulting", "Market Research", "Workflow Optimization", "Stakeholder Communication"]
-  }
+  "skills_columns": [
+    {
+      "title": "Data & Analytics",
+      "pills": ["SQL", "Excel", "Databricks", "Fabric", "Snowflake", "Power BI", "Tableau", "R"],
+      "subgroups": [
+        {
+          "name": "Cloud & DB",
+          "pills": ["Databricks", "Fabric", "Snowflake", "SQL"]
+        }
+      ]
+    },
+    {
+      "title": "Marketing Performance",
+      "pills": ["GA4", "SEO", "Google Ads", "HubSpot", "Performance Reporting", "Conversion Tracking"],
+      "subgroups": [
+        {
+          "name": "Tools",
+          "pills": ["GA4", "Google Ads", "HubSpot"]
+        }
+      ]
+    },
+    {
+      "title": "Strategy & Operations",
+      "pills": ["Market Research", "Strategic Analysis", "Strategic Consulting", "Workflow Optimization", "Stakeholder Communication"],
+      "subgroups": [
+        {
+          "name": "Consulting",
+          "pills": ["Market Research", "Strategic Analysis"]
+        }
+      ]
+    }
+  ]
 }
