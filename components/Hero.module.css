@@ -153,9 +153,9 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: transparent;
-  color: var(--fg-secondary);
-  border: 1px solid var(--border-subtle);
+  background: var(--brand-accent-soft);
+  color: var(--brand-accent);
+  border: 1px solid var(--brand-accent);
   padding: 14px 24px;
   border-radius: var(--radius-sm);
   font-weight: 600;
