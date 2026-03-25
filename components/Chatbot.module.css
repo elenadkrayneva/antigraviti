@@ -162,6 +162,10 @@
   position: relative;
 }
 
+.messageLine {
+  margin-bottom: 0.25rem;
+}
+
 .aiMessage {
   align-self: flex-start;
   background: #ffffff;
