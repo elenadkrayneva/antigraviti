@@ -2,155 +2,176 @@
   "profile": {
     "name": "Elena Krayneva",
     "role": "Marketing Analytics & Consulting",
-    "location": "Barcelona, Spain",
-    "email": "elena.d.krayneva@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/elena-d-krayneva/",
+    "headline": "Turning Marketing Data into Strategic Decisions",
     "subheadline": "MSc Digital Marketing & Analytics student with hands-on experience in **data analysis**, **KPI reporting**, and **marketing strategy**. Combining structured analytical thinking with a strong business understanding to turn data into actionable insights.",
-    "about": "MSc Digital Marketing & Analytics student with a background in business consultancy and a strong interest in how positioning, performance drivers, and data-informed insights shape strategic growth decisions."
+    "location": "Barcelona, Spain",
+    "linkedin": "https://www.linkedin.com/in/elena-d-krayneva/",
+    "email": "elena.d.krayneva@gmail.com",
+    "phone": "+34 742 08 34 90",
+    "photo": "/images/profile.jpg"
   },
-  "experience": [
+  "skills_columns": [
     {
-      "id": "exp-x5",
-      "company": "X5 Digital",
-      "role": "HR BP Assistant – People Analytics",
-      "date": "Feb 2025 - Present",
-      "featured": true,
-      "companyDescription": "One of Russia's leading high-load digital retailers, managing logistics and delivery for major grocery chains.",
-      "bullets": [
-        "Analyzed workforce datasets (headcount, onboarding, attrition, leave trends) using SQL and Excel.",
-        "Translated complex data into performance-driven insights to support strategic workforce planning.",
-        "Collaborated with cross-functional teams to optimize reporting accuracy and decision-making speed."
-      ],
-      "logo": null
+      "title": "Digital Marketing & Analytics",
+      "pills": [
+        "Marketing Analytics",
+        "Web & SEO Analytics",
+        "Campaign Performance Tracking",
+        "Conversion Tracking",
+        "Paid Media Strategy",
+        "Google Ads (Search & Display)",
+        "Campaign Planning & Optimization",
+        "Dashboard Development",
+        "Data Visualization",
+        "Performance Reporting"
+      ]
     },
     {
-      "id": "exp-tedo",
-      "company": "Technologies of Trust (TeDo)",
-      "role": "Operations Specialist (Freelance)",
-      "date": "Dec 2023 - Feb 2025",
-      "featured": true,
-      "companyDescription": "Former PwC Russia, specializing in high-level strategic and operational consulting.",
-      "bullets": [
-        "Coordinated contracting workflows for 40+ freelance consultants monthly, ensuring legal/finance alignment.",
-        "Optimized internal approval processes, reducing bottleneck time for contractor onboarding.",
-        "Managed operational reporting for various consulting project workstreams."
-      ],
-      "logo": null
+      "title": "Marketing Strategy & Business",
+      "pills": [
+        "Market Research",
+        "Strategic & Business Analysis",
+        "Analytical & Research Skills",
+        "Cross-functional Coordination",
+        "Stakeholder Communication",
+        "Workflow Optimization",
+        "Operational Reporting"
+      ]
     },
     {
-      "id": "exp-qwell",
-      "company": "Qwell",
-      "role": "Workforce Operations Specialist",
-      "date": "Nov 2023 - Dec 2023",
-      "featured": false,
-      "companyDescription": "Market leader in flexible workforce management and workforce logistics.",
-      "bullets": [
-        "Coordinated daily shift allocations for a pool of 3,000 employees using internal ERP systems.",
-        "Maintained 95%+ operational continuity through proactive workforce scheduling and conflict resolution.",
-        "Reduced administrative errors in shift reporting through dashboard optimization."
-      ],
-      "logo": null
-    },
-    {
-      "id": "exp-legrand",
-      "company": "Legrand",
-      "role": "Recruitment & HR Intern",
-      "date": "Jan 2023 - Feb 2023",
-      "featured": false,
-      "companyDescription": "Global specialist in electrical and digital building infrastructures.",
-      "bullets": [
-        "Supported the regional recruitment roadmap by managing job postings and candidate funnels.",
-        "Facilitated initial communication for technical and corporate roles across multiple departments."
-      ],
-      "logo": null
-    },
-    {
-      "id": "exp-scanderm",
-      "company": "Scanderm",
-      "role": "Operations Intern",
-      "date": "Apr 2022 - Dec 2022",
-      "featured": true,
-      "companyDescription": "Early-stage HealthTech startup focusing on AI-driven diagnostics.",
-      "bullets": [
-        "Structured internal documentation workflows and knowledge management systems.",
-        "Analyzed external funding landscapes, identifying key grant opportunities for startup scaling.",
-        "Assisted in competitive market research to refine product valuation and positioning."
-      ],
-      "logo": null
+      "title": "Tools",
+      "subgroups": [
+        {
+          "name": "Data & Analytics",
+          "pills": ["SQL", "R", "Python", "Databricks", "Snowflake"]
+        },
+        {
+          "name": "Visualization & Reporting",
+          "pills": ["Power BI", "Tableau", "Excel", "PowerPoint"]
+        },
+        {
+          "name": "Marketing Tools",
+          "pills": ["Google Analytics", "Google Search Console", "Google Ads", "HubSpot"]
+        }
+      ]
     }
   ],
-  "education": [
+  "tools_with_icons": [
+    { "name": "Google Analytics 4", "icon": "ga4", "color": "#E37400" },
+    { "name": "Excel", "icon": "excel", "color": "#217346" },
+    { "name": "Tableau", "icon": "tableau", "color": "#E97627" },
+    { "name": "Power BI", "icon": "powerbi", "color": "#F2C811" },
+    { "name": "Google Ads", "icon": "googleads", "color": "#4285F4" },
+    { "name": "HubSpot", "icon": "hubspot", "color": "#FF7A59" },
+    { "name": "SQL", "icon": "sql", "color": "#336791" },
+    { "name": "R", "icon": "r", "color": "#276DC3" }
+  ],
+  "experience": [
     {
-      "id": "edu-tbs",
-      "school": "TBS Education",
-      "degree": "MSc Digital Marketing & Analytics",
-      "date": "Oct 2025 - Oct 2026",
-      "description": "Advanced coursework in GA4, SQL, SEO, and Marketing Science. Focus on data-driven strategic growth."
+      "id": "x5-digital",
+      "logo": "/images/logos/x5.png",
+      "company": "X5 DIGITAL",
+      "companyDescription": "Digital division of X5 Group, Russia’s largest food retailer",
+      "role": "HRBP Assistant - People Analytics & Reporting",
+      "date": "Feb 2025 – Jul 2025",
+      "location": "Moscow, Russia",
+      "featured": true,
+      "bullets": [
+        "Analyzed workforce datasets (headcount, onboarding, attrition, leave) and developed KPI reports to support workforce planning and organizational decision-making",
+        "Prepared recurring workforce KPI dashboard presentations summarizing key trends",
+        "Compiled workforce data and candidate profiles for talent reviews supporting succession planning across departments and two leadership levels (1–6 candidates per role)"
+      ]
     },
     {
-      "id": "edu-hse",
-      "school": "HSE University",
-      "degree": "BBA, HR Management",
-      "date": "Sep 2019 - Jul 2023",
-      "description": "Focus on data-driven management, organizational behavior, and business process modeling."
+      "id": "technologies-of-trust",
+      "logo": "/images/logos/trust.png",
+      "company": "TECHNOLOGIES OF TRUST",
+      "companyDescription": "Russian audit & consulting firm, successor to PwC Russia",
+      "role": "Contractor Operations Specialist",
+      "date": "Dec 2023 – Feb 2025",
+      "location": "Moscow, Russia",
+      "featured": true,
+      "bullets": [
+        "Developed structured Excel trackers to monitor contract approvals across departments, onboarding, payments, and renewals",
+        "Coordinated cross-functional approval workflows for 40+ contractors monthly",
+        "Proposed workflow improvements to streamline approval cycles and reduce administrative iterations"
+      ]
+    },
+    {
+      "id": "qwell",
+      "logo": "/images/logos/qwell.png",
+      "company": "Qwell",
+      "companyDescription": "Personnel outsourcing and workforce management platform",
+      "role": "Workforce Operations Specialist",
+      "date": "Nov 2023 – Dec 2023",
+      "location": "Moscow, Russia",
+      "featured": false,
+      "bullets": [
+        "Coordinated workforce operations for a personnel base of approximately 3,000 employees",
+        "Managed shift allocation through internal systems to maintain operational continuity",
+        "Conducted high-volume recruitment and effectively resolved on-site workforce issues"
+      ]
+    },
+    {
+      "id": "legrand",
+      "logo": "/images/logos/legrand.png",
+      "company": "Legrand",
+      "companyDescription": "Global specialist in electrical and digital building infrastructures",
+      "role": "Internship Trainee",
+      "date": "Jan 2023 – Feb 2023",
+      "location": "Moscow, Russia",
+      "featured": false,
+      "bullets": [
+        "Managed publication of job vacancies across internal and external platforms and coordinated initial candidate communication",
+        "Contributed to an external employer branding campaign through partnerships with universities and student outreach initiatives at both headquarters and regional offices",
+        "Supported recruitment pipeline tracking and prepared structured HR reports in Excel"
+      ]
+    },
+    {
+      "id": "scanderm",
+      "logo": "/images/logos/scanderm.png",
+      "company": "Scanderm",
+      "companyDescription": "Health technology startup focusing on dermatological analytics",
+      "role": "Operations Intern",
+      "date": "Apr 2022 – Dec 2022",
+      "location": "Moscow, Russia",
+      "featured": false,
+      "bullets": [
+        "Structured and managed internal documentation workflows within a tech startup environment",
+        "Conducted analysis of external funding opportunities, including grants and financial support programs",
+        "Formalized technical documentation to improve internal information flow and process clarity",
+        "Collaborated directly with founders to ensure timely submission of applications and compliance requirements"
+      ]
     }
   ],
   "certifications": [
     {
-      "name": "Google Ads Display Certification",
+      "name": "Google Analytics 4 Certification",
       "issuer": "Google",
-      "year": "2026",
-      "url": ""
+      "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png",
+      "year": "2024",
+      "url": "https://skillshop.credential.net/"
     },
     {
-      "name": "Google Analytics Certification",
+      "name": "Google Ads Search Certification",
       "issuer": "Google",
-      "year": "2026",
-      "url": ""
+      "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png",
+      "year": "2024",
+      "url": "https://skillshop.credential.net/"
     },
     {
-      "name": "HubSpot Marketing Hub",
-      "issuer": "HubSpot",
-      "year": "2026",
-      "url": ""
+      "name": "HubSpot Marketing Software Certification",
+      "issuer": "HubSpot Academy",
+      "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/HubSpot_Logo.svg/320px-HubSpot_Logo.svg.png",
+      "year": "2024",
+      "url": "https://academy.hubspot.com/"
     },
     {
-      "name": "IELTS Academic (C1)",
-      "issuer": "British Council",
+      "name": "Digital Marketing & Analytics",
+      "issuer": "IE Business School",
+      "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IE_University_logo.svg/320px-IE_University_logo.svg.png",
       "year": "2025",
-      "url": ""
-    }
-  ],
-  "skills_columns": [
-    {
-      "title": "Data & Analytics",
-      "pills": ["SQL", "Excel", "Databricks", "Fabric", "Snowflake", "Power BI", "Tableau", "R"],
-      "subgroups": [
-        {
-          "name": "Cloud & DB",
-          "pills": ["Databricks", "Fabric", "Snowflake", "SQL"]
-        }
-      ]
-    },
-    {
-      "title": "Marketing Performance",
-      "pills": ["GA4", "SEO", "Google Ads", "HubSpot", "Performance Reporting", "Conversion Tracking"],
-      "subgroups": [
-        {
-          "name": "Tools",
-          "pills": ["GA4", "Google Ads", "HubSpot"]
-        }
-      ]
-    },
-    {
-      "title": "Strategy & Operations",
-      "pills": ["Market Research", "Strategic Analysis", "Strategic Consulting", "Workflow Optimization", "Stakeholder Communication"],
-      "subgroups": [
-        {
-          "name": "Consulting",
-          "pills": ["Market Research", "Strategic Analysis"]
-        }
-      ]
+      "url": "https://www.ie.edu/"
     }
   ]
 }

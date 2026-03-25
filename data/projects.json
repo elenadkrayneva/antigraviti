@@ -1,45 +1,42 @@
 [
   {
-    "id": "x5-digital-logistics",
-    "title": "Logistics Efficiency & Workforce Analysis",
-    "client": "X5 Digital",
-    "image": "/projects/x5-project.png",
-    "context": "Professional analysis for X5 Digital (one of the largest grocery retail chains in the region) focusing on workforce performance and delivery network optimization.",
-    "problem": "Challenges in delivery speed and logistics network scaling during peak growth periods, necessitating data-driven workforce planning and resource allocation.",
-    "metrics": [
-      "Headcount Optimization",
-      "Delivery Speed Trends",
-      "Onboarding Cycle Efficiency",
-      "Attrition Rate Analysis"
-    ],
+    "id": "digify-active",
+    "image": "/images/projects/digify_active.png",
+    "title": "DIGIFY ACTIVE | B2B Agency Growth Simulation",
+    "category": "Growth & Marketing Analytics",
+    "client": "SME fitness businesses",
+    "context": "A team-based academic project focused on building and testing a B2B marketing agency from scratch. The objective was to simulate a realistic go-to-market process, combining strategic positioning, UX/UI, SEO, paid acquisition, and performance analysis.",
+    "problem": "Many SME fitness businesses lack structured digital marketing capabilities and rely on fragmented acquisition channels. This created an opportunity to design a marketing service tailored to their operational constraints.",
     "actions": [
-      "Structured large-scale logistics datasets using SQL and Databricks.",
-      "Identified critical bottlenecks in the contractor onboarding cycle.",
-      "Developed a centralized reporting framework to track delivery network health monthly."
+      "Market Positioning & Offer Design: Developed value proposition and pricing logic for a service-based B2B offering.",
+      "Customer Journey & Conversion Funnel: Designed conversion-focused funnel and built landing pages in HubSpot.",
+      "UX/UI Design & SEO: Prototyped in Figma, applied foundational on-page SEO, and adapted UX to HubSpot constraints.",
+      "Paid Acquisition: Launched Google Ads (Search & Display) with a limited budget to test acquisition approaches.",
+      "Performance Analysis: Tracked CTR, CPA, and funnel behavior in HubSpot to identify drop-off points."
     ],
-    "myContribution": "Lead data analyst for this specific workstream, responsible for building the analysis from scratch and presenting dashboards to HR Business Partners and Logistics Directors.",
-    "result": "Created actionable insights that led to a 15% reduction in onboarding bottleneck time through process re-engineering and automated status tracking.",
-    "tags": ["SQL", "Databricks", "Excel", "Operations Analysis"]
+    "myContribution": "Designed conversion funnel structure and customer journey logic. Co-developed landing pages (copywriting and HubSpot implementation). Contributed to SEO research and participated in campaign analysis, connecting performance data with optimization decisions.",
+    "projectResult": "Conversion depended more on clarity of value proposition than traffic volume. Search campaigns outperformed Display. The simplified UX had a measurable impact on efficiency, resulting in real leads generated during the simulation.",
+    "metrics": ["End-to-End Workflow", "Real Leads Generated", "HubSpot & Google Ads"],
+    "tags": ["B2B Marketing", "Conversion Funnel", "Google Ads", "HubSpot", "UX/UI", "SEO"]
   },
   {
-    "id": "ai-startup-diagnostics",
-    "title": "Startup Strategic Positioning & Funding",
-    "client": "Scanderm (HealthTech Startup)",
-    "image": "/projects/ai-startup.png",
-    "context": "Engagement with a high-growth AI startup focused on dermatological diagnostics and computer vision technology.",
-    "problem": "Lack of structured internal processes and limited visibility into the external funding landscape, preventing scalable capital fundraising.",
-    "metrics": [
-      "Grant Landscape Mapping",
-      "Competitive Position SWOT",
-      "Documentation Integrity Index"
-    ],
+    "id": "ai-startup",
+    "image": "/images/projects/ai_startup.png",
+    "title": "AI STARTUP | Strategic Market Consulting",
+    "category": "Strategic Consulting",
+    "client": "Early-stage AI startup",
+    "context": "A short-term consulting engagement with an early-stage AI startup in image generation and dataset infrastructure. Still in product development, the focus was on strategic direction setting rather than performance optimization.",
+    "problem": "Given the absence of an established market presence, the primary objective was to identify a viable market opportunity: Where and how should the company position its core technology to achieve differentiation and long-term viability?",
     "actions": [
-      "Conducted thorough market research on direct AI-health competitors in Europe and CIS.",
-      "Identified and applied for several early-stage grant opportunities.",
-      "Designed and implemented a unified knowledge management system for R&D and operations."
+      "Week 1 — Analytical Phase: Conducted market landscape analysis, competitive benchmarking, and demand driver assessment.",
+      "Explored unconventional applications beyond the original use case to identify gaps in high-regulation industries.",
+      "Week 2 — Strategy & Recommendations: Developed new positioning logic scaling away from horizontal applications toward vertical specialization.",
+      "Designed a scalable SaaS-based business model and a phased go-to-market approach.",
+      "Structured funding and growth pathways."
     ],
-    "myContribution": "Strategic intern reporting directly to the Founder, acting as bridge between internal operations and external investor/grant outreach.",
-    "result": "Secured mapping of 10+ viable grand opportunities and implemented an internal workflow framework that scaled the startup's team coordination efficiency.",
-    "tags": ["Market Research", "Strategic Consulting", "Grants", "Startup Ops"]
+    "myContribution": "Responsible for market and industry analysis, competitive benchmarking, identification of strategic opportunity areas, and the development of the core positioning logic and go-to-market framework.",
+    "projectResult": "Identified that addressing a structural data gap in a specialized industry offered higher potential than horizontal AI use cases. Delivered a strategic report and presented to the CEO, establishing a viable, data-backed growth direction.",
+    "metrics": ["2-Week Sprint", "C-Level Presentation", "Vertical Repositioning"],
+    "tags": ["Market Analysis", "Strategic Positioning", "Competitive Benchmarking", "Go-To-Market"]
   }
 ]

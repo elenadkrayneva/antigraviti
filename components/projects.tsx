@@ -40,7 +40,7 @@ export default function Projects() {
               >
                 {/* Visual Image */}
                 {project.image && (
-                  <div className={`${styles.cardImage} ${project.id === 'ai-startup' ? styles.aiStartupImage : ''}`}>
+                  <div className={styles.cardImage}>
                     <img src={project.image} alt={project.title} />
                   </div>
                 )}
@@ -105,7 +105,7 @@ export default function Projects() {
 
                         <div className={styles.resultBlock}>
                           <span className={styles.label}>Outcome / Insights</span>
-                          <p className={styles.resultText}>{project.result}</p>
+                          <p className={styles.resultText}>{project.projectResult}</p>
                         </div>
                       </motion.div>
                     )}
