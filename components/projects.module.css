@@ -45,27 +45,24 @@
 
 .cardImage {
   width: 100%;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-bottom: 1px solid var(--border-subtle);
-  background: #f5f8ff;
-  /* Height is ~78% of image height, shifted to skip the top blue strip (~13%) */
-  height: 0;
-  padding-bottom: 44%; /* 16:9 * 0.78 ≈ 44% */
-  position: relative;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cardImage img {
-  position: absolute;
-  top: -14.5%; /* shift up to crop the blue header strip */
-  left: 0;
   width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.4s ease;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover .cardImage img {
-  transform: translateY(-2px) scale(1.015);
+  transform: scale(1.02);
 }
 
 .cardHeader {

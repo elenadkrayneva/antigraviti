@@ -45,12 +45,8 @@ export default function Projects() {
                   </div>
                 )}
                 
-                {/* Header */}
+                {/* Info Header */}
                 <div className={styles.cardHeader}>
-                  <span className={styles.categoryBadge}>{project.category}</span>
-                  <div className={styles.titleRow}>
-                    <h3 className={styles.title}>{project.title}</h3>
-                  </div>
                   <p className={styles.clientLine}>Client: <strong>{project.client}</strong></p>
                 </div>
 
