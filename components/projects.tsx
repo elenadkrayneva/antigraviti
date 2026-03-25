@@ -40,7 +40,7 @@ export default function Projects() {
               >
                 {/* Visual Image */}
                 {project.image && (
-                  <div className={styles.cardImage}>
+                  <div className={`${styles.cardImage} ${project.id === 'ai-startup' ? styles.aiStartupImage : ''}`}>
                     <img src={project.image} alt={project.title} />
                   </div>
                 )}
