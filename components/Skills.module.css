@@ -99,21 +99,27 @@
   .section {
     min-height: 100vh;
     display: flex;
-    align-items: center;
-    padding: 6rem 0 4rem;
-  }
-  .sectionTitle {
-    font-size: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0;
   }
   .grid {
-    margin-top: 1.5rem;
-    grid-template-columns: 1fr;
+    margin-top: 2rem;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     gap: 1rem;
+    padding: 1rem 1.25rem 2rem;
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+  .grid::-webkit-scrollbar {
+    display: none; /* Hide scrollbar Chrome/Safari */
   }
   .categoryCard {
-    padding: 1.25rem;
-  }
-  .categoryTitle {
-    margin-bottom: 0.75rem;
+    min-width: 280px;
+    scroll-snap-align: start;
+    padding: 1.5rem;
+    height: auto;
   }
 }
