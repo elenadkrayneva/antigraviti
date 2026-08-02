@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import styles from './Hero.module.css';
-import { ArrowRight, MapPin, Mail } from 'lucide-react';
+import { ArrowRight, MapPin, Mail, Github } from 'lucide-react';
 import cvData from '@/data/cv.json';
 
 export default function Hero() {
@@ -26,64 +26,68 @@ export default function Hero() {
     <section id="hero" className={styles.heroSection}>
       <div className={styles.content}>
         <motion.div
-          className={styles.availabilityBadge}
-          initial={{ opacity: 0, y: -16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.35 }}
-        >
-          <span className={styles.dot} />
-          Open to Internships & Consulting Roles
-        </motion.div>
+  className={styles.availabilityBadge}
+  initial={{ opacity: 0, y: -16 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.35 }}
+>
+  <span className={styles.dot} />
+  Open to Internships & Consulting Roles
+</motion.div>
 
-        <motion.h1
-          className={styles.name}
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.05 }}
-        >
-          {profile.name}
-        </motion.h1>
+<motion.h1
+  className={styles.name}
+  initial={{ opacity: 0, y: 24 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.4, delay: 0.05 }}
+>
+  {profile.name}
+</motion.h1>
 
-        <motion.p
-          className={styles.role}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.35, delay: 0.1 }}
-        >
-          {profile.role}
-        </motion.p>
+<motion.p
+  className={styles.role}
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.35, delay: 0.1 }}
+>
+  {profile.role}
+</motion.p>
 
-        <motion.p
-          className={styles.subheadline}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.35, delay: 0.15 }}
-        >
-          {profile.subheadline.split('**').map((part, index) =>
-            index % 2 === 1
-              ? <strong key={index} className={styles.bold}>{part}</strong>
-              : part
-          )}
-        </motion.p>
+<motion.p
+  className={styles.subheadline}
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.35, delay: 0.15 }}
+>
+  {profile.subheadline.split('**').map((part, index) =>
+    index % 2 === 1
+      ? <strong key={index} className={styles.bold}>{part}</strong>
+      : part
+  )}
+</motion.p>
 
-        <motion.div
-          className={styles.meta}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.3, delay: 0.2 }}
-        >
-          <span className={styles.metaItem}>
-            <MapPin size={14} /> {profile.location}
-          </span>
-          <span className={styles.metaItem}>
-            <Mail size={14} />
-            <a href={`mailto:${profile.email}`}>{profile.email}</a>
-          </span>
-          <span className={styles.metaItem}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </span>
-        </motion.div>
+<motion.div
+  className={styles.meta}
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 0.3, delay: 0.2 }}
+>
+  <span className={styles.metaItem}>
+    <MapPin size={14} /> {profile.location}
+  </span>
+  <span className={styles.metaItem}>
+    <Mail size={14} />
+    <a href={`mailto:${profile.email}`}>{profile.email}</a>
+  </span>
+  <span className={styles.metaItem}>
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+    <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </span>
+  <span className={styles.metaItem}>
+    <Github size={14} />
+    <a href={(profile as any).github} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+  </span>
+</motion.div>
 
         <motion.div
           className={styles.ctaGroup}

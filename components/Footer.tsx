@@ -16,6 +16,14 @@ export default function Footer() {
           >
             LinkedIn
           </a>
+          <a 
+            href="https://github.com/elenadkrayneva/antigraviti" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
+            GitHub Repo
+          </a>
         </div>
       </div>
     </footer>

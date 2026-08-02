@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import styles from './Contact.module.css';
-import { Mail, Phone, Linkedin } from 'lucide-react';
+import { Mail, Phone, Linkedin, Github } from 'lucide-react';
 import cvData from '@/data/cv.json';
 
 export default function Contact() {
@@ -54,6 +54,14 @@ export default function Contact() {
               <div>
                 <div className={styles.contactLabel}>LinkedIn</div>
                 <div className={styles.contactValue}>elena-d-krayneva</div>
+              </div>
+            </a>
+
+            <a href={(profile as any).github} target="_blank" rel="noopener noreferrer" className={styles.contactCard}>
+              <div className={styles.contactIcon}><Github size={20} /></div>
+              <div>
+                <div className={styles.contactLabel}>GitHub</div>
+                <div className={styles.contactValue}>Portfolio Repo</div>
               </div>
             </a>
 
