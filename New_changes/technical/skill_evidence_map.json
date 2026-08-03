@@ -1,0 +1,169 @@
+{
+  "popoverTitle": "See how I applied this skill",
+  "evidence": {
+    "Conversion Funnel Analysis": [
+      {
+        "label": "Digify Active",
+        "detail": "Analysed the acquisition funnel and identified conversion drop-off points.",
+        "href": "/projects/digify-active"
+      }
+    ],
+    "Google Ads": [
+      {
+        "label": "Digify Active",
+        "detail": "Supported Search and Display campaign execution and performance analysis.",
+        "href": "/projects/digify-active"
+      }
+    ],
+    "HubSpot": [
+      {
+        "label": "Digify Active",
+        "detail": "Built landing pages, lead-capture forms, and funnel structure in HubSpot.",
+        "href": "/projects/digify-active"
+      }
+    ],
+    "Keyword Research": [
+      {
+        "label": "Digify Active",
+        "detail": "Conducted keyword research for paid acquisition and website optimisation.",
+        "href": "/projects/digify-active"
+      }
+    ],
+    "On-Page SEO": [
+      {
+        "label": "Digify Active",
+        "detail": "Applied on-page optimisation within the project website.",
+        "href": "/projects/digify-active"
+      }
+    ],
+    "Market Research": [
+      {
+        "label": "AI Startup",
+        "detail": "Compared potential industry verticals and evaluated market attractiveness.",
+        "href": "/projects/ai-startup-strategy"
+      },
+      {
+        "label": "Oblicuo Hi-Fi Bar",
+        "detail": "Combined customer and competitor research to support the strategy.",
+        "href": "/projects/oblicuo-customer-strategy"
+      }
+    ],
+    "Competitor Analysis": [
+      {
+        "label": "AI Startup",
+        "detail": "Benchmarked competitors and positioning gaps across market options.",
+        "href": "/projects/ai-startup-strategy"
+      },
+      {
+        "label": "Oblicuo Hi-Fi Bar",
+        "detail": "Reviewed competitor positioning and social-media activity.",
+        "href": "/projects/oblicuo-customer-strategy"
+      }
+    ],
+    "Market Prioritisation": [
+      {
+        "label": "AI Startup",
+        "detail": "Evaluated and prioritised industry verticals using structured criteria.",
+        "href": "/projects/ai-startup-strategy"
+      }
+    ],
+    "Strategic Positioning": [
+      {
+        "label": "AI Startup",
+        "detail": "Contributed to the strategic positioning logic for vertical specialisation.",
+        "href": "/projects/ai-startup-strategy"
+      }
+    ],
+    "Go-to-Market Strategy": [
+      {
+        "label": "AI Startup",
+        "detail": "Contributed to a phased go-to-market and implementation roadmap.",
+        "href": "/projects/ai-startup-strategy"
+      }
+    ],
+    "Customer Research": [
+      {
+        "label": "Oblicuo Hi-Fi Bar",
+        "detail": "Conducted and analysed 16 in-venue customer interviews.",
+        "href": "/projects/oblicuo-customer-strategy"
+      }
+    ],
+    "Customer Journey Mapping": [
+      {
+        "label": "Digify Active",
+        "detail": "Mapped the acquisition journey from awareness to lead submission.",
+        "href": "/projects/digify-active"
+      },
+      {
+        "label": "Oblicuo Hi-Fi Bar",
+        "detail": "Mapped the journey from awareness through visit and loyalty.",
+        "href": "/projects/oblicuo-customer-strategy"
+      }
+    ],
+    "KPI Reporting": [
+      {
+        "label": "Digify Active",
+        "detail": "Analysed campaign and conversion KPIs.",
+        "href": "/projects/digify-active"
+      },
+      {
+        "label": "X5 Digital",
+        "detail": "Built KPI-based workforce reports and presentations.",
+        "href": "/#x5-digital"
+      }
+    ],
+    "People Analytics": [
+      {
+        "label": "X5 Digital",
+        "detail": "Analysed workforce data and supported talent-review reporting.",
+        "href": "/#x5-digital"
+      }
+    ],
+    "Workforce Analytics": [
+      {
+        "label": "X5 Digital",
+        "detail": "Analysed headcount, onboarding, attrition, and leave data.",
+        "href": "/#x5-digital"
+      }
+    ],
+    "Process Analysis": [
+      {
+        "label": "Technologies of Trust",
+        "detail": "Maintained process visibility across contractor administration and approvals.",
+        "href": "/#technologies-of-trust"
+      }
+    ],
+    "Process Improvement": [
+      {
+        "label": "Technologies of Trust",
+        "detail": "Structured workflows and tracking across HR, legal, finance, and business teams.",
+        "href": "/#technologies-of-trust"
+      }
+    ],
+    "Stakeholder Coordination": [
+      {
+        "label": "X5 Digital",
+        "detail": "Coordinated recurring reporting and data requests with HRBP and stakeholders.",
+        "href": "/#x5-digital"
+      },
+      {
+        "label": "Technologies of Trust",
+        "detail": "Coordinated approvals across HR, legal, finance, and business teams.",
+        "href": "/#technologies-of-trust"
+      }
+    ],
+    "Excel": [
+      {
+        "label": "Technologies of Trust",
+        "detail": "Developed and maintained trackers for approvals, renewals, payments, deadlines, and requests.",
+        "href": "/#technologies-of-trust"
+      },
+      {
+        "label": "X5 Digital",
+        "detail": "Structured workforce data for KPI reporting and presentations.",
+        "href": "/#x5-digital"
+      }
+    ]
+  },
+  "rule": "Only apply these mappings when the exact or equivalent skill already exists on the current site. Do not add missing skills to the page merely because they appear in this file."
+}

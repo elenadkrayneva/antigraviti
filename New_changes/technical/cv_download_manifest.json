@@ -1,0 +1,21 @@
+{
+  "triggerLabel": "Download CV",
+  "dialogTitle": "Choose CV language",
+  "files": [
+    {
+      "label": "English",
+      "path": "/assets/cv/Elena_Krayneva_CV_EN.pdf",
+      "downloadName": "Elena_Krayneva_CV_EN.pdf"
+    },
+    {
+      "label": "Español",
+      "path": "/assets/cv/Elena_Krayneva_CV_ES.pdf",
+      "downloadName": "Elena_Krayneva_CV_ES.pdf"
+    },
+    {
+      "label": "Русский",
+      "path": "/assets/cv/Elena_Krayneva_CV_RU.pdf",
+      "downloadName": "Elena_Krayneva_CV_RU.pdf"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 'use client';
+
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './Experience.module.css';
@@ -8,18 +9,19 @@ import cvData from '@/data/cv.json';
 export default function Experience() {
   const { experience } = cvData;
   const [expanded, setExpanded] = useState(false);
-  
-  // Set the first open card to the first entry if exists
-  const [openCards, setOpenCards] = useState<Set<string>>(new Set(experience.length > 0 ? [experience[0].id] : []));
+  const [openCards, setOpenCards] = useState<Set<string>>(
+    new Set(experience.map((e: any) => e.id))
+  );
 
   const featured = experience.filter((e: any) => e.featured);
   const extra = experience.filter((e: any) => !e.featured);
   const shown = expanded ? experience : featured;
 
   const toggleCard = (id: string) => {
-    setOpenCards(prev => {
+    setOpenCards((prev) => {
       const next = new Set(prev);
-      if (next.has(id)) next.delete(id); else next.add(id);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
       return next;
     });
   };
@@ -35,7 +37,9 @@ export default function Experience() {
           className={styles.header}
         >
           <h2 className={styles.sectionTitle}>Professional Experience</h2>
-          <p className={styles.sectionSubtitle}>Data analysis, structured workflows, and KPI reporting across analytics and operations roles.</p>
+          <p className={styles.sectionSubtitle}>
+            Data analysis, structured workflows, and KPI reporting across analytics and operations roles.
+          </p>
         </motion.div>
 
         <div className={styles.timeline}>
@@ -44,6 +48,7 @@ export default function Experience() {
             return (
               <motion.div
                 key={exp.id}
+                id={exp.id}
                 className={styles.card}
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -70,7 +75,11 @@ export default function Experience() {
                   </div>
                   <div className={styles.cardRight}>
                     <span className={styles.dateBadge}>{exp.date}</span>
-                    {isOpen ? <ChevronUp size={18} className={styles.chevron} /> : <ChevronDown size={18} className={styles.chevron} />}
+                    {isOpen ? (
+                      <ChevronUp size={18} className={styles.chevron} />
+                    ) : (
+                      <ChevronDown size={18} className={styles.chevron} />
+                    )}
                   </div>
                 </button>
 
@@ -99,14 +108,16 @@ export default function Experience() {
 
         {extra.length > 0 && (
           <div className={styles.showMoreWrapper}>
-            <button
-              className={styles.showMoreBtn}
-              onClick={() => setExpanded(!expanded)}
-            >
+            <button className={styles.showMoreBtn} onClick={() => setExpanded(!expanded)}>
               {expanded ? (
-                <><ChevronUp size={16} /> Show less</>
+                <>
+                  <ChevronUp size={16} /> Show less
+                </>
               ) : (
-                <><ChevronDown size={16} /> Show {extra.length} more experience{extra.length > 1 ? 's' : ''}</>
+                <>
+                  <ChevronDown size={16} /> Show {extra.length} more experience
+                  {extra.length > 1 ? 's' : ''}
+                </>
               )}
             </button>
           </div>

@@ -1,0 +1,9 @@
+Implement the website update using the attached package as the sole source of truth.
+
+Start with `README_FIRST.md`, then follow `01_MASTER_IMPLEMENTATION_BRIEF_RU.md` and the exact copy in `02_EXACT_COPY_EN.md`. Use `content/site_content.json` for labels, routes and approved text. Build the three project skeletons according to `project_specs/` without inventing content. Implement interactions according to `technical/interactions_and_accessibility.md` and finish only when every item in `05_ACCEPTANCE_CHECKLIST.md` passes.
+
+Do not redesign the website from scratch. Preserve the existing visual identity. Do not expose the confidential AI project name anywhere. Remove phone number, Qwell, Databricks, Snowflake, McKinsey Forward, unfinished SQL certification, internship-seeking copy, duplicated AI CTAs and old Technologies of Trust copy.
+
+Use the supplied CV PDFs in `assets/cv/` for the language-selector download flow.
+
+At handoff, provide the changed-file list, created routes, confidentiality and phone-number scan results, link tests, responsive/accessibility checks and screenshots required by the master brief.

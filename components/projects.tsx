@@ -1,15 +1,32 @@
 'use client';
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 import styles from './projects.module.css';
-import { ChevronDown, ChevronUp } from 'lucide-react';
-import projectsData from '@/data/projects.json';
+
+const FEATURED_PROJECTS = [
+  {
+    slug: 'ai-startup-strategy',
+    title: 'AI Startup — Strategic Market Consulting',
+    type: 'Academic consulting project',
+    description:
+      'Academic consulting project completed for an early-stage AI company developing automated image-processing and synthetic-data solutions. The task was to compare potential industry verticals and recommend the strongest direction for differentiation and scalable growth.',
+    cta: 'View more',
+    href: '/projects/ai-startup-strategy',
+  },
+  {
+    slug: 'digify-active',
+    title: 'Digify Active — B2B Growth & Marketing Analytics',
+    type: 'Applied academic project',
+    description:
+      'Applied academic project focused on developing a B2B marketing concept for SME fitness businesses. The task was to build and test an acquisition funnel connecting positioning, landing pages, paid campaigns, and conversion analysis.',
+    cta: 'View more',
+    href: '/projects/digify-active',
+  },
+];
 
 export default function Projects() {
-  const [openId, setOpenId] = useState<string | null>(null);
-
-  const toggle = (id: string) => setOpenId(prev => prev === id ? null : id);
-
   return (
     <section id="projects" className={styles.section}>
       <div className="container">
@@ -20,107 +37,38 @@ export default function Projects() {
           transition={{ duration: 0.35 }}
           className={styles.header}
         >
-          <h2 className={styles.sectionTitle}>Case Studies</h2>
-          <p className={styles.sectionSubtitle}>
-            Applied consulting and marketing analytics projects — structured approach, real clients, measurable thinking.
-          </p>
+          <h2 className={styles.sectionTitle}>Featured Projects</h2>
         </motion.div>
 
         <div className={styles.grid}>
-          {(projectsData as any[]).map((project, index) => {
-            const isOpen = openId === project.id;
-            return (
-              <motion.article
-                key={project.id}
-                className={`${styles.card} ${isOpen ? styles.cardOpen : ''}`}
-                initial={{ opacity: 0, y: 28 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.05, duration: 0.35 }}
-              >
-                {/* Visual Image */}
-                {project.image && (
-                  <div className={`${styles.cardImage} ${project.id === 'ai-startup' ? styles.strategicZoom : ''}`}>
-                    <img src={project.image} alt={project.title} />
-                  </div>
-                )}
-                
-                {/* Info Header */}
-                <div className={styles.cardHeader}>
-                  <p className={styles.clientLine}>Client: <strong>{project.client}</strong></p>
+          {FEATURED_PROJECTS.map((project, index) => (
+            <motion.article
+              key={project.slug}
+              className={styles.card}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1, duration: 0.35 }}
+            >
+              <div className={styles.cardContent}>
+                <div className={styles.cardBadge}>{project.type}</div>
+                <h3 className={styles.cardTitle}>{project.title}</h3>
+                <p className={styles.cardDescription}>{project.description}</p>
+
+                <div className={styles.cardFooter}>
+                  <Link href={project.href} className={styles.cardLink}>
+                    {project.cta} <ArrowRight size={16} className={styles.arrowIcon} />
+                  </Link>
                 </div>
+              </div>
+            </motion.article>
+          ))}
+        </div>
 
-                {/* Content */}
-                <div className={styles.cardBody}>
-                  <p className={styles.context}>{project.context}</p>
-
-                  <div className={styles.problemBox}>
-                    <span className={styles.label}>Business Problem</span>
-                    <p className={styles.problemText}>{project.problem}</p>
-                  </div>
-
-                  {/* Metrics chips */}
-                  {project.metrics && (
-                    <div className={styles.metrics}>
-                      {project.metrics.map((m: string, i: number) => (
-                        <span key={i} className={styles.metric}>
-                          {m}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-
-                  {/* Expand / Collapse Button */}
-                  <button
-                    className={styles.expandBtn}
-                    onClick={() => toggle(project.id)}
-                    aria-expanded={isOpen}
-                  >
-                    {isOpen ? <><ChevronUp size={15} /> Hide details</> : <><ChevronDown size={15} /> Expand project details</>}
-                  </button>
-
-                  {/* Always Expanded Content */}
-                  <AnimatePresence initial={false}>
-                    {isOpen && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.35, ease: 'easeInOut' }}
-                        className={styles.expandedContent}
-                      >
-                        <div className={styles.actionsBlock}>
-                          <span className={styles.label}>What Was Done</span>
-                          <ul className={styles.actionList}>
-                            {project.actions.map((a: string, i: number) => (
-                              <li key={i}>{a}</li>
-                            ))}
-                          </ul>
-                        </div>
-
-                        <div className={styles.contributionBlock}>
-                          <span className={styles.label}>My Contribution</span>
-                          <p>{project.myContribution}</p>
-                        </div>
-
-                        <div className={styles.resultBlock}>
-                          <span className={styles.label}>Outcome / Insights</span>
-                          <p className={styles.resultText}>{project.projectResult}</p>
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-
-                {/* Tags */}
-                <div className={styles.tags}>
-                  {project.tags.map((tag: string) => (
-                    <span key={tag} className={styles.tag}>{tag}</span>
-                  ))}
-                </div>
-              </motion.article>
-            );
-          })}
+        <div className={styles.allProjectsWrapper}>
+          <Link href="/projects" className={styles.viewAllBtn}>
+            View All Projects <ArrowRight size={18} className={styles.arrowIcon} />
+          </Link>
         </div>
       </div>
     </section>

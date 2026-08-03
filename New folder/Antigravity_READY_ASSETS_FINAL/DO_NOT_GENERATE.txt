@@ -1,0 +1,1 @@
+All project visuals are already included in the assets folder. Do not generate, recreate, redraw, replace, or source additional visuals. Integrate the supplied files exactly as mapped in EXECUTE_THIS.md.

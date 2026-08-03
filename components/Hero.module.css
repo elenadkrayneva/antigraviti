@@ -49,21 +49,21 @@
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1;
-  color: var(--fg-primary);
+  color: var(--fg-primary, #111827);
   margin-bottom: 1rem;
 }
 
 .role {
   font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 600;
-  color: var(--brand-accent);
+  color: var(--brand-accent, #2563eb);
   margin-bottom: 1.5rem;
   letter-spacing: -0.01em;
 }
 
 .subheadline {
   font-size: 1.125rem;
-  color: var(--fg-secondary);
+  color: var(--fg-secondary, #4b5563);
   max-width: 700px;
   line-height: 1.7;
   margin-bottom: 2rem;
@@ -71,7 +71,7 @@
 
 .bold {
   font-weight: 700;
-  color: var(--fg-primary);
+  color: var(--fg-primary, #111827);
 }
 
 .meta {
@@ -86,91 +86,121 @@
   align-items: center;
   gap: 6px;
   font-size: 0.9rem;
-  color: var(--fg-muted);
+  color: var(--fg-muted, #6b7280);
   font-weight: 500;
 }
 
 .metaItem a {
-  color: var(--fg-muted);
+  color: var(--fg-muted, #6b7280);
   transition: color 0.2s;
 }
 
 .metaItem a:hover {
-  color: var(--brand-accent);
+  color: var(--brand-accent, #2563eb);
 }
 
 .ctaGroup {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.875rem;
 }
 
+/* 1. Primary CTA: Contact me (Rich Blue) */
 .btnPrimary {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  background: #000000;
+  height: 48px;
+  padding: 0 24px;
+  background: var(--brand-accent, #2563eb);
   color: #ffffff;
-  border: none;
-  padding: 14px 28px;
-  border-radius: var(--radius-sm);
-  font-weight: 700;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  border: 1px solid #1d4ed8;
+  border-radius: 10px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
 }
 
 .btnPrimary:hover {
+  background: #1d4ed8;
+  border-color: #1e40af;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.35);
 }
 
+.btnPrimary:focus-visible {
+  outline: 3px solid #60a5fa;
+  outline-offset: 3px;
+}
+
+/* 2. Secondary CTA: View Projects (Light Blue) */
 .btnSecondary {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  background: var(--brand-accent);
-  color: #ffffff;
-  border: none;
-  padding: 14px 28px;
-  border-radius: var(--radius-sm);
-  font-weight: 700;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  height: 48px;
+  padding: 0 24px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .btnSecondary:hover {
+  background: #dbeafe;
+  color: #1e40af;
+  border-color: #bfdbfe;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(37,99,235,0.25);
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.12);
 }
 
+.btnSecondary:focus-visible {
+  outline: 3px solid #60a5fa;
+  outline-offset: 3px;
+}
+
+/* 3. Tertiary CTA: Download CV (Solid Black) */
 .btnGhost {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #f8fafc;
-  color: #475569;
-  border: 1px solid #cbd5e1;
-  padding: 14px 28px; /* Consistent with other hero buttons */
-  border-radius: var(--radius-sm);
-  font-weight: 700;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  gap: 8px;
+  height: 48px;
+  padding: 0 24px;
+  background: #111827;
+  color: #ffffff;
+  border: 1px solid #111827;
+  border-radius: 10px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(17, 24, 39, 0.15);
 }
 
 .btnGhost:hover {
-  background: #f1f5f9;
-  border-color: #94a3b8;
-  color: var(--fg-primary);
+  background: #1f2937;
+  border-color: #1f2937;
+  color: #ffffff;
   transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.25);
+}
+
+.btnGhost:focus-visible {
+  outline: 3px solid #9ca3af;
+  outline-offset: 3px;
 }
 
 /* Decorative background blobs */
@@ -236,7 +266,8 @@
   }
   .btnPrimary, .btnSecondary, .btnGhost {
     width: 100%;
-    padding: 10px 20px;
-    font-size: 0.75rem;
+    height: 44px;
+    padding: 0 16px;
+    font-size: 0.875rem;
   }
 }

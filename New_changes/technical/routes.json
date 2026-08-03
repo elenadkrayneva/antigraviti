@@ -1,0 +1,32 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "page": "Homepage"
+    },
+    {
+      "path": "/projects",
+      "page": "Projects index"
+    },
+    {
+      "path": "/projects/ai-startup-strategy",
+      "page": "AI Startup skeleton"
+    },
+    {
+      "path": "/projects/digify-active",
+      "page": "Digify Active skeleton"
+    },
+    {
+      "path": "/projects/oblicuo-customer-strategy",
+      "page": "Oblicuo skeleton"
+    }
+  ],
+  "homepageAnchors": [
+    "experience",
+    "skills",
+    "education",
+    "contact",
+    "x5-digital",
+    "technologies-of-trust"
+  ]
+}

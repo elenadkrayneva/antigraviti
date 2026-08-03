@@ -1,0 +1,139 @@
+{
+  "version": "1.0",
+  "date": "2026-08-02",
+  "hero": {
+    "title": "Marketing & Business Analytics | Strategy",
+    "subtitle": "I combine professional experience in people analytics and process improvement with applied projects in marketing analytics, customer research, and market strategy. I turn data and research into clear recommendations, dashboards, and action plans.",
+    "ctas": [
+      {
+        "label": "Contact Me",
+        "action": "scroll",
+        "target": "#contact",
+        "priority": "primary"
+      },
+      {
+        "label": "View Projects",
+        "action": "navigate",
+        "target": "/projects",
+        "priority": "secondary"
+      },
+      {
+        "label": "Download CV",
+        "action": "open_cv_language_selector",
+        "priority": "tertiary"
+      }
+    ]
+  },
+  "featuredProjects": [
+    {
+      "slug": "ai-startup-strategy",
+      "title": "AI Startup — Strategic Market Consulting",
+      "type": "Academic consulting project",
+      "description": "Academic consulting project completed for an early-stage AI company developing automated image-processing and synthetic-data solutions. The task was to compare potential industry verticals and recommend the strongest direction for differentiation and scalable growth.",
+      "cta": "View more",
+      "href": "/projects/ai-startup-strategy"
+    },
+    {
+      "slug": "digify-active",
+      "title": "Digify Active — B2B Growth & Marketing Analytics",
+      "type": "Applied academic project",
+      "description": "Applied academic project focused on developing a B2B marketing concept for SME fitness businesses. The task was to build and test an acquisition funnel connecting positioning, landing pages, paid campaigns, and conversion analysis.",
+      "cta": "View more",
+      "href": "/projects/digify-active"
+    }
+  ],
+  "projectsIndex": {
+    "title": "Projects",
+    "subtitle": "Selected projects in marketing analytics, strategy, customer research, and business analysis.",
+    "projects": [
+      {
+        "slug": "ai-startup-strategy",
+        "title": "AI Startup — Strategic Market Consulting",
+        "type": "Academic consulting project",
+        "description": "Compared potential industry verticals for an early-stage AI company and developed a strategic recommendation based on market attractiveness, competitive differentiation, adoption barriers, and implementation feasibility.",
+        "tags": [
+          "Market Research",
+          "Competitive Analysis",
+          "Market Prioritisation",
+          "Strategic Positioning",
+          "Go-to-Market Strategy"
+        ],
+        "href": "/projects/ai-startup-strategy"
+      },
+      {
+        "slug": "digify-active",
+        "title": "Digify Active — B2B Growth & Marketing Analytics",
+        "type": "Applied academic project",
+        "context": "Target market: SME fitness businesses",
+        "description": "Developed and tested a B2B acquisition funnel for SME fitness businesses, connecting positioning, HubSpot landing pages, Google Ads, and conversion performance analysis.",
+        "tags": [
+          "Funnel Analysis",
+          "Google Ads",
+          "HubSpot",
+          "Marketing Analytics",
+          "B2B Strategy"
+        ],
+        "href": "/projects/digify-active"
+      },
+      {
+        "slug": "oblicuo-customer-strategy",
+        "title": "Oblicuo Hi-Fi Bar — Customer Research & Social Strategy",
+        "type": "Applied academic project",
+        "description": "Conducted customer research for a Barcelona hi-fi bar to understand barriers to weekday visits and translate customer insights into a measurable growth and communication strategy.",
+        "tags": [
+          "Customer Research",
+          "Qualitative Interviews",
+          "Segmentation",
+          "Customer Journey",
+          "KPI Framework"
+        ],
+        "href": "/projects/oblicuo-customer-strategy"
+      }
+    ]
+  },
+  "experience": {
+    "x5": {
+      "anchor": "x5-digital",
+      "role": "HRBP Assistant — People Analytics & Reporting",
+      "companyContext": "Digital division of X5 Group, Russia’s largest food retailer.",
+      "dates": "Feb 2025 – Jul 2025",
+      "bullets": [
+        "Analysed workforce data across 500+ employee records, including headcount, onboarding, attrition, and leave.",
+        "Built KPI-based reports, dashboards, and presentations for HR leadership and management decision-making.",
+        "Processed 150+ manager inputs for talent review and succession planning, improving data completeness and supporting insight generation.",
+        "Coordinated recurring reporting and data requests in collaboration with HRBP and cross-functional stakeholders."
+      ]
+    },
+    "tedo": {
+      "anchor": "technologies-of-trust",
+      "role": "HR Specialist — Process & Data Support",
+      "companyContext": "Russian audit and consulting firm, successor to PwC Russia.",
+      "dates": "Dec 2023 – Feb 2025",
+      "bullets": [
+        "Managed the full cycle of administration and documentation for 30+ external contractors each month.",
+        "Developed and maintained Excel trackers for contract approvals, renewals, payments, deadlines, and incoming requests.",
+        "Coordinated approval processes across HR, legal, finance, and business teams.",
+        "Supported calculations and payments by collecting data, validating accuracy, and monitoring deadlines.",
+        "Trained a colleague on HR processes and corporate systems and prepared supporting training materials."
+      ]
+    }
+  },
+  "contact": {
+    "anchor": "contact",
+    "title": "Contact",
+    "body": "For professional opportunities or conversations related to marketing analytics, business analysis, and strategy, contact me by email or LinkedIn.",
+    "actions": [
+      "Email Me",
+      "LinkedIn"
+    ]
+  },
+  "aiAssistant": {
+    "position": "fixed-bottom-right",
+    "invitation": {
+      "title": "Curious about my experience?",
+      "body": "Ask about my projects, skills, or professional background.",
+      "button": "Ask a question",
+      "frequency": "once-per-browser-session"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "routes": {
+    "ai-startup-strategy": "/projects/ai-startup-strategy",
+    "digify-active": "/projects/digify-active",
+    "oblicuo-customer-strategy": "/projects/oblicuo-customer-strategy"
+  },
+  "pageCharacter": {
+    "ai-startup-strategy": "strategic, structured, decision-framework-led",
+    "digify-active": "performance-oriented, funnel-led, applied",
+    "oblicuo-customer-strategy": "editorial, insight-led, customer-centred"
+  },
+  "strategicRecommendationHeadlines": {
+    "ai-startup-strategy": "Shift from broad horizontal competition to focused vertical specialisation.",
+    "digify-active": "Build acquisition around intent-led targeting and an end-to-end conversion funnel.",
+    "oblicuo-customer-strategy": "Use social media as a risk-reduction tool for weekday visits."
+  },
+  "requiredNewVisuals": {
+    "ai-startup-strategy": [
+      "metadata strip",
+      "recommendation logic flow",
+      "clean roadmap if needed"
+    ],
+    "digify-active": [
+      "metadata strip",
+      "customer journey",
+      "acquisition funnel",
+      "search vs display comparison",
+      "performance metric strip",
+      "optimisation grid"
+    ],
+    "oblicuo-customer-strategy": [
+      "metadata strip",
+      "research-in-numbers strip",
+      "priority segment spotlight",
+      "customer journey if needed"
+    ]
+  }
+}

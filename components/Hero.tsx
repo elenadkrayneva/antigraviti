@@ -1,93 +1,84 @@
 'use client';
+
+import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import styles from './Hero.module.css';
-import { ArrowRight, MapPin, Mail, Github } from 'lucide-react';
+import { ArrowRight, Mail, Linkedin, Github, Download } from 'lucide-react';
 import cvData from '@/data/cv.json';
+import CvLanguageModal from './CvLanguageModal';
 
 export default function Hero() {
   const { profile } = cvData;
+  const [isCvModalOpen, setIsCvModalOpen] = useState(false);
 
-  const handleScroll = (id: string) => {
-    const el = document.getElementById(id);
+  const handleContactClick = () => {
+    const el = document.getElementById('contact');
     if (el) {
       const offset = 80;
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = el.getBoundingClientRect().top;
       const offsetPosition = elementRect - bodyRect - offset;
       window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+      setTimeout(() => {
+        el.focus({ preventScroll: true });
+      }, 500);
     }
-  };
-
-  const openChatbot = () => {
-    window.dispatchEvent(new CustomEvent('open-chatbot'));
   };
 
   return (
     <section id="hero" className={styles.heroSection}>
       <div className={styles.content}>
+        <motion.h1
+          className={styles.name}
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.05 }}
+        >
+          {profile.name}
+        </motion.h1>
+
+        <motion.p
+          className={styles.role}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.35, delay: 0.1 }}
+        >
+          {profile.role}
+        </motion.p>
+
+        <motion.p
+          className={styles.subheadline}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.35, delay: 0.15 }}
+        >
+          {profile.subheadline}
+        </motion.p>
+
         <motion.div
-  className={styles.availabilityBadge}
-  initial={{ opacity: 0, y: -16 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.35 }}
->
-  <span className={styles.dot} />
-  Open to Internships & Consulting Roles
-</motion.div>
-
-<motion.h1
-  className={styles.name}
-  initial={{ opacity: 0, y: 24 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.4, delay: 0.05 }}
->
-  {profile.name}
-</motion.h1>
-
-<motion.p
-  className={styles.role}
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.35, delay: 0.1 }}
->
-  {profile.role}
-</motion.p>
-
-<motion.p
-  className={styles.subheadline}
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.35, delay: 0.15 }}
->
-  {profile.subheadline.split('**').map((part, index) =>
-    index % 2 === 1
-      ? <strong key={index} className={styles.bold}>{part}</strong>
-      : part
-  )}
-</motion.p>
-
-<motion.div
-  className={styles.meta}
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ duration: 0.3, delay: 0.2 }}
->
-  <span className={styles.metaItem}>
-    <MapPin size={14} /> {profile.location}
-  </span>
-  <span className={styles.metaItem}>
-    <Mail size={14} />
-    <a href={`mailto:${profile.email}`}>{profile.email}</a>
-  </span>
-  <span className={styles.metaItem}>
-    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-    <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
-  </span>
-  <span className={styles.metaItem}>
-    <Github size={14} />
-    <a href={(profile as any).github} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
-  </span>
-</motion.div>
+          className={styles.meta}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3, delay: 0.2 }}
+        >
+          <span className={styles.metaItem}>
+            <Mail size={14} />
+            <a href={`mailto:${profile.email}`}>{profile.email}</a>
+          </span>
+          <span className={styles.metaItem}>
+            <Linkedin size={14} />
+            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+          </span>
+          <span className={styles.metaItem}>
+            <Github size={14} />
+            <a href={profile.github} target="_blank" rel="noopener noreferrer">
+              GitHub Portfolio
+            </a>
+          </span>
+        </motion.div>
 
         <motion.div
           className={styles.ctaGroup}
@@ -95,15 +86,15 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.35, delay: 0.25 }}
         >
-          <button onClick={() => handleScroll('projects')} className={styles.btnPrimary}>
-            View Case Studies <ArrowRight size={16} />
+          <button onClick={() => setIsCvModalOpen(true)} className={styles.btnGhost}>
+            Download CV <Download size={16} />
           </button>
-          <button onClick={() => handleScroll('contact')} className={styles.btnSecondary}>
-            Contact Me
+          <button onClick={handleContactClick} className={styles.btnPrimary}>
+            Contact me <ArrowRight size={16} />
           </button>
-          <button onClick={openChatbot} className={styles.btnGhost}>
-            Ask AI About Me
-          </button>
+          <Link href="/projects" className={styles.btnSecondary}>
+            View Projects
+          </Link>
         </motion.div>
       </div>
 
@@ -111,6 +102,8 @@ export default function Hero() {
         <div className={styles.decorBlob1} />
         <div className={styles.decorBlob2} />
       </div>
+
+      <CvLanguageModal isOpen={isCvModalOpen} onClose={() => setIsCvModalOpen(false)} />
     </section>
   );
 }

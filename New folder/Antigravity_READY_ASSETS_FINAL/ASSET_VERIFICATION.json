@@ -1,0 +1,236 @@
+[
+  {
+    "file": "assets/ai_startup/ai-gtm-roadmap-clean.png",
+    "width": 1600,
+    "height": 700,
+    "ok": true
+  },
+  {
+    "file": "assets/ai_startup/ai-prioritisation-framework.png",
+    "width": 1600,
+    "height": 1000,
+    "ok": true
+  },
+  {
+    "file": "assets/ai_startup/ai-recommendation-logic.png",
+    "width": 1600,
+    "height": 700,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/landing/01-landing-hero.png",
+    "width": 1280,
+    "height": 800,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/landing/02-lead-capture-form.png",
+    "width": 1280,
+    "height": 800,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/landing/03-testimonial-section.png",
+    "width": 1280,
+    "height": 800,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/landing/04-services-section.png",
+    "width": 1280,
+    "height": 800,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/media_metrics/01-agency-and-niche.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/media_metrics/02-kenzen-client-profile.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/media_metrics/03-competitor-mou-pilates.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/media_metrics/04-competitor-vibra.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/media_metrics/05-competitor-pampa.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/media_metrics/06-client-analysis.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/media_metrics/07-content-inspiration-and-trends.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/media_metrics/08-video-production-process.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/media_metrics/09-final-video-and-message.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/media_metrics/10-performance-results.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/media_metrics/11-engagement-results.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/media_metrics/12-audience-insights.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/media_metrics/13-improvement-recommendations.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/pitch_innovation/01-agency-overview.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/pitch_innovation/02-strategic-diagnosis.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/pitch_innovation/03-luma-workshop.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/pitch_innovation/04-active360-pitch.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/pitch_innovation/05-active360-concept-framework.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/pitch_innovation/06-active360-prototype.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/pitch_innovation/07-targeting-and-positioning.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/pitch_innovation/08-pricing-and-competitor-benchmark.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/pitch_innovation/09-channel-selection-bullseye.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/pitch_innovation/10-promotional-activity-mockups.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/pitch_innovation/11-tam-estimation.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/pitch_innovation/12-cost-structure.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/pitch_innovation/13-financial-projection.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/digify/pitch_innovation/14-success-metrics.png",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "file": "assets/oblicuo/oblicuo-customer-journey.png",
+    "width": 1600,
+    "height": 850,
+    "ok": true
+  },
+  {
+    "file": "assets/oblicuo/oblicuo-key-insights-board.png",
+    "width": 1600,
+    "height": 950,
+    "ok": true
+  },
+  {
+    "file": "assets/oblicuo/oblicuo-kpi-chain.png",
+    "width": 1600,
+    "height": 650,
+    "ok": true
+  },
+  {
+    "file": "assets/oblicuo/oblicuo-priority-segment-spotlight.png",
+    "width": 1600,
+    "height": 900,
+    "ok": true
+  },
+  {
+    "file": "assets/oblicuo/oblicuo-research-in-numbers.png",
+    "width": 1600,
+    "height": 420,
+    "ok": true
+  }
+]

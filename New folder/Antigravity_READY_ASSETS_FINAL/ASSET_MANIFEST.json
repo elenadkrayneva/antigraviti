@@ -1,0 +1,60 @@
+{
+  "rule": "All listed assets are already supplied. Do not generate or recreate visuals.",
+  "projects": {
+    "ai-startup-strategy": {
+      "route": "/projects/ai-startup-strategy",
+      "assets": [
+        "assets/ai_startup/ai-prioritisation-framework.png",
+        "assets/ai_startup/ai-recommendation-logic.png",
+        "assets/ai_startup/ai-gtm-roadmap-clean.png"
+      ]
+    },
+    "digify-active": {
+      "route": "/projects/digify-active",
+      "assets": [
+        "assets/digify/landing/01-landing-hero.png",
+        "assets/digify/landing/02-lead-capture-form.png",
+        "assets/digify/landing/03-testimonial-section.png",
+        "assets/digify/landing/04-services-section.png",
+        "assets/digify/landing/landing-page-walkthrough.mp4",
+        "assets/digify/media_metrics/01-agency-and-niche.png",
+        "assets/digify/media_metrics/02-kenzen-client-profile.png",
+        "assets/digify/media_metrics/03-competitor-mou-pilates.png",
+        "assets/digify/media_metrics/04-competitor-vibra.png",
+        "assets/digify/media_metrics/05-competitor-pampa.png",
+        "assets/digify/media_metrics/06-client-analysis.png",
+        "assets/digify/media_metrics/07-content-inspiration-and-trends.png",
+        "assets/digify/media_metrics/08-video-production-process.png",
+        "assets/digify/media_metrics/09-final-video-and-message.png",
+        "assets/digify/media_metrics/10-performance-results.png",
+        "assets/digify/media_metrics/11-engagement-results.png",
+        "assets/digify/media_metrics/12-audience-insights.png",
+        "assets/digify/media_metrics/13-improvement-recommendations.png",
+        "assets/digify/pitch_innovation/01-agency-overview.png",
+        "assets/digify/pitch_innovation/02-strategic-diagnosis.png",
+        "assets/digify/pitch_innovation/03-luma-workshop.png",
+        "assets/digify/pitch_innovation/04-active360-pitch.png",
+        "assets/digify/pitch_innovation/05-active360-concept-framework.png",
+        "assets/digify/pitch_innovation/06-active360-prototype.png",
+        "assets/digify/pitch_innovation/07-targeting-and-positioning.png",
+        "assets/digify/pitch_innovation/08-pricing-and-competitor-benchmark.png",
+        "assets/digify/pitch_innovation/09-channel-selection-bullseye.png",
+        "assets/digify/pitch_innovation/10-promotional-activity-mockups.png",
+        "assets/digify/pitch_innovation/11-tam-estimation.png",
+        "assets/digify/pitch_innovation/12-cost-structure.png",
+        "assets/digify/pitch_innovation/13-financial-projection.png",
+        "assets/digify/pitch_innovation/14-success-metrics.png"
+      ]
+    },
+    "oblicuo-customer-strategy": {
+      "route": "/projects/oblicuo-customer-strategy",
+      "assets": [
+        "assets/oblicuo/oblicuo-research-in-numbers.png",
+        "assets/oblicuo/oblicuo-key-insights-board.png",
+        "assets/oblicuo/oblicuo-priority-segment-spotlight.png",
+        "assets/oblicuo/oblicuo-customer-journey.png",
+        "assets/oblicuo/oblicuo-kpi-chain.png"
+      ]
+    }
+  }
+}

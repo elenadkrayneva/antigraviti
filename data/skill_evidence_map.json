@@ -1,0 +1,265 @@
+{
+  "popoverTitle": "See how I applied this skill",
+  "evidence": {
+    "Marketing Analytics": [
+      {
+        "label": "Acquisition Funnel Dashboard",
+        "detail": "Analysed full-funnel marketing performance across CTR, CPA, ROAS, ROMI and conversion rates.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/00-Acquisition-Funnel-Excel-Dashboard",
+        "isExternal": true
+      }
+    ],
+    "Web & SEO Analytics": [
+      {
+        "label": "Digify Active",
+        "detail": "Conducted keyword research, applied SEO principles and connected search intent to the project website and acquisition strategy.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/02-Digify-Active",
+        "isExternal": true
+      }
+    ],
+    "Campaign Performance Tracking": [
+      {
+        "label": "Acquisition Funnel Dashboard",
+        "detail": "Tracked campaign results by platform, channel and audience segment using an interactive Excel dashboard.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/00-Acquisition-Funnel-Excel-Dashboard",
+        "isExternal": true
+      }
+    ],
+    "Conversion Tracking": [
+      {
+        "label": "Digify Active",
+        "detail": "Tracked the acquisition journey from paid traffic to lead submission and analysed conversion performance.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/02-Digify-Active",
+        "isExternal": true
+      },
+      {
+        "label": "Acquisition Funnel Dashboard",
+        "detail": "Analysed click-to-lead and lead-to-order conversion rates and identified funnel drop-offs.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/00-Acquisition-Funnel-Excel-Dashboard",
+        "isExternal": true
+      }
+    ],
+    "Paid Media Strategy": [
+      {
+        "label": "Digify Active",
+        "detail": "Planned paid acquisition around campaign objectives, audience targeting, keyword intent and lead generation.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/02-Digify-Active",
+        "isExternal": true
+      }
+    ],
+    "Google Ads (Search & Display)": [
+      {
+        "label": "Digify Active",
+        "detail": "Planned and launched Google Ads Search and Display campaigns and analysed their conversion performance.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/02-Digify-Active",
+        "isExternal": true
+      },
+      {
+        "label": "Google Ads Display Certification",
+        "detail": "View credential.",
+        "href": "https://skillshop.credential.net/7b50cac1-6a37-4a5d-984d-af324c05ecc5#acc.WEAsRH32",
+        "isExternal": true
+      }
+    ],
+    "Google Ads": [
+      {
+        "label": "Digify Active",
+        "detail": "Planned and launched Google Ads Search and Display campaigns and analysed their conversion performance.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/02-Digify-Active",
+        "isExternal": true
+      },
+      {
+        "label": "Google Ads Display Certification",
+        "detail": "View credential.",
+        "href": "https://skillshop.credential.net/7b50cac1-6a37-4a5d-984d-af324c05ecc5#acc.WEAsRH32",
+        "isExternal": true
+      }
+    ],
+    "Campaign Planning & Optimization": [
+      {
+        "label": "Digify Active",
+        "detail": "Structured campaign targeting and acquisition logic and developed recommendations based on performance data.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/02-Digify-Active",
+        "isExternal": true
+      }
+    ],
+    "Dashboard Development": [
+      {
+        "label": "Acquisition Funnel Dashboard",
+        "detail": "Built an interactive Excel dashboard with KPI cards, pivot charts, slicers and timeline filters.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/00-Acquisition-Funnel-Excel-Dashboard",
+        "isExternal": true
+      }
+    ],
+    "Data Visualization": [
+      {
+        "label": "Acquisition Funnel Dashboard",
+        "detail": "Visualised marketing spend, revenue, acquisition efficiency and conversion progression.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/00-Acquisition-Funnel-Excel-Dashboard",
+        "isExternal": true
+      }
+    ],
+    "Performance Reporting": [
+      {
+        "label": "Acquisition Funnel Dashboard",
+        "detail": "Converted campaign data into KPI summaries, channel comparisons and budget recommendations.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/00-Acquisition-Funnel-Excel-Dashboard",
+        "isExternal": true
+      }
+    ],
+    "Market Research": [
+      {
+        "label": "AI Startup",
+        "detail": "Compared potential market verticals using demand, competition, regulation, adoption and scalability criteria.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/09-Zoria-Strategic-Market-Prioritisation",
+        "isExternal": true
+      },
+      {
+        "label": "Oblicuo Hi-Fi Bar",
+        "detail": "Combined 16 customer interviews with competitor analysis to identify behavioural barriers and growth opportunities.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/08-Oblicuo-Customer-Insights-Growth-Strategy",
+        "isExternal": true
+      }
+    ],
+    "Keyword Research & Search Analysis": [
+      {
+        "label": "Digify Active",
+        "detail": "Researched high-intent keywords and connected search logic to paid acquisition and SEO decisions.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/02-Digify-Active",
+        "isExternal": true
+      }
+    ],
+    "Strategic & Business Analysis": [
+      {
+        "label": "AI Startup",
+        "detail": "Evaluated market attractiveness, competitive differentiation and implementation feasibility to support market prioritisation.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/09-Zoria-Strategic-Market-Prioritisation",
+        "isExternal": true
+      },
+      {
+        "label": "Oblicuo Hi-Fi Bar",
+        "detail": "Translated customer evidence into a priority-segment strategy, implementation plan and KPI framework.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/08-Oblicuo-Customer-Insights-Growth-Strategy",
+        "isExternal": true
+      }
+    ],
+    "Analytical & Research Skills": [
+      {
+        "label": "Oblicuo Hi-Fi Bar",
+        "detail": "Synthesised qualitative interviews and competitor research into customer insights and strategic recommendations.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/08-Oblicuo-Customer-Insights-Growth-Strategy",
+        "isExternal": true
+      },
+      {
+        "label": "Human–AI Interaction Analysis",
+        "detail": "Cleaned and analysed experimental data from more than 260 participants using R.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/05-Human-AI-Interaction-R-Analysis",
+        "isExternal": true
+      }
+    ],
+    "Cross-functional Coordination": [
+      {
+        "label": "Professional Experience",
+        "detail": "Coordinated recurring workflows and stakeholder inputs across HR, legal, finance and business teams.",
+        "href": "/#x5-digital",
+        "isExternal": false
+      }
+    ],
+    "Stakeholder Communication": [
+      {
+        "label": "AI Startup",
+        "detail": "Presented the strategic recommendation to the CEO and defended the analysis, assumptions and implementation risks.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/09-Zoria-Strategic-Market-Prioritisation",
+        "isExternal": true
+      },
+      {
+        "label": "X5 Digital",
+        "detail": "Prepared structured reporting and presentations for HR leadership.",
+        "href": "/#x5-digital",
+        "isExternal": false
+      }
+    ],
+    "Workflow Optimization": [
+      {
+        "label": "Technologies of Trust",
+        "detail": "Coordinated approval workflows and maintained tracking systems across HR, legal, finance and business teams.",
+        "href": "/#technologies-of-trust",
+        "isExternal": false
+      }
+    ],
+    "Operational Reporting": [
+      {
+        "label": "X5 Digital",
+        "detail": "Prepared KPI-based workforce reports and management presentations.",
+        "href": "/#x5-digital",
+        "isExternal": false
+      },
+      {
+        "label": "Technologies of Trust",
+        "detail": "Maintained operational trackers for approvals, renewals, payments, deadlines and requests.",
+        "href": "/#technologies-of-trust",
+        "isExternal": false
+      }
+    ],
+    "R": [
+      {
+        "label": "Walmart A/B Test",
+        "detail": "Used R and statistical tests to compare conversion, revenue per visitor and average order value.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/03-Walmart-AB-Testing-R",
+        "isExternal": true
+      },
+      {
+        "label": "Human–AI Interaction Analysis",
+        "detail": "Used R for data preparation, exploratory analysis, regression modelling and visualisation.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/05-Human-AI-Interaction-R-Analysis",
+        "isExternal": true
+      }
+    ],
+    "Python": [
+      {
+        "label": "NYC Airbnb Analysis",
+        "detail": "Cleaned and explored approximately 48,000 listings using Python, Pandas and visual analysis.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/04-Python-NYC-Airbnb-Analysis",
+        "isExternal": true
+      }
+    ],
+    "Excel": [
+      {
+        "label": "Acquisition Funnel Dashboard",
+        "detail": "Built a full-funnel campaign tracker using Power Query, formulas, pivot tables, slicers and charts.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/00-Acquisition-Funnel-Excel-Dashboard",
+        "isExternal": true
+      }
+    ],
+    "Google Analytics": [
+      {
+        "label": "Google Analytics Certification",
+        "detail": "View credential.",
+        "href": "https://skillshop.credential.net/7b50cac1-6a37-4a5d-984d-af324c05ecc5#acc.WEAsRH32",
+        "isExternal": true
+      }
+    ],
+    "Google Analytics 4": [
+      {
+        "label": "Google Analytics Certification",
+        "detail": "View credential.",
+        "href": "https://skillshop.credential.net/7b50cac1-6a37-4a5d-984d-af324c05ecc5#acc.WEAsRH32",
+        "isExternal": true
+      }
+    ],
+    "HubSpot": [
+      {
+        "label": "Digify Active",
+        "detail": "Used HubSpot for the project website, landing pages, lead capture and CRM integration.",
+        "href": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/02-Digify-Active",
+        "isExternal": true
+      },
+      {
+        "label": "HubSpot Marketing Hub Software",
+        "detail": "View credential.",
+        "href": "https://app.hubspot.com/academy/achievements/400j3fn2/en/1/elena-krayneva/hubspot-marketing-hub-software",
+        "isExternal": true
+      }
+    ]
+  }
+}

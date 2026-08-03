@@ -1,0 +1,11 @@
+CONFIDENTIAL TERM SCAN
+
+The private project name must not appear anywhere in the repository, generated site, metadata, source maps, asset names, alt text, comments, analytics labels or build output.
+
+Scan case-insensitively for all known capitalization variants before delivery.
+
+Approved public replacement:
+AI Startup — Strategic Market Consulting
+
+Approved route:
+/projects/ai-startup-strategy

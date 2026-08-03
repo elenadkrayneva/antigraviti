@@ -1,0 +1,324 @@
+{
+  "projects": [
+    {
+      "slug": "ai-startup-strategy",
+      "route": "/projects/ai-startup-strategy",
+      "type": "Academic consulting project",
+      "title": "AI Startup — Strategic Market Consulting",
+      "summary": "An academic consulting engagement for an early-stage AI company developing automated image-processing and synthetic-data solutions. The project evaluated potential industry verticals and developed a focused market-prioritisation and go-to-market recommendation.",
+      "github": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/09-Zoria-Strategic-Market-Prioritisation",
+      "githubLabel": "View project evidence on GitHub",
+      "tags": [
+        "Market Prioritisation",
+        "Strategic Positioning",
+        "Go-to-Market Strategy"
+      ],
+      "metadataStrip": [
+        { "label": "Project Type", "value": "Academic consulting project" },
+        { "label": "Methods", "value": "Market research, benchmarking, prioritisation" },
+        { "label": "Focus", "value": "Vertical selection and differentiation" },
+        { "label": "Deliverable", "value": "Strategic recommendation + roadmap" }
+      ],
+      "challenge": {
+        "text": "The startup operated in a highly competitive AI infrastructure market where broad technical capability did not automatically create a defensible market position. The central challenge was to identify a vertical where customer pain, market attractiveness, adoption readiness, regulatory conditions, and implementation feasibility could support stronger differentiation.",
+        "quote": "Which market vertical should the company prioritise to achieve stronger differentiation and scalable growth?"
+      },
+      "approach": {
+        "intro": "The team compared potential applications through one structured decision framework rather than selecting a market based only on headline size.",
+        "criteria": [
+          "1. Market attractiveness",
+          "2. Demand potential",
+          "3. Competitive intensity",
+          "4. Regulatory environment",
+          "5. Adoption barriers",
+          "6. Implementation feasibility",
+          "7. Scalability and defensibility"
+        ]
+      },
+      "research": [
+        {
+          "title": "Market and vertical research",
+          "content": "We researched multiple potential applications and compared the commercial logic of each vertical, including customer pain, demand maturity, market structure, and the role synthetic data could play."
+        },
+        {
+          "title": "Competitive benchmarking",
+          "content": "We assessed direct competitors, adjacent solutions, positioning gaps, and the degree to which vertical specialisation could create a clearer value proposition."
+        },
+        {
+          "title": "Feasibility and adoption",
+          "content": "We considered regulation, data access, technical integration, adoption readiness, implementation complexity, and the risks associated with entering each market."
+        }
+      ],
+      "logicFlow": [
+        { "num": "01", "title": "Customer Pain", "text": "Start with a clearly defined, high-urgency customer problem." },
+        { "num": "02", "title": "Tech Role", "text": "Ensure synthetic data plays a relevant, core technological role." },
+        { "num": "03", "title": "Business Value", "text": "Demonstrate clear, quantifiable economic value for adopters." },
+        { "num": "04", "title": "Adoption Reality", "text": "Validate realistic compliance, data access, and integration friction." },
+        { "num": "05", "title": "Defensible Differentiation", "text": "Establish a specialized, defensible barrier against horizontal players." }
+      ],
+      "strategicRecommendation": {
+        "headline": "Shift from broad horizontal competition to focused vertical specialisation.",
+        "principles": [
+          "Prioritise a clearer, high-value vertical use case",
+          "Align tech capabilities with market demand and adoption reality",
+          "Reduce go-to-market ambiguity through focused positioning",
+          "Strengthen long-term competitive differentiation",
+          "Support scalable, repeatable market entry"
+        ]
+      },
+      "roadmap": [
+        {
+          "stage": "Stage 1",
+          "title": "Validation",
+          "description": "Validate customer pain, use cases, technical requirements, and buying logic."
+        },
+        {
+          "stage": "Stage 2",
+          "title": "Pilot Design",
+          "description": "Define a focused pilot, success criteria, and technical and commercial validation requirements."
+        },
+        {
+          "stage": "Stage 3",
+          "title": "Focused Market Entry",
+          "description": "Refine positioning, target segments, messaging, and initial customer-acquisition priorities."
+        },
+        {
+          "stage": "Stage 4",
+          "title": "Expansion",
+          "description": "Scale after evidence of product–market fit and repeatable implementation."
+        }
+      ],
+      "contributionSplit": {
+        "independentlyLed": [
+          "TAM / SAM / SOM market sizing and prioritization logic",
+          "Positioning-gap analysis vs direct and adjacent competitors",
+          "Structuring the final executive analytical storyline",
+          "Presenting and defending the strategic recommendation directly to the CEO"
+        ],
+        "contributedTo": [
+          "Market and vertical background research",
+          "Competitor benchmarking across candidate industries",
+          "Demand, regulation, and implementation friction comparison",
+          "Roadmap and KPI framework development"
+        ]
+      },
+      "outcome": {
+        "text": "The final analysis and recommendation were presented directly to the CEO. During the Q&A, the team defended the evidence, trade-offs, assumptions, implementation risks, and feasibility of the proposed direction.",
+        "disclaimer": "The project delivered a validated strategic direction and an actionable roadmap. It did not include measured post-launch commercial results."
+      },
+      "seo": {
+        "title": "AI Startup Strategic Market Consulting | Elena Krayneva",
+        "description": "Academic consulting project evaluating market verticals, competitive positioning, adoption barriers, and a phased go-to-market strategy for an early-stage AI startup."
+      }
+    },
+    {
+      "slug": "digify-active",
+      "route": "/projects/digify-active",
+      "type": "Applied academic project",
+      "title": "Digify Active — B2B Growth & Marketing Analytics",
+      "summary": "A team-based academic project that developed and tested a B2B marketing-agency concept for small and medium-sized fitness businesses, connecting market strategy, HubSpot landing pages, Google Ads, conversion tracking, and performance analysis.",
+      "github": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/02-Digify-Active",
+      "githubLabel": "View project evidence on GitHub",
+      "liveSite": "https://digifyactive.com/",
+      "liveSiteLabel": "View live project site",
+      "tags": [
+        "B2B Marketing",
+        "Funnel Analysis",
+        "Google Ads",
+        "HubSpot",
+        "Conversion Optimisation",
+        "Marketing Analytics"
+      ],
+      "metadataStrip": [
+        { "label": "Project Type", "value": "Applied academic project" },
+        { "label": "Methods", "value": "Positioning, funnel design, Google Ads, analysis" },
+        { "label": "Focus", "value": "SME fitness acquisition funnel" },
+        { "label": "Deliverable", "value": "Live funnel + performance analysis" }
+      ],
+      "challenge": {
+        "text": "Many small and medium-sized fitness businesses lacked a structured approach to digital acquisition. The project needed to create a differentiated B2B service proposition and connect it to a realistic path from initial awareness to lead submission.",
+        "quote": "How can a new B2B marketing service attract and convert SME fitness businesses through a structured digital acquisition funnel?"
+      },
+      "foundation": [
+        {
+          "title": "Market gap",
+          "content": "The team identified a gap between the growth needs of SME fitness businesses and their ability to build consistent digital-marketing systems."
+        },
+        {
+          "title": "Target segment and positioning",
+          "content": "Defined a target segment, customer needs, value proposition, and service positioning designed around the constraints of smaller fitness businesses."
+        },
+        {
+          "title": "Pricing logic",
+          "content": "Pricing was developed as part of the service concept and aligned with the target market and proposed offer."
+        }
+      ],
+      "journeySteps": [
+        { "step": "01", "name": "Paid Advertisement", "desc": "Google Ads Search & Display campaign touchpoint" },
+        { "step": "02", "name": "Landing Page", "desc": "HubSpot conversion-focused value proposition" },
+        { "step": "03", "name": "Lead-Capture Form", "desc": "Structured qualification and lead submission flow" },
+        { "step": "04", "name": "Diagnostic Content", "desc": "Interactive audit & tailored marketing insights" },
+        { "step": "05", "name": "Follow-Up Communication", "desc": "Nurturing sequence and consultation booking" }
+      ],
+      "channelComparison": [
+        { "criterion": "Intent Level", "search": "High (active solution seekers)", "display": "Medium to Passive (brand awareness)" },
+        { "criterion": "Targeting Logic", "search": "Exact & phrase match keywords", "display": "In-market & custom affinity segments" },
+        { "criterion": "Role in Funnel", "search": "Direct lead generation & conversion", "display": "Top-of-funnel retargeting & reach" },
+        { "criterion": "Acquisition Quality", "search": "Higher conversion readiness", "display": "Broad reach, higher drop-off rate" },
+        { "criterion": "Optimisation Focus", "search": "Keyword negative List & bid adjustment", "display": "Placement exclusion & visual CTR" }
+      ],
+      "performanceMetrics": [
+        { "metric": "CTR Tracking", "detail": "Click-through rate measurement across ad formats" },
+        { "metric": "CPA Efficiency", "detail": "Cost-per-acquisition analysis per channel" },
+        { "metric": "Lead Conversions", "detail": "Form submissions and qualification rate" },
+        { "metric": "Funnel Drop-offs", "detail": "Step-by-step conversion leak analysis" }
+      ],
+      "strategicRecommendation": {
+        "headline": "Build acquisition around intent-led targeting and an end-to-end conversion funnel.",
+        "principles": [
+          "Align ad messaging directly with landing-page offer",
+          "Improve hero clarity to capture instant visitor interest",
+          "Refine search keyword targeting to reduce wasted spend",
+          "Eliminate form friction to reduce mid-funnel drop-offs",
+          "Tighten follow-up communication to improve lead conversion"
+        ]
+      },
+      "optimisationGrid": [
+        { "category": "1. Targeting", "action": "Refine keyword match types & exclude irrelevant query themes" },
+        { "category": "2. Bidding", "action": "Reallocate budget toward high-intent Search keywords" },
+        { "category": "3. Landing Page", "action": "Streamline hero copy and bring form fields above the fold" },
+        { "category": "4. Messaging", "action": "Match ad headline text directly to landing-page headers" },
+        { "category": "5. Follow-up Flow", "action": "Automate instant email confirmation with next steps" }
+      ],
+      "contributionSplit": {
+        "independentlyLed": [
+          "Building conversion-focused landing pages and lead-capture forms in HubSpot",
+          "Structuring the end-to-end user path from ad click to lead submission",
+          "Analyzing funnel drop-off points across landing page interactions"
+        ],
+        "contributedTo": [
+          "Market and target-audience research for SME fitness operators",
+          "Developing B2B positioning and value proposition",
+          "Supporting Google Ads Search and Display campaign execution",
+          "CTR, CPA, and channel performance comparison"
+        ]
+      },
+      "outcome": {
+        "text": "The project moved from market analysis and positioning to a functioning B2B acquisition model with a live website, lead-capture structure, paid campaign testing, and performance analysis.",
+        "disclaimer": "The test generated evidence about channel and funnel behaviour and produced recommendations for the next optimisation cycle. It did not represent a scaled commercial agency."
+      },
+      "seo": {
+        "title": "Digify Active B2B Growth & Marketing Analytics | Elena Krayneva",
+        "description": "Applied academic project combining B2B positioning, HubSpot landing pages, Google Ads Search and Display, acquisition-funnel analysis, and optimisation recommendations."
+      }
+    },
+    {
+      "slug": "oblicuo-customer-strategy",
+      "route": "/projects/oblicuo-customer-strategy",
+      "type": "Applied academic project",
+      "title": "Oblicuo Hi-Fi Bar — Customer Research & Growth Strategy",
+      "summary": "A customer-insights and strategy project for a Barcelona listening bar, focused on increasing Tuesday–Thursday visits while preserving its premium, intimate, and locally relevant identity.",
+      "github": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/08-Oblicuo-Customer-Insights-Growth-Strategy",
+      "githubLabel": "View project evidence on GitHub",
+      "tags": [
+        "Customer Research",
+        "Qualitative Interviews",
+        "Audience Segmentation",
+        "Customer Journey",
+        "Growth Strategy",
+        "KPI Framework"
+      ],
+      "metadataStrip": [
+        { "label": "Project Type", "value": "Applied academic project" },
+        { "label": "Research", "value": "16 in-venue interviews + competitor analysis" },
+        { "label": "Focus", "value": "Tuesday–Thursday weekday growth" },
+        { "label": "Deliverable", "value": "Strategy + implementation plan + KPI framework" }
+      ],
+      "researchStats": [
+        { "number": "16", "label": "In-venue customer interviews" },
+        { "number": "5", "label": "Audience personas developed" },
+        { "number": "Tue–Thu", "label": "Target growth focus" },
+        { "number": "360°", "label": "Competitor & platform audit" }
+      ],
+      "challenge": {
+        "text": "Oblicuo had strong brand authenticity but inconsistent early-week attendance and limited structured digital strategy. The goal was not maximum reach. Broad visibility could attract poorly matched audiences and weaken the experience that differentiated the venue.",
+        "quote": "How could the venue increase Tuesday–Thursday visits without losing its premium, intimate, and locally relevant identity?"
+      },
+      "keyInsights": [
+        {
+          "num": "01",
+          "headline": "Validation over discovery",
+          "detail": "Social media often validated a choice rather than created initial discovery. Customers checked social channels to confirm atmosphere before going out."
+        },
+        {
+          "num": "02",
+          "headline": "Uncertainty barrier",
+          "detail": "The main visit barrier was uncertainty about crowd level, noise, seating availability, and early-evening vibe."
+        },
+        {
+          "num": "03",
+          "headline": "Segmented value drivers",
+          "detail": "Different customer segments valued the Hi-Fi concept for distinct reasons (audiophiles vs casual socializers vs design enthusiasts)."
+        },
+        {
+          "num": "04",
+          "headline": "Predictability requirement",
+          "detail": "Weekday demand required predictability and comfortable atmosphere rather than weekend hype or packed crowds."
+        }
+      ],
+      "spotlightSegment": {
+        "title": "Priority Segment: The After-Work Neighbor",
+        "desc": "A nearby professional looking for one high-quality drink and comfortable conversation without planning a late night out.",
+        "need": "Wants a calm, predictable, conversation-friendly environment after work.",
+        "communication": "Clear visual signals showing early-evening seating, relaxed noise levels, and effortless walk-in convenience."
+      },
+      "journeyStages": [
+        { "stage": "01", "name": "Awareness", "desc": "Word-of-mouth or local neighborhood passing" },
+        { "stage": "02", "name": "Consideration", "desc": "Checking social media to verify atmosphere & crowd" },
+        { "stage": "03", "name": "Visit Decision", "desc": "Deciding on spontaneous Tuesday–Thursday walk-in" },
+        { "stage": "04", "name": "Venue Experience", "desc": "Enjoying Hi-Fi sound, curated drinks & conversation" },
+        { "stage": "05", "name": "Loyalty", "desc": "Becoming a regular weekday neighbor visitor" }
+      ],
+      "strategicRecommendation": {
+        "headline": "Use social media as a risk-reduction tool for weekday visits.",
+        "principles": [
+          "Reduce customer uncertainty around seating and atmosphere",
+          "Show real early-evening conditions to set clear expectations",
+          "Reinforce local neighborhood relevance and convenience",
+          "Make weekday visits feel easy, accessible, and repeatable",
+          "Protect the venue's premium, intimate 'hidden-gem' identity"
+        ]
+      },
+      "kpiChain": [
+        "1. Local audience quality",
+        "2. Social engagement rate",
+        "3. Saves and direct replies",
+        "4. Visit & reservation intent",
+        "5. Walk-in conversions",
+        "6. Tuesday–Thursday foot traffic"
+      ],
+      "contributionSplit": {
+        "independentlyLed": [
+          "Developing the detailed implementation layer for the 'After-Work Neighbor' segment",
+          "Formulating behavioral objectives & content creation principles",
+          "Structuring timing logic & the 3-month tactical content calendar",
+          "Creating specific post, story, and video content concepts"
+        ],
+        "contributedTo": [
+          "16 in-venue customer interviews & insight synthesis",
+          "Competitor and platform positioning analysis",
+          "5-persona framework development",
+          "Overall growth strategy and KPI measurement tree"
+        ]
+      },
+      "outcome": {
+        "text": "The project established a clearly defined priority segment for weekday growth and delivered a data-backed strategy grounded in direct customer evidence.",
+        "disclaimer": "These were strategic deliverables and proposed indicators, not measured post-implementation commercial results."
+      },
+      "seo": {
+        "title": "Oblicuo Customer Research & Growth Strategy | Elena Krayneva",
+        "description": "Customer-insights project using 16 interviews, audience segmentation, customer journeys, behavioural barriers, growth strategy, and a KPI framework for weekday visits."
+      }
+    }
+  ]
+}

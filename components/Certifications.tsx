@@ -1,15 +1,16 @@
 'use client';
+
 import { motion } from 'framer-motion';
 import styles from './Certifications.module.css';
-import { Award, GraduationCap } from 'lucide-react';
+import { Award, GraduationCap, ExternalLink } from 'lucide-react';
 import cvData from '@/data/cv.json';
 
 export default function Certifications() {
   const { certifications, education } = cvData as any;
 
   return (
-    <section id="education-certifications" className={styles.section}>
-      <div className="container">
+    <section id="education" className={styles.section}>
+      <div className="container" id="education-certifications">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -18,7 +19,9 @@ export default function Certifications() {
           className={styles.header}
         >
           <h2 className={styles.sectionTitle}>Education & Certifications</h2>
-          <p className={styles.sectionSubtitle}>Academic background and professional credentials in marketing analytics.</p>
+          <p className={styles.sectionSubtitle}>
+            Academic background and professional credentials in marketing analytics.
+          </p>
         </motion.div>
 
         <div className={styles.groupsContainer}>
@@ -40,7 +43,9 @@ export default function Certifications() {
                   </div>
                   <div className={styles.eduInfo}>
                     <div className={styles.certName}>{edu.degree}</div>
-                    <div className={styles.certIssuer}>{edu.school} · {edu.period}</div>
+                    <div className={styles.certIssuer}>
+                      {edu.school} · {edu.period}
+                    </div>
                   </div>
                 </motion.div>
               ))}
@@ -51,27 +56,58 @@ export default function Certifications() {
           <div className={styles.group}>
             <h3 className={styles.groupTitle}>Certifications</h3>
             <div className={styles.grid}>
-              {(certifications as any[]).map((cert, index) => (
-                <motion.a
-                  key={index}
-                  href={cert.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.card}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.05, duration: 0.3 }}
-                >
-                  <div className={styles.iconWrap}>
-                    <Award size={20} className={styles.awardIcon} />
-                  </div>
-                  <div className={styles.certInfo}>
-                    <div className={styles.certName}>{cert.name}</div>
-                    <div className={styles.certIssuer}>{cert.issuer} · {cert.year} {cert.score && `(score ${cert.score})`}</div>
-                  </div>
-                </motion.a>
-              ))}
+              {(certifications as any[]).map((cert, index) => {
+                const hasUrl = Boolean(cert.url);
+
+                if (hasUrl) {
+                  return (
+                    <motion.a
+                      key={index}
+                      href={cert.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.card}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.05, duration: 0.3 }}
+                    >
+                      <div className={styles.iconWrap}>
+                        <Award size={20} className={styles.awardIcon} />
+                      </div>
+                      <div className={styles.certInfo}>
+                        <div className={styles.certName}>
+                          {cert.name} <ExternalLink size={12} style={{ display: 'inline', marginLeft: 4 }} />
+                        </div>
+                        <div className={styles.certIssuer}>
+                          {cert.issuer} · {cert.year} {cert.score && `(score ${cert.score})`}
+                        </div>
+                      </div>
+                    </motion.a>
+                  );
+                }
+
+                return (
+                  <motion.div
+                    key={index}
+                    className={`${styles.card} ${styles.staticCard}`}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.05, duration: 0.3 }}
+                  >
+                    <div className={styles.iconWrap}>
+                      <Award size={20} className={styles.awardIcon} />
+                    </div>
+                    <div className={styles.certInfo}>
+                      <div className={styles.certName}>{cert.name}</div>
+                      <div className={styles.certIssuer}>
+                        {cert.issuer} · {cert.year} {cert.score && `(score ${cert.score})`}
+                      </div>
+                    </div>
+                  </motion.div>
+                );
+              })}
             </div>
           </div>
         </div>

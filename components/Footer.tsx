@@ -8,21 +8,21 @@ export default function Footer() {
           © {new Date().getFullYear()} Elena Krayneva. All rights reserved.
         </p>
         <div className={styles.links}>
-          <a 
-            href="https://www.linkedin.com/in/elena-d-krayneva/" 
-            target="_blank" 
+          <a
+            href="https://www.linkedin.com/in/elena-d-krayneva/"
+            target="_blank"
             rel="noopener noreferrer"
             className={styles.link}
           >
             LinkedIn
           </a>
-          <a 
-            href="https://github.com/elenadkrayneva/antigraviti" 
-            target="_blank" 
+          <a
+            href="https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio"
+            target="_blank"
             rel="noopener noreferrer"
             className={styles.link}
           >
-            GitHub Repo
+            GitHub Portfolio
           </a>
         </div>
       </div>

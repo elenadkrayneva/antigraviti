@@ -1,52 +1,81 @@
 'use client';
+
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import styles from './Navigation.module.css';
 
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+
+  const isHomePage = pathname === '/';
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
+    const handleScroll = () => setScrolled(window.scrollY > 80);
+    // Initial check
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-    e.preventDefault();
-    const el = document.getElementById(id);
-    if (el) {
-      const offset = 80;
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = el.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    if (isHomePage) {
+      e.preventDefault();
+      const el = document.getElementById(id);
+      if (el) {
+        const offset = 80;
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = el.getBoundingClientRect().top;
+        const offsetPosition = elementRect - bodyRect - offset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth',
+        });
+      }
     }
   };
+
+  const showContactButton = !isHomePage || scrolled;
 
   return (
     <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.navContainer}`}>
-        <Link href="/" className={styles.logo} onClick={(e) => handleSmoothScroll(e, 'hero')}>
+        <Link href="/" className={styles.logo}>
           EK<span>.</span>
         </Link>
         <div className={styles.links}>
-          <a href="#experience" onClick={(e) => handleSmoothScroll(e, 'experience')} className={styles.link}>Experience</a>
-          <a href="#projects" onClick={(e) => handleSmoothScroll(e, 'projects')} className={styles.link}>Projects</a>
-          <a href="#skills" onClick={(e) => handleSmoothScroll(e, 'skills')} className={styles.link}>Skills</a>
-          <a href="#education-certifications" onClick={(e) => handleSmoothScroll(e, 'education-certifications')} className={styles.link}>Education</a>
-          <a href="#contact" onClick={(e) => handleSmoothScroll(e, 'contact')} className={styles.link}>Contact</a>
-          <button 
-            className={styles.cta} 
-            onClick={() => window.dispatchEvent(new CustomEvent('open-chatbot'))}
+          <Link href="/projects" className={styles.link}>
+            Projects
+          </Link>
+          <Link
+            href="/#experience"
+            onClick={(e) => handleAnchorClick(e, 'experience')}
+            className={styles.link}
           >
-            Ask AI About Me
-          </button>
+            Experience
+          </Link>
+          <Link
+            href="/#skills"
+            onClick={(e) => handleAnchorClick(e, 'skills')}
+            className={styles.link}
+          >
+            Skills
+          </Link>
+          <Link
+            href="/#education"
+            onClick={(e) => handleAnchorClick(e, 'education')}
+            className={styles.link}
+          >
+            Education
+          </Link>
+          <Link
+            href="/#contact"
+            onClick={(e) => handleAnchorClick(e, 'contact')}
+            className={showContactButton ? styles.contactCta : styles.link}
+          >
+            Contact me
+          </Link>
         </div>
       </div>
     </nav>

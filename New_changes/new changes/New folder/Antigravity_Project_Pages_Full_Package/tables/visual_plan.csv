@@ -1,0 +1,24 @@
+Project,Section,Visual Type,Status,Source / Creation,Notes
+AI Startup,Hero,Image / strategic banner,Reuse/adapt,Existing GitHub asset,Must be anonymised
+AI Startup,Business Challenge,Overview / challenge visual,Reuse,Existing GitHub asset,Place directly after challenge
+AI Startup,Research & Analysis,Prioritisation framework,Reuse/adapt,Existing GitHub asset,High-emphasis visual
+AI Startup,Recommendation Logic,5-step logic flow,New,Create new,No confidential values
+AI Startup,Roadmap,4-stage GTM roadmap,Reuse/adapt,Existing GitHub asset,Simplify if needed
+AI Startup,My Contribution,Contribution block visual,Reuse,Existing GitHub asset,Distinct section
+Digify Active,Hero,Website screenshot,Reuse,Existing screenshot.png,Main hero visual
+Digify Active,Strategic Foundation,3-part structured block,New,Create new,Market gap / segment / value proposition
+Digify Active,Customer Journey,Process diagram,New,Create new,Ad → landing page → form → diagnostic → follow-up
+Digify Active,Acquisition Funnel,Funnel diagram,New,Create new,No invented values
+Digify Active,Paid Acquisition,Search vs Display comparison,New,Create new,Use comparison criteria not fake numbers
+Digify Active,Performance Analysis,Metric strip / analytical tiles,New,Create new,CTR / CPA / conversions / drop-offs
+Digify Active,Recommendations,5-block optimisation grid,New,Create new,Targeting / bidding / LP / messaging / follow-up
+Oblicuo,Hero,Atmospheric hero image,Reuse,Existing GitHub asset,Main page image
+Oblicuo,Business Challenge,Challenge / overview visual,Reuse,Existing GitHub asset,Directly after challenge
+Oblicuo,Research in Numbers,Evidence strip,New,Create new,16 interviews etc.
+Oblicuo,Key Insights,Numbered insight block,Reuse/adapt,Existing GitHub asset or new layout,One insight can dominate
+Oblicuo,Persona Map,Framework visual,Reuse,Existing GitHub asset,Full-width or split layout
+Oblicuo,Priority Segment,Segment spotlight block,New,Create new,After-Work Neighbor
+Oblicuo,Customer Journey,Journey diagram,New/adapt,Create or adapt,Barrier → response logic
+Oblicuo,Strategy,Strategy logic visual,Reuse,Existing GitHub asset,High-emphasis section
+Oblicuo,KPI Framework,KPI tree,Reuse,Existing GitHub asset,Below strategy
+Oblicuo,My Contribution,Contribution block visual,Reuse,Existing GitHub asset,Distinct section

@@ -1,14 +1,12 @@
 {
   "profile": {
     "name": "Elena Krayneva",
-    "role": "Marketing Analytics & Consulting",
-    "headline": "Turning Marketing Data into Strategic Decisions",
-    "subheadline": "MSc Digital Marketing & Analytics student with hands-on experience in **data analysis**, **KPI reporting**, and **marketing strategy**. Combining structured analytical thinking with a strong business understanding to turn data into actionable insights.",
-    "location": "Barcelona, Spain",
+    "role": "Marketing & Business Analytics | Strategy",
+    "headline": "Marketing & Business Analytics | Strategy",
+    "subheadline": "I combine professional experience in people analytics and process improvement with applied projects in marketing analytics, customer research, and market strategy. I turn data and research into clear recommendations, dashboards, and action plans.",
     "linkedin": "https://www.linkedin.com/in/elena-d-krayneva/",
-    "github": "https://github.com/elenadkrayneva/antigraviti",
+    "github": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio",
     "email": "elena.d.krayneva@gmail.com",
-    "phone": "+34 742 08 34 90",
     "photo": "/images/profile.jpg"
   },
   "skills_columns": [
@@ -45,7 +43,7 @@
       "subgroups": [
         {
           "name": "Data & Analytics",
-          "pills": ["SQL", "R", "Python", "Databricks", "Snowflake"]
+          "pills": ["SQL", "R", "Python"]
         },
         {
           "name": "Visualization & Reporting",
@@ -73,45 +71,33 @@
       "id": "x5-digital",
       "logo": "/images/logos/x5.png",
       "company": "X5 DIGITAL",
-      "companyDescription": "Digital division of X5 Group, Russia’s largest food retailer",
-      "role": "HRBP Assistant - People Analytics & Reporting",
+      "companyDescription": "Digital division of X5 Group, Russia’s largest food retailer.",
+      "role": "HRBP Assistant — People Analytics & Reporting",
       "date": "Feb 2025 – Jul 2025",
       "location": "Moscow, Russia",
       "featured": true,
       "bullets": [
-        "Analyzed workforce datasets (headcount, onboarding, attrition, leave) and developed KPI reports to support workforce planning and organizational decision-making",
-        "Prepared recurring workforce KPI dashboard presentations summarizing key trends",
-        "Compiled workforce data and candidate profiles for talent reviews supporting succession planning across departments and two leadership levels (1–6 candidates per role)"
+        "Analysed workforce data across 500+ employee records, including headcount, onboarding, attrition, and leave.",
+        "Built KPI-based reports, dashboards, and presentations for HR leadership and management decision-making.",
+        "Processed 150+ manager inputs for talent review and succession planning, improving data completeness and supporting insight generation.",
+        "Coordinated recurring reporting and data requests in collaboration with HRBP and cross-functional stakeholders."
       ]
     },
     {
       "id": "technologies-of-trust",
       "logo": "/images/logos/trust.png",
       "company": "TECHNOLOGIES OF TRUST",
-      "companyDescription": "Russian audit & consulting firm, successor to PwC Russia",
-      "role": "Contractor Operations Specialist",
+      "companyDescription": "Russian audit and consulting firm, successor to PwC Russia.",
+      "role": "HR Specialist — Process & Data Support",
       "date": "Dec 2023 – Feb 2025",
       "location": "Moscow, Russia",
       "featured": true,
       "bullets": [
-        "Developed structured Excel trackers to monitor contract approvals across departments, onboarding, payments, and renewals",
-        "Coordinated cross-functional approval workflows for 40+ contractors monthly",
-        "Proposed workflow improvements to streamline approval cycles and reduce administrative iterations"
-      ]
-    },
-    {
-      "id": "qwell",
-      "logo": "/images/logos/qwell.png",
-      "company": "Qwell",
-      "companyDescription": "Personnel outsourcing and workforce management platform",
-      "role": "Workforce Operations Specialist",
-      "date": "Nov 2023 – Dec 2023",
-      "location": "Moscow, Russia",
-      "featured": false,
-      "bullets": [
-        "Coordinated workforce operations for a personnel base of approximately 3,000 employees",
-        "Managed shift allocation through internal systems to maintain operational continuity",
-        "Conducted high-volume recruitment and effectively resolved on-site workforce issues"
+        "Managed the full cycle of administration and documentation for 30+ external contractors each month.",
+        "Developed and maintained Excel trackers for contract approvals, renewals, payments, deadlines, and incoming requests.",
+        "Coordinated approval processes across HR, legal, finance, and business teams.",
+        "Supported calculations and payments by collecting data, validating accuracy, and monitoring deadlines.",
+        "Trained a colleague on HR processes and corporate systems and prepared supporting training materials."
       ]
     },
     {
@@ -163,21 +149,21 @@
       "name": "Google Ads Display Certification",
       "issuer": "Google",
       "year": "2026",
-      "url": "https://skillshop.credential.net/",
+      "url": "https://skillshop.credential.net/7b50cac1-6a37-4a5d-984d-af324c05ecc5#acc.WEAsRH32",
       "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png"
     },
     {
       "name": "Google Analytics Certification",
       "issuer": "Google",
       "year": "2026",
-      "url": "https://skillshop.credential.net/",
+      "url": "https://skillshop.credential.net/7b50cac1-6a37-4a5d-984d-af324c05ecc5#acc.WEAsRH32",
       "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png"
     },
     {
       "name": "HubSpot Marketing Hub Software Certification",
       "issuer": "HubSpot",
       "year": "2026",
-      "url": "https://academy.hubspot.com/",
+      "url": "https://app.hubspot.com/academy/achievements/400j3fn2/en/1/elena-krayneva/hubspot-marketing-hub-software",
       "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/HubSpot_Logo.svg/320px-HubSpot_Logo.svg.png"
     },
     {

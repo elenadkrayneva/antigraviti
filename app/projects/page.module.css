@@ -1,0 +1,144 @@
+.main {
+  min-height: 100vh;
+  padding: 8rem 0 5rem;
+  background: transparent;
+}
+
+.header {
+  margin-bottom: 3.5rem;
+}
+
+.title {
+  font-size: clamp(2.25rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--fg-primary, #111827);
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--fg-secondary, #4b5563);
+  max-width: 680px;
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid var(--border-subtle, #e5e7eb);
+  border-radius: var(--radius-md, 12px);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.card:hover {
+  border-color: var(--brand-accent, #2563eb);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.08);
+}
+
+.badgeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.typeBadge {
+  background: #eff6ff;
+  color: #2563eb;
+  border: 1px solid #dbeafe;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.contextBadge {
+  background: #f9fafb;
+  color: #4b5563;
+  border: 1px solid #e5e7eb;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.cardTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--fg-primary, #111827);
+  line-height: 1.35;
+  margin-bottom: 1rem;
+}
+
+.cardDescription {
+  font-size: 0.95rem;
+  color: var(--fg-secondary, #4b5563);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.tag {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  color: #4b5563;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.cardFooter {
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-subtle, #e5e7eb);
+}
+
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--brand-accent, #2563eb);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cardLink:hover {
+  color: #1d4ed8;
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 6rem 0 3rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+}

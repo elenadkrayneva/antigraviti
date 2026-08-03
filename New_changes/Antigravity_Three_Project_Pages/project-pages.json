@@ -1,0 +1,56 @@
+{
+  "projects": [
+    {
+      "slug": "ai-startup-strategy",
+      "route": "/projects/ai-startup-strategy",
+      "title": "AI Startup — Strategic Market Consulting",
+      "type": "Academic consulting project",
+      "github": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/09-Zoria-Strategic-Market-Prioritisation",
+      "confidential": true,
+      "tags": [
+        "Market Research",
+        "Competitive Benchmarking",
+        "Market Prioritisation",
+        "Strategic Positioning",
+        "Go-to-Market Planning",
+        "Executive Communication"
+      ]
+    },
+    {
+      "slug": "digify-active",
+      "route": "/projects/digify-active",
+      "title": "Digify Active — B2B Growth & Marketing Analytics",
+      "type": "Applied academic project",
+      "github": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/02-Digify-Active",
+      "liveSite": "https://digifyactive.com/",
+      "tags": [
+        "B2B Marketing",
+        "Funnel Analysis",
+        "Google Ads",
+        "HubSpot",
+        "Conversion Optimisation",
+        "Marketing Analytics"
+      ]
+    },
+    {
+      "slug": "oblicuo-customer-strategy",
+      "route": "/projects/oblicuo-customer-strategy",
+      "title": "Oblicuo Hi-Fi Bar — Customer Research & Growth Strategy",
+      "type": "Applied academic project",
+      "github": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio/tree/main/08-Oblicuo-Customer-Insights-Growth-Strategy",
+      "tags": [
+        "Customer Research",
+        "Qualitative Interviews",
+        "Audience Segmentation",
+        "Customer Journey",
+        "Growth Strategy",
+        "KPI Framework"
+      ]
+    }
+  ],
+  "navigationOrder": [
+    "ai-startup-strategy",
+    "digify-active",
+    "oblicuo-customer-strategy"
+  ]
+}
