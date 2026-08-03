@@ -7,7 +7,8 @@
     "linkedin": "https://www.linkedin.com/in/elena-d-krayneva/",
     "github": "https://github.com/elenadkrayneva/Elena-Krayneva-Portfolio",
     "email": "elena.d.krayneva@gmail.com",
-    "photo": "/images/profile.jpg"
+    "photo": "/images/profile.jpg",
+    "phone": "+34 (Spain)"
   },
   "skills_columns": [
     {
@@ -43,28 +44,73 @@
       "subgroups": [
         {
           "name": "Data & Analytics",
-          "pills": ["SQL", "R", "Python"]
+          "pills": [
+            "SQL",
+            "R",
+            "Python"
+          ]
         },
         {
           "name": "Visualization & Reporting",
-          "pills": ["Power BI", "Tableau", "Excel", "PowerPoint"]
+          "pills": [
+            "Power BI",
+            "Tableau",
+            "Excel",
+            "PowerPoint"
+          ]
         },
         {
           "name": "Marketing Tools",
-          "pills": ["Google Analytics", "Google Ads", "HubSpot"]
+          "pills": [
+            "Google Analytics",
+            "Google Ads",
+            "HubSpot"
+          ]
         }
       ]
     }
   ],
   "tools_with_icons": [
-    { "name": "Google Analytics 4", "icon": "ga4", "color": "#E37400" },
-    { "name": "Excel", "icon": "excel", "color": "#217346" },
-    { "name": "Tableau", "icon": "tableau", "color": "#E97627" },
-    { "name": "Power BI", "icon": "powerbi", "color": "#F2C811" },
-    { "name": "Google Ads", "icon": "googleads", "color": "#4285F4" },
-    { "name": "HubSpot", "icon": "hubspot", "color": "#FF7A59" },
-    { "name": "SQL", "icon": "sql", "color": "#336791" },
-    { "name": "R", "icon": "r", "color": "#276DC3" }
+    {
+      "name": "Google Analytics 4",
+      "icon": "ga4",
+      "color": "#E37400"
+    },
+    {
+      "name": "Excel",
+      "icon": "excel",
+      "color": "#217346"
+    },
+    {
+      "name": "Tableau",
+      "icon": "tableau",
+      "color": "#E97627"
+    },
+    {
+      "name": "Power BI",
+      "icon": "powerbi",
+      "color": "#F2C811"
+    },
+    {
+      "name": "Google Ads",
+      "icon": "googleads",
+      "color": "#4285F4"
+    },
+    {
+      "name": "HubSpot",
+      "icon": "hubspot",
+      "color": "#FF7A59"
+    },
+    {
+      "name": "SQL",
+      "icon": "sql",
+      "color": "#336791"
+    },
+    {
+      "name": "R",
+      "icon": "r",
+      "color": "#276DC3"
+    }
   ],
   "experience": [
     {
